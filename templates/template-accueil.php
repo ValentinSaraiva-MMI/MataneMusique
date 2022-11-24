@@ -77,7 +77,7 @@ $query = new WP_query($args);
                 <?php the_field('paragraphe_actualite'); ?>
             </div>
         </div>
-        <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+        <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir pluttts</a></button>
         <hr class="header_hr">
     </article>
     <?php endwhile; ?>

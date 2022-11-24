@@ -90,7 +90,7 @@ $args = array(
 );
 $query = new WP_query($args);
 ?>
-<h2>Évenements à venir</h2>
+<h2>Évenements à venir test</h2>
 <section>
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):

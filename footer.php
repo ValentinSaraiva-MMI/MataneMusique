@@ -42,7 +42,7 @@
         </div>
         <div class="bottom-details">
             <div class="bottom_text">
-                <span class="copyright_text">Copyright © 2022 <a href="#">Ecole Musique Matane.</a>Tout droit
+                <span class="copyright_text">Copyright © 2022 <a href="#">Ecole Musique Matane.</a>Tout droit 
                     résevé</span>
             </div>
         </div>

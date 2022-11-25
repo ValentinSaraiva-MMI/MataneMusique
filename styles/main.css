@@ -521,6 +521,11 @@ footer .bottom-details {
 .actu-contient p {
     margin-left: 1vw;
     margin-top: 0;
+    text-align: center;
+}
+
+.actu-contient img~div p {
+    text-align: left;
 }
 
 .actu-section hr {
@@ -540,9 +545,15 @@ footer .bottom-details {
     text-decoration: none;
 }
 
-.actualite .actu-section:last-child .header_hr {
+.actualite .actu:last-child .header_hr {
     display: none;
 }
+
+.actu:not(:first-child) .actu-titre,
+.actualite .btn-bordure {
+    margin-top: 3vh;
+}
+
 
 
 /******** Cours *********/

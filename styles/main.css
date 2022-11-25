@@ -27,8 +27,14 @@ h3 {
     text-align: center;
 }
 
+h1 {
+    font-size: 60pt;
+}
+
 h2 {
     margin-top: 50px;
+    font-size: 32pt;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -462,14 +468,37 @@ footer .bottom-details {
     text-align: center;
 }
 
-.ecole-lien {
+.btn-bordure {
+    border: solid 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), linear-gradient(to left, #FF8E01, #DC0019);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     padding: 10px;
-    font-size: 1.5em;
-    background-color: transparent;
-    border: solid 5px;
+    background-clip: padding-box, border-box;
+    margin-top: 1vh;
+}
+
+.btn-bordure a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.ecole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Actu Accueil */
+.actualite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .actu {
     width: 31vw;
 }
@@ -492,11 +521,6 @@ footer .bottom-details {
 .actu-contient p {
     margin-left: 1vw;
     margin-top: 0;
-}
-
-.actu-section {
-    display: flex;
-    justify-content: center;
 }
 
 .actu-section hr {

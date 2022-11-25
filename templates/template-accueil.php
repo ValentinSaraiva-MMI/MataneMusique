@@ -23,11 +23,13 @@ Template Name: Accueil
     <?php while ($query->have_posts()):
             $query->the_post(); ?>
     <article class="item-third widget-accueil">
-        <img class="widget-img" src="<?php the_field('image_widget'); ?>" alt="">
-        <div> 
+        <div>
+            <img class="widget-img" src="<?php the_field('image_widget'); ?>" alt="">
             <h3>
                 <?php the_field('titre_widget'); ?>
             </h3>
+        </div>
+        <div> 
             <a href="<?php the_field('lien_widget'); ?>">
                 <?php the_field('nom_du_lien') ?>
             </a>

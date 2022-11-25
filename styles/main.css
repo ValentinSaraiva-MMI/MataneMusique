@@ -961,10 +961,11 @@ footer .bottom-details {
         max-width: 15vw;
     }
 
-    .widget-accueil div {
+    .widget-accueil div:last-child {
         display: flex;
-        flex-direction: column;
-        text-align: end;
+        align-items: flex-end;
+        justify-content: center;
+        height: 2vh;
     }
 
 

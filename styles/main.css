@@ -953,13 +953,25 @@ footer .bottom-details {
         height: auto;
     }
 
+    .widget a {
+        font-size: 0.7em;
+    }
+
+    .widget-img {
+        max-width: 15vw;
+    }
+
+    .widget-accueil div {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+
     .ecole-info p {
         width: 75vw;
     }
 
-    .widget-img {
-        max-width: 27vw;
-    }
 
 }
 

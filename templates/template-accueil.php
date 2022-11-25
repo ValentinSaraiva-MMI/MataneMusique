@@ -24,12 +24,14 @@ Template Name: Accueil
             $query->the_post(); ?>
     <article class="item-third widget-accueil">
         <img class="widget-img" src="<?php the_field('image_widget'); ?>" alt="">
-        <h3>
-            <?php the_field('titre_widget'); ?>
-        </h3>
-        <a href="<?php the_field('lien_widget'); ?>">
-            <?php the_field('nom_du_lien') ?>
-        </a>
+        <div> 
+            <h3>
+                <?php the_field('titre_widget'); ?>
+            </h3>
+            <a href="<?php the_field('lien_widget'); ?>">
+                <?php the_field('nom_du_lien') ?>
+            </a>
+        </div>
     </article>
     <?php endwhile; ?>
     <?php endif;

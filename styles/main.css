@@ -540,7 +540,7 @@ footer .bottom-details {
     text-decoration: none;
 }
 
-.actu-section:last-child hr {
+.actu-section:last-child>hr {
     display: none;
 }
 

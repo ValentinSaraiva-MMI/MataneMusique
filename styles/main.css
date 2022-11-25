@@ -937,14 +937,30 @@ footer .bottom-details {
         font-size: 12px;
     }
 
-    /* widget accueil */
+    /* accueil */
     .container {
         width: 95%;
     }
 
     .widget-accueil {
         max-width: 30vw;
+        height: auto;
     }
+
+    .widget h3 {
+        margin: 1vh 0;
+        font-size: 1em;
+        height: auto;
+    }
+
+    .ecole-info p {
+        width: 75vw;
+    }
+
+    .widget-img {
+        max-width: 27vw;
+    }
+
 }
 
 @media all and (max-width:640px) {
@@ -972,14 +988,5 @@ footer .bottom-details {
 
     /* widget accueil */
 
-    .widget {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .widget-accueil {
-        max-width: 55vw;
-        width: 55vw;
-        margin-bottom: 3vh;
-    }
 }

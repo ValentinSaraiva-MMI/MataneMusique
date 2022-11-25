@@ -37,7 +37,7 @@ Template Name: Accueil
     ?>
 </section>
 
-<section> 
+<section class="ecole"> 
     <?php
     $args = array(
         'post_type' => 'post',
@@ -49,7 +49,7 @@ Template Name: Accueil
         <?php while ($query->have_posts()): $query->the_post(); ?>
             <h2> <?php the_title(); ?> </h2>
             <div class="ecole-info"> <?php the_content(); ?> </div>
-            <button class="ecole-lien"><a href="">Découvrir l'école</a></button>
+            <button class="btn-bordure"><a href="">Découvrir l'école</a></button>
         <?php endwhile; ?>
         <?php endif; ?>
 </section>
@@ -62,8 +62,10 @@ $query = new WP_query($args);
 ?>
 
 
+
+<section class="actualite">
 <h2>Actualités</h2>
-<section class="actu-section">
+<div class="actu-section">
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):
             $query->the_post(); ?>
@@ -72,16 +74,21 @@ $query = new WP_query($args);
             <?php the_field('titre_'); ?>
         </h3>
         <div class="actu-contient">
+            <?php $image=get_field('image_article_') ?>
+            <?php if(!empty($image)): ?>
             <img src="<?php the_field('image_article_') ?>" alt="">
+            <?php endif; ?>
             <div>
                 <?php the_field('paragraphe_actualite'); ?>
             </div>
         </div>
-        <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir pluttts</a></button>
+        <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
         <hr class="header_hr">
     </article>
     <?php endwhile; ?>
     <?php endif; ?>
+    </div>
+    <button class="btn-bordure"><a href="">Découvrir plus de nouvelles</a></button>
 </section>
 
 <?php
@@ -90,7 +97,7 @@ $args = array(
 );
 $query = new WP_query($args);
 ?>
-<h2>Évenements à vkkenir test</h2>
+<h2>Évenements à venir</h2>
 <section>
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):

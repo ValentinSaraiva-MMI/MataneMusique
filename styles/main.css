@@ -419,7 +419,6 @@ footer .bottom-details {
 
 /*** Bannière ***/
 .banner {
-    height: 70vh;
     width: 98vw;
     background-color: grey;
     border-radius: 45px;
@@ -612,6 +611,8 @@ footer .bottom-details {
 
 
 @media all and (max-width:1536px) {
+
+    /* header*/
     .menu {
         width: 53vw;
     }
@@ -639,10 +640,21 @@ footer .bottom-details {
         font-size: 0.85em;
     }
 
+    /*accueil */
+    .widget-accueil {
+        max-width: 14vw;
+    }
+
+    .actu {
+        width: 38vw;
+    }
+
 
 }
 
 @media all and (max-width:1280px) {
+
+    /* header */
     .menu {
         width: 58vw;
     }
@@ -668,6 +680,12 @@ footer .bottom-details {
 
     .header_logo_column {
         width: 11vw;
+    }
+
+    /* accueil */
+    .widget-accueil {
+        max-width: 19vw;
+        padding: 2.5vh 1vw;
     }
 }
 
@@ -707,6 +725,20 @@ footer .bottom-details {
     footer .content .link-boxes .input-box {
         width: 40%;
         margin-top: 10px;
+    }
+
+    /* widget accueil */
+    .container {
+        width: 90%;
+    }
+
+    .widget {
+        justify-content: space-between;
+        margin-top: 10vh;
+    }
+
+    .widget-accueil {
+        max-width: 25vw;
     }
 }
 
@@ -904,6 +936,15 @@ footer .bottom-details {
     .bottom-details .bottom_text a {
         font-size: 12px;
     }
+
+    /* widget accueil */
+    .container {
+        width: 95%;
+    }
+
+    .widget-accueil {
+        max-width: 30vw;
+    }
 }
 
 @media all and (max-width:640px) {
@@ -927,5 +968,18 @@ footer .bottom-details {
 
     footer .content .link-boxes .input-box {
         width: 100%;
+    }
+
+    /* widget accueil */
+
+    .widget {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widget-accueil {
+        max-width: 55vw;
+        width: 55vw;
+        margin-bottom: 3vh;
     }
 }

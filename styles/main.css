@@ -540,6 +540,10 @@ footer .bottom-details {
     text-decoration: none;
 }
 
+.actu:last-child hr {
+    display: none;
+}
+
 /******** Cours *********/
 .article-cours {
     position: relative;

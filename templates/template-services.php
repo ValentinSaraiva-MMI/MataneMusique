@@ -23,8 +23,7 @@ Template Name: Services
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    <div class="services-position">
-        <div class="widget services">
+    <div class="widget services">
             <?php
                 $args = array(
                     'post_type' => 'Service',
@@ -47,6 +46,21 @@ Template Name: Services
             <?php endif;
             wp_reset_postdata();
             ?>
+        </div>
+    <div class="services-position">
+        <div>
+            <?php
+                $args = array(
+                'post_type' => 'post',
+                'tag' => 'artsetudes','examens','boncadeau'
+                );
+                $query = new WP_Query($args);
+            ?>
+            <?php if ($query->have_posts()): ?>
+                <?php while ($query->have_posts()): $query->the_post(); ?>
+                    <div class="services-image"> <?php the_content(); ?> </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
         <div>
             <?php

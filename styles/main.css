@@ -373,6 +373,10 @@ footer .bottom-details {
     transition: 0.5s;
 }
 
+.menu a:hover {
+    color: #DC0019;
+}
+
 
 .footer-text {
     font-size: 1.5em;
@@ -514,7 +518,7 @@ footer .bottom-details {
     width: 15vw;
     height: 15vw;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .actu-contient p {

@@ -824,10 +824,6 @@ footer .bottom-details {
 @media all and (max-width:748px) {
     /*général*/
 
-    html {
-        overflow-x: hidden;
-    }
-
     h3 {
         font-size: 1.1em;
     }

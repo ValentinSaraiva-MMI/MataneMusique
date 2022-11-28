@@ -622,9 +622,11 @@ footer .bottom-details {
     justify-content: center;
 }
 
-.titre-cours-individuel,
+
 .text-cours-ind {
-    text-align: center;
+
+    .titre-cours-individuel,
+    .text-cours-ind ul text-align: center;
 }
 
 /* ----------------------- */

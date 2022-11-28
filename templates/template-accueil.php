@@ -97,7 +97,7 @@ $query = new WP_query($args);
 
 <?php
 $args = array(
-    'post_type' => 'Evenements'
+    'post_type' => 'Evenement'
 );
 $query = new WP_query($args);
 ?>

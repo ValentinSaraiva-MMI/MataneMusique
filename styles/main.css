@@ -587,7 +587,8 @@ footer .bottom-details {
 
 }
 
-.titre-cours, .btn-cours {
+.titre-cours,
+.btn-cours {
     position: absolute;
     top: 212px;
     left: 59px;

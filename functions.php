@@ -140,7 +140,7 @@ $args = array(
 register_post_type('Actualités', $args);
 
 
-// CPT Actualités
+// CPT Évenement
 $labels = array(
     'name' => 'Evenements',
     'all_items' => 'Tous les Evenements',

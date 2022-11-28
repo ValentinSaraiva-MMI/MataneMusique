@@ -15,7 +15,7 @@
     <?php wp_body_open(); ?>
 
     <div class="div_header">
-        <div>
+        <div> 
             <figure class="header_logo_column">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php echo get_template_directory_uri() . '/images/logoEcoleDeMusique.png' ?> "

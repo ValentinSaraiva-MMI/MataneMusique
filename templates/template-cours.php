@@ -9,7 +9,7 @@ Template Name: Cours
 <section>
     <?php
     $args = array(
-        'post_type' => 'Cours',
+        'post_type' => 'Cours', 
     );
     $query = new WP_query($args);
     ?>

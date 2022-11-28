@@ -514,7 +514,7 @@ footer .bottom-details {
     width: 15vw;
     height: 15vw;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .actu-contient p {

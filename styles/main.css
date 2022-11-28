@@ -375,6 +375,7 @@ footer .bottom-details {
 
 .menu a:hover {
     color: #DC0019;
+    font-size: 1.3em;
 }
 
 
@@ -654,6 +655,17 @@ footer .bottom-details {
         font-size: 0.85em;
     }
 
+    /*bannière*/
+    .banner {
+        width: 96vw;
+        margin-left: -8vw;
+        height: 66vh;
+    }
+
+    .n2-ss-slider-3 {
+        height: 66vh;
+    }
+
     /*accueil */
     .widget-accueil {
         max-width: 14vw;
@@ -731,6 +743,24 @@ footer .bottom-details {
         width: 14vw;
     }
 
+    /*bannière*/
+    .banner {
+        height: 45vh;
+    }
+
+    .n2-ss-slider-3 {
+        height: 45vh;
+    }
+
+    /*actu*/
+    .actu {
+        width: 55vw;
+    }
+
+    .btn-bordure a {
+        font-size: 1.6em;
+    }
+
     /*footer*/
     footer .content .link-boxes {
         flex-wrap: wrap;
@@ -758,9 +788,17 @@ footer .bottom-details {
 
 @media all and (max-width:748px) {
 
+    /*général*/
+
     html {
         overflow-x: hidden;
     }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    /*menu*/
 
     .toggle-button {
         display: block;
@@ -971,8 +1009,19 @@ footer .bottom-details {
         font-size: 0.7em;
     }
 
+    .widget-accueil a {
+        font-size: 0..9em;
+    }
+
+    .widget {
+        margin-top: 3vh;
+        width: 92.5vw;
+        margin-left: -1vw;
+    }
+
     .widget-img {
         max-width: 15vw;
+        width: 50%;
     }
 
     .widget-accueil div:last-child {
@@ -982,9 +1031,14 @@ footer .bottom-details {
         height: 2vh;
     }
 
-
     .ecole-info p {
         width: 75vw;
+    }
+
+    /*bannière*/
+    .banner {
+        width: 94vw;
+        margin-left: -2vw;
     }
 
 

@@ -8,7 +8,22 @@ Template Name: Services
 
 
 <section>
-    <h2>Service</h2>
+<h2>Services</h2>
+<div> 
+    <?php
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => 'Service',
+    );
+    $query = new WP_Query($args);
+    ?>
+    <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()): $query->the_post(); ?>
+            <div class="ecole-info"> <?php the_content(); ?> </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+    <div class="widget services">
     <?php
     $args = array(
         'post_type' => 'Service',
@@ -31,6 +46,7 @@ Template Name: Services
     <?php endif;
     wp_reset_postdata();
     ?>
+    </div>
 </section>
 
 <?php get_footer(); ?>

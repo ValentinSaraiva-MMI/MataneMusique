@@ -590,7 +590,7 @@ footer .bottom-details {
     border-radius: 10px;
     padding: 8px;
     position: absolute;
-    top: 228px;
+    top: 317px;
     left: 61px;
     color: white;
 }
@@ -613,9 +613,6 @@ footer .bottom-details {
 }
 
 
-
-
-
 .grid-cours {
     display: flex;
     flex-wrap: wrap;
@@ -623,6 +620,10 @@ footer .bottom-details {
     align-items: center;
     flex-direction: row;
     justify-content: center;
+}
+
+.titre-cours-individuel, .text-cours-ind{
+    text-align: center;
 }
 
 /* ----------------------- */

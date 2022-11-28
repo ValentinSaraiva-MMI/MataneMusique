@@ -375,6 +375,7 @@ footer .bottom-details {
 
 .menu a:hover {
     color: #DC0019;
+    font-size: 1.3em;
 }
 
 
@@ -730,6 +731,15 @@ footer .bottom-details {
 
     .header_logo_column {
         width: 14vw;
+    }
+
+    /*bannière*/
+    .banner {
+        height: 45vh;
+    }
+
+    .n2-ss-slider-3 {
+        height: 45vh;
     }
 
     /*footer*/

@@ -742,6 +742,15 @@ footer .bottom-details {
         height: 45vh;
     }
 
+    /*actu*/
+    .actu {
+        width: 55vw;
+    }
+
+    .btn-bordure a {
+        font-size: 1.6em;
+    }
+
     /*footer*/
     footer .content .link-boxes {
         flex-wrap: wrap;
@@ -982,6 +991,10 @@ footer .bottom-details {
         font-size: 0.7em;
     }
 
+    .widget {
+        margin-top: 3vh;
+    }
+
     .widget-img {
         max-width: 15vw;
     }
@@ -993,9 +1006,14 @@ footer .bottom-details {
         height: 2vh;
     }
 
-
     .ecole-info p {
         width: 75vw;
+    }
+
+    /*bannière*/
+    .banner {
+        width: 94vw;
+        margin-left: -2vw;
     }
 
 

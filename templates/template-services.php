@@ -13,7 +13,7 @@ Template Name: Services
         <?php
         $args = array(
         'post_type' => 'post',
-        'tags_name' => 'services',
+        'tag' => 'services',
         );
         $query = new WP_Query($args);
         ?>
@@ -52,7 +52,7 @@ Template Name: Services
         <?php
         $args = array(
         'post_type' => 'post',
-        'tags_name' => 'imageservices',
+        'tag' => 'imageservices',
         );
         $query = new WP_Query($args);
         ?>

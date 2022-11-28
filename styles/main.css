@@ -623,10 +623,11 @@ footer .bottom-details {
 }
 
 
-.text-cours-ind {
+.text-cours-ind,
+.titre-cours-individuel,
+.text-cours-ind ul {
 
-    .titre-cours-individuel,
-    .text-cours-ind ul text-align: center;
+    text-align: center;
 }
 
 /* ----------------------- */

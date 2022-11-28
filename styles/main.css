@@ -576,7 +576,6 @@ footer .bottom-details {
 }
 
 .btn-cours {
-    top: 310px;
     border: solid 3px transparent;
     border-radius: 20px;
     background-image: linear-gradient(white, white), linear-gradient(to left, #FF8E01, #DC0019);
@@ -590,6 +589,10 @@ footer .bottom-details {
     border: none;
     border-radius: 10px;
     padding: 8px;
+    position: absolute;
+    top: 228px;
+    left: 61px;
+    color: white;
 }
 
 .titre-cours {
@@ -597,6 +600,10 @@ footer .bottom-details {
     font-size: 32pt;
     margin-bottom: 0;
     font-size: 2.5vh;
+    position: absolute;
+    top: 228px;
+    left: 61px;
+    color: white;
 
 }
 
@@ -605,22 +612,14 @@ footer .bottom-details {
     text-decoration: none;
 }
 
-.titre-cours, .btn-cours {
-    position: absolute;
-    top: 212px;
-    left: 59px;
-    color: white;
-}
-
-
 
 .grid-cours {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
     margin-top: 5vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* ----------------------- */

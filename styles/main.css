@@ -373,6 +373,10 @@ footer .bottom-details {
     transition: 0.5s;
 }
 
+.menu a:hover {
+    color: #DC0019;
+}
+
 
 .footer-text {
     font-size: 1.5em;

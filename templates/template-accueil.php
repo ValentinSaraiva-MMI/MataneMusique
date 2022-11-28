@@ -65,8 +65,6 @@ $args = array(
 $query = new WP_query($args);
 ?>
 
-
-
 <section class="actualite">
     <h2>Actualités</h2>
     <div class="actu-section">

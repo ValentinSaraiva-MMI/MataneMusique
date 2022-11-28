@@ -97,22 +97,22 @@ $query = new WP_query($args);
 
 <?php
 $args = array(
-    'post_type' => 'Evenements'
+    'post_type' => 'Evenement'
 );
 $query = new WP_query($args);
 ?>
-<h2>Évenements à venir</h2>
+
+
 <section>
+    <h2>Évenements à venir</h2>
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):
             $query->the_post(); ?>
     <article>
-        <h3>
-            <?php the_field('titre_'); ?>
-        </h3>
+        <h3><?php the_field('titre_'); ?></h3>
             <img src="<?php the_field('image_evenement') ?>" alt="">
-                <?php the_field('paragraphe_evenement_'); ?>
-                <?php the_field('date_evenement_'); ?>
+                <p><?php the_field('paragraphe_evenement_'); ?></p>
+                <h3><?php the_field('date_evenement_'); ?></h3>
                 <?php the_field('lieu_evenement_'); ?>
                 <?php the_field('categorie_evenement_'); ?>
     </article>

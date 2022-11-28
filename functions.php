@@ -139,6 +139,33 @@ $args = array(
 );
 register_post_type('Actualités', $args);
 
+
+// CPT Évenement
+$labels = array(
+    'name' => 'Evenements',
+    'all_items' => 'Tous les Evenements',
+    // affiché dans le sous menu
+    'singular_name' => 'Evenement',
+    'add_new_item' => 'Ajouter un Evenement',
+    'add_new' => 'Ajouter un Evenement',
+    'edit_item' => 'Modifier un Evenement',
+    'menu_name' => 'Evenements'
+);
+$args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-calendar-alt',
+    'rewrite' => array('slug' => 'Evenement')
+);
+register_post_type('Evenement', $args);
+
+
+
+
 add_action('init', 'ecole_musique_post_types');
 
 

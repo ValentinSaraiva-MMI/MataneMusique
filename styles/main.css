@@ -778,9 +778,17 @@ footer .bottom-details {
 
 @media all and (max-width:748px) {
 
+    /*général*/
+
     html {
         overflow-x: hidden;
     }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    /*menu*/
 
     .toggle-button {
         display: block;
@@ -991,12 +999,19 @@ footer .bottom-details {
         font-size: 0.7em;
     }
 
+    .widget-accueil a {
+        font-size: 0..9em;
+    }
+
     .widget {
         margin-top: 3vh;
+        width: 92.5vw;
+        margin-left: -1vw;
     }
 
     .widget-img {
         max-width: 15vw;
+        width: 50%;
     }
 
     .widget-accueil div:last-child {

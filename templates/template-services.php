@@ -13,7 +13,7 @@ Template Name: Services
         <?php
         $args = array(
         'post_type' => 'post',
-        'tags_name' => 'services',
+        'tag' => 'services',
         );
         $query = new WP_Query($args);
         ?>
@@ -34,8 +34,8 @@ Template Name: Services
         <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()):
             $query->the_post(); ?>
-        <article class="item-third">
-            <img src="<?php the_field('image_du_services_'); ?>" alt="">
+        <article class="item-third widget-accueil">
+            <img class="widget-img" src="<?php the_field('image_du_services_'); ?>" alt="">
             <h3>
                 <?php the_field('titre_service_'); ?>
             </h3>
@@ -52,7 +52,7 @@ Template Name: Services
         <?php
         $args = array(
         'post_type' => 'post',
-        'tags_name' => 'imageservices',
+        'tag' => 'imageservices',
         );
         $query = new WP_Query($args);
         ?>

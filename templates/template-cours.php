@@ -17,12 +17,12 @@ Template Name: Cours
 
     <h2 class="titre-cours-individuel"> Cours en individuel </h2>
     <div class="text-cours-ind">
-        <p>
-            <li>Cette activité consiste en un cours de musique privé avec un professeur.<li>
-            <li>L’horaire est déterminé selon les disponibilités de l’élève et du professeur.<li>
-            <li>L’enseignement est adapté selon l’âge, le niveau et les connaissances de l’élève.<li>
-            <li>L’élève fait l’apprentissage d’un instrument et développe sa technique et sa musicalité.<li>
-        </p>
+            <ul>
+                <li>Cette activité consiste en un cours de musique privé avec un professeur.</li>
+                <li>L’horaire est déterminé selon les disponibilités de l’élève et du professeur.</li>
+                <li>L’enseignement est adapté selon l’âge, le niveau et les connaissances de l’élève.</li>
+                <li>L’élève fait l’apprentissage d’un instrument et développe sa technique et sa musicalité.</li>
+            </ul>
 
     </div>
     <div class="grid-cours">

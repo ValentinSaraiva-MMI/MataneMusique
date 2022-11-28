@@ -58,7 +58,8 @@ Template Name: Services
             ?>
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
-                    <div class="services-image"> <?php the_content(); ?> </div>
+                    <h2> <?php the_title(); ?> </h2>
+                    <div class="services-infos"> <?php the_content(); ?> </div>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>

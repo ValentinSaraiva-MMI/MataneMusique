@@ -759,7 +759,7 @@ footer .bottom-details {
     }
 
     .btn-bordure a {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     /*footer*/
@@ -779,7 +779,9 @@ footer .bottom-details {
 
     .widget {
         justify-content: space-between;
-        margin-top: 10vh;
+        margin-top: 3vh;
+        width: 93vw;
+        margin-left: -1.5vw;
     }
 
     .widget-accueil {
@@ -796,15 +798,14 @@ footer .bottom-details {
         font-size: 1.1em;
     }
 
+    /*général*/
+    h2 {
+        font-size: 28pt;
+    }
+
 }
 
 @media all and (max-width:748px) {
-
-    /*général*/
-
-    html {
-        overflow-x: hidden;
-    }
 
     /*menu*/
 
@@ -1014,7 +1015,7 @@ footer .bottom-details {
     }
 
     .widget a {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .widget-accueil a {

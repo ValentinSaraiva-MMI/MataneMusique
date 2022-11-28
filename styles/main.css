@@ -640,6 +640,17 @@ footer .bottom-details {
         font-size: 0.85em;
     }
 
+    /*bannière*/
+    .banner {
+        width: 96vw;
+        margin-left: -8vw;
+        height: 66vh;
+    }
+
+    .n2-ss-slider-3 {
+        height: 66vh;
+    }
+
     /*accueil */
     .widget-accueil {
         max-width: 14vw;

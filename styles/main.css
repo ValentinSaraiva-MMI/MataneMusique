@@ -587,7 +587,8 @@ footer .bottom-details {
 
 }
 
-.titre-cours, .btn-cours {
+.titre-cours,
+.btn-cours {
     position: absolute;
     top: 212px;
     left: 59px;
@@ -784,6 +785,17 @@ footer .bottom-details {
     .widget-accueil {
         max-width: 25vw;
     }
+
+    /*bannière*/
+    .banner {
+        width: 94vw;
+        margin-left: -2vw;
+    }
+
+    .widget h3 {
+        font-size: 1.1em;
+    }
+
 }
 
 @media all and (max-width:748px) {
@@ -792,10 +804,6 @@ footer .bottom-details {
 
     html {
         overflow-x: hidden;
-    }
-
-    h3 {
-        font-size: 1.1em;
     }
 
     /*menu*/
@@ -1035,11 +1043,7 @@ footer .bottom-details {
         width: 75vw;
     }
 
-    /*bannière*/
-    .banner {
-        width: 94vw;
-        margin-left: -2vw;
-    }
+
 
 
 }

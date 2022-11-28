@@ -581,7 +581,7 @@ footer .bottom-details {
     border-radius: 20px;
     background-image: linear-gradient(white, white), linear-gradient(to left, #FF8E01, #DC0019);
     background-origin: border-box;
-    background-clip: content-box, border-box; 
+    background-clip: content-box, border-box;
     padding: 10px;
     background-clip: padding-box, border-box;
     margin-top: 1vh;
@@ -605,7 +605,8 @@ footer .bottom-details {
     text-decoration: none;
 }
 
-.titre-cours, .btn-cours {
+.titre-cours,
+.btn-cours {
     position: absolute;
     top: 212px;
     left: 59px;
@@ -802,7 +803,6 @@ footer .bottom-details {
     .widget-accueil {
         max-width: 25vw;
     }
-<<<<<<< HEAD
 
     /*bannière*/
     .banner {
@@ -819,14 +819,9 @@ footer .bottom-details {
         font-size: 28pt;
     }
 
-=======
->>>>>>> c36843bc2722c73636dbaf254c8bb32becd605dd
 }
 
 @media all and (max-width:748px) {
-
-<<<<<<< HEAD
-=======
     /*général*/
 
     html {
@@ -837,7 +832,6 @@ footer .bottom-details {
         font-size: 1.1em;
     }
 
->>>>>>> c36843bc2722c73636dbaf254c8bb32becd605dd
     /*menu*/
 
     .toggle-button {

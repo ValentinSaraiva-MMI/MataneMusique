@@ -559,7 +559,33 @@ footer .bottom-details {
 }
 
 /*evenements accueil*/
-.evenement img {}
+.evenement-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25vh;
+    width: 50vw;
+}
+
+.evenement img {
+    height: 25vw;
+    width: 20vw;
+    object-fit: cover;
+}
+
+.evenement-date p,
+.evenement-lieu p {
+    margin: 0;
+}
+
+.evenement-infos,
+.evenement-date,
+.evenement-lieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
 
 
 
@@ -618,13 +644,13 @@ footer .bottom-details {
     justify-content: center;
 }
 
-.titre-cours-individuel, 
+.titre-cours-individuel,
 .text-cours-ind ul {
     text-align: center;
     list-style-type: none;
 }
 
-.btn-inscription{
+.btn-inscription {
     background: linear-gradient(to left, #FF8E01, #DC0019);
     border: none;
     border-radius: 10px;

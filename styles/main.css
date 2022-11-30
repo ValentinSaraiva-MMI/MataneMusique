@@ -615,7 +615,8 @@ footer .bottom-details {
     justify-content: center;
 }
 
-.titre-cours-individuel, .text-cours-ind ul {
+.titre-cours-individuel, 
+.text-cours-ind ul {
     text-align: center;
     list-style-type: none;
 }

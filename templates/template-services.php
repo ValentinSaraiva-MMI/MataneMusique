@@ -8,7 +8,7 @@ Template Name: Services
 
 
 <section>
-    <h2>Services</h2>
+    <h1>Services</h1>
     <div> 
         <?php
             $args = array(
@@ -59,7 +59,9 @@ Template Name: Services
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
                     <div class="un-service">
-                        <h3> <?php the_title(); ?> </h2>
+                        <h2> 
+                            <?php the_title(); ?> 
+                        </h2>
                         <div class="services-infos"> <?php the_content(); ?> </div>
                     </div>
                 <?php endwhile; ?>

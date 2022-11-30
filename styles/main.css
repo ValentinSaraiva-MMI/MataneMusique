@@ -28,12 +28,12 @@ h3 {
 }
 
 h1 {
-    font-size: 60pt;
+    font-size: 48pt;
 }
 
 h2 {
     margin-top: 50px;
-    font-size: 32pt;
+    font-size: 24pt;
     margin-bottom: 0;
 }
 
@@ -625,6 +625,11 @@ footer .bottom-details {
 }
 
 /*services*/
+
+.services h2 {
+    line-height: 30px;
+}
+
 .services .widget-accueil {
     max-width: 20vw;
     height: auto;
@@ -640,14 +645,14 @@ footer .bottom-details {
 }
 
 .nos-services {
-    width: 30vw;
+    width: 40vw;
 }
 
 .services-image img {
     width: 25vw;
     height: 80vh;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 45px;
 }
 
 .services-position {
@@ -769,10 +774,11 @@ table {
     padding: 1vh;
 }
 
-tr{
+tr {
     text-align: center;
 }
  */
+
 
 /* ----------------------- */
 /*        Responsive       */

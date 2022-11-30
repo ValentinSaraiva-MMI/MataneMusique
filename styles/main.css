@@ -628,7 +628,7 @@ footer .bottom-details {
 
 .services h2 {
     line-height: 30px;
-    margin: 0;
+    margin-top: 0;
 }
 
 .services .widget-accueil {
@@ -737,18 +737,19 @@ table {
     border-color: #E0E0E0;
     border-style: solid;
     color: #2E2E2E;
-  }
+}
 
-  table td, table th {
+table td,
+table th {
     border-width: 0px;
     border-color: #E0E0E0;
     border-style: solid;
     padding: 5px;
-  }
+}
 
-  table thead {
+table thead {
     background-color: #B3B3B3;
-  }
+}
 
 /*  .table-tarif {
     background-color: rgb(211, 211, 211);

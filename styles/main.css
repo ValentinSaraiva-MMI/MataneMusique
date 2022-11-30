@@ -729,6 +729,8 @@ footer .bottom-details {
     list-style-type: none;
 }
 
+/* TABLEAU */
+
 table {
     width: 100%;
     background-color: #F0F0F0;
@@ -737,7 +739,6 @@ table {
     border-color: #E0E0E0;
     border-style: solid;
     color: #2E2E2E;
-    display: flex;
     float: left;
 }
 

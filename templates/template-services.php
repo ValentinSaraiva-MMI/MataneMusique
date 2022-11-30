@@ -8,7 +8,7 @@ Template Name: Services
 
 
 <section>
-    <h2>Services</h2>
+    <h1>Services</h1>
     <div> 
         <?php
             $args = array(
@@ -35,9 +35,9 @@ Template Name: Services
                         $query->the_post(); ?>
                     <article class="item-third widget-accueil">
                         <img class="widget-img" src="<?php the_field('image_du_services_'); ?>" alt="">
-                        <h3>
+                        <h2>
                             <?php the_field('titre_service_'); ?>
-                        </h3>
+                        </h2>
                         <p>
                             <?php the_field('description_services_') ?>
                         </p>

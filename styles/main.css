@@ -566,8 +566,10 @@ footer .bottom-details {
     justify-content: space-between;
     height: 25vh;
     width: 70vw;
-    background-color: #FF8F0012;
+    background-color: #FF8F0030;
     border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .evenement {
@@ -580,6 +582,7 @@ footer .bottom-details {
     height: 25vh;
     width: 20vw;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .evenement-date p,
@@ -588,9 +591,18 @@ footer .bottom-details {
     vertical-align: baseline;
 }
 
-.evenement-infos {
+.evenement .evenement-infos {
     text-align: left;
     width: 25vw;
+    align-items: flex-start;
+}
+
+.evenement-categorie {
+    background-color: #F46706;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    margin-top: -12px;
 }
 
 .evenement-infos,

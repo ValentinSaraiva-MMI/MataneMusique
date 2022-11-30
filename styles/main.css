@@ -729,6 +729,8 @@ footer .bottom-details {
     list-style-type: none;
 }
 
+/* TABLEAU */
+
 table {
     width: 100%;
     background-color: #F0F0F0;
@@ -737,10 +739,12 @@ table {
     border-color: #E0E0E0;
     border-style: solid;
     color: #2E2E2E;
+
 }
 
 table td,
 table th {
+
     border-width: 0px;
     border-color: #E0E0E0;
     border-style: solid;
@@ -756,12 +760,14 @@ table thead {
     display: flex;
     float: left;
     border-radius: 20px;
+=======
+>>>>>>> d09582c6c7964f8ed3a891d207bc7203f78e6f76
 }
 
-.text-tarif {
-    width: 30vw;
+table thead {
+    background-color: #B3B3B3;
 }
-
+  
 .tarif-ind {
     display: flex;
     align-items: center;
@@ -769,19 +775,18 @@ table thead {
     margin-top: 4vh;
 }
 
-.text-tarif ul {
-    list-style-type: none;
+.text-tarif {
+        width: 30vw;
 }
 
 .text-tarif li {
     padding: 1vh;
-}
+}   
 
-tr {
-    text-align: center;
-}
- */
+.text-tarif ul {
+    list-style-type: none;
 
+}
 
 /* ----------------------- */
 /*        Responsive       */

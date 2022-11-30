@@ -625,6 +625,11 @@ footer .bottom-details {
 }
 
 /*services*/
+
+.services h2 {
+    line-height: 30px;
+}
+
 .services .widget-accueil {
     max-width: 20vw;
     height: auto;
@@ -640,14 +645,14 @@ footer .bottom-details {
 }
 
 .nos-services {
-    width: 30vw;
+    width: 40vw;
 }
 
 .services-image img {
     width: 25vw;
     height: 80vh;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 45px;
 }
 
 .services-position {
@@ -748,14 +753,15 @@ footer .bottom-details {
     padding: 1vh;
 }
 
-tr{
+tr {
     text-align: center;
 }
 
-.titre-table{
+.titre-table {
     border-radius: 20px;
     background-color: #919191;
 }
+
 /* ----------------------- */
 /*        Responsive       */
 /* ----------------------- */

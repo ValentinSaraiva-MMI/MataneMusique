@@ -576,13 +576,6 @@ footer .bottom-details {
 }
 
 .btn-cours {
-    border: solid 3px transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(white, white), linear-gradient(to left, #FF8E01, #DC0019);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    padding: 10px;
-    background-clip: padding-box, border-box;
     margin-top: 1vh;
     float: right;
     background: linear-gradient(to left, #FF8E01, #DC0019);
@@ -622,8 +615,17 @@ footer .bottom-details {
     justify-content: center;
 }
 
-.titre-cours-individuel, .text-cours-ind ul{
+.titre-cours-individuel, .text-cours-ind ul {
     text-align: center;
+    list-style-type: none;
+}
+
+.btn-inscription{
+    background: linear-gradient(to left, #FF8E01, #DC0019);
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
 }
 
 /* ----------------------- */

@@ -23,7 +23,7 @@ Template Name: Cours
                 <li>L’enseignement est adapté selon l’âge, le niveau et les connaissances de l’élève.</li>
                 <li>L’élève fait l’apprentissage d’un instrument et développe sa technique et sa musicalité.</li>
             </ul>
-
+            <button class="btn-inscription"><a href="">S'inscrire</a></button>
     </div>
     <div class="grid-cours">
         <?php if ($query->have_posts()): ?>

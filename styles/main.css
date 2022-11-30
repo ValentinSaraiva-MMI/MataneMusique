@@ -665,6 +665,10 @@ footer .bottom-details {
     border-radius: 20px;
 }
 
+.tarif-ind{
+    display: flex;
+    float: right;
+}
 
 
 /* ----------------------- */

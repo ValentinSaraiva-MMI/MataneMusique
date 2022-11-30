@@ -40,8 +40,9 @@ Template Name: Cours
         <?php endif; ?>
     </div>
 
-    <div class=tarif-ind>
+
     <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
+    <div class=tarif-ind>
         <div class=table-tarif>
             <table>
                 <tr class="titre-table">

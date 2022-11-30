@@ -18,8 +18,11 @@
                     <p>418 562-4212</p> <br>
                     <p>Suivez nous</p>
                     <div class="top media-icons content">
-                        <a href="https://fr-ca.facebook.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>images/facebookicone2.png" /></a>
-                        <a href="https://www.youtube.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>images/youtubeicone.png" /></a>
+                        <a href="https://fr-ca.facebook.com/" target="_blank"><img class="icones"
+                                src="<?php  echo (get_template_directory_uri() . '/images/facebookicone2.png')?>" alt=""></a>
+                       
+                        <a href="https://www.youtube.com/" target="_blank"><img class="icones" src="<?php  echo (get_template_directory_uri() . '/images/youtubeicone.png')?>"
+                                alt=""></a>
                     </div>
                 </ul>
                 <ul class="box">

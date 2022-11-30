@@ -635,10 +635,29 @@ footer .bottom-details {
     margin: 0;
 }
 
-.services .widget {
+.services.widget {
     margin-top: 5vh;
 }
 
+.nos-services {
+    width: 30vw;
+}
+
+.services-image {
+    width: 25vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.services-position {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.un-service {
+    border-left: 2px solid #FF8E00;
+}
 
 
 /******** Cours *********/

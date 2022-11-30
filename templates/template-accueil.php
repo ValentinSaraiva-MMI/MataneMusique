@@ -108,11 +108,31 @@ $query = new WP_query($args);
             $query->the_post(); ?>
     <article>
         <h3><?php the_field('titre_'); ?></h3>
+        <div class="evenement-position">
             <img src="<?php the_field('image_evenement') ?>" alt="">
-                <p><?php the_field('paragraphe_evenement_'); ?></p>
-                <h3><?php the_field('date_evenement_'); ?></h3>
-                <?php the_field('lieu_evenement_'); ?>
-                <?php the_field('categorie_evenement_'); ?>
+            <div class="evenement">
+                <div class="evenement-infos">    
+                    <div class="evenement-categorie">
+                        <?php the_field('categorie_evenement_'); ?>
+                    </div>
+                    <div>
+                        <?php the_field('paragraphe_evenement_'); ?>
+                    </div>
+                </div>
+                <div class="evenement-date">
+                    <p> DATE </p>
+                    <div>
+                        <?php the_field('date_evenement_'); ?>
+                    </div>
+                </div>
+                <div class="evenement-lieu">
+                    <p> LIEU </p>
+                    <div>
+                        <?php the_field('lieu_evenement_'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </article>
     <?php endwhile; ?>
     <?php endif; ?>

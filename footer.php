@@ -20,7 +20,7 @@
                     <div class="top media-icons content">
                         <a href="https://fr-ca.facebook.com/" target="_blank"><img class="icones"
                                 src="/images/facebookiconne2.png" alt=""></a>
-                        <a href="https://www.youtube.com/" target="_blank"><img class="icones" src="images/youtubeicone.png"
+                        <a href="https://www.youtube.com/" target="_blank"><img class="icones" src="/images/youtubeicone.png"
                                 alt=""></a>
                     </div>
                 </ul>

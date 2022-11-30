@@ -624,6 +624,21 @@ footer .bottom-details {
     width: 8vw;
 }
 
+/*services*/
+.services .widget-accueil {
+    max-width: 20vw;
+    height: auto;
+    padding: 2vh;
+}
+
+.services .widget-accueil p {
+    margin: 0;
+}
+
+.services .widget {
+    margin-top: 5vh;
+}
+
 
 
 /******** Cours *********/
@@ -692,11 +707,6 @@ footer .bottom-details {
     display: flex;
     float: left;
     border-radius: 20px;
-}
-
-.tarif-ind{
-    display: flex;
-    float: right;
 }
 
 

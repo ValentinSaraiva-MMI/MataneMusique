@@ -709,8 +709,20 @@ footer .bottom-details {
     border-radius: 20px;
 }
 
+.text-tarif{
+    width: 30vw;
+}
 
+.tarif-ind{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+}
 
+.text-tarif ul{
+    list-style-type: none;
+}
 
 /* ----------------------- */
 /*        Responsive       */

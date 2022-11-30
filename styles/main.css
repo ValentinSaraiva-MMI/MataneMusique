@@ -694,18 +694,20 @@ footer .bottom-details {
     border-radius: 20px;
 }
 
-.tarif-ind{
+.tarif-ind {
     display: flex;
     float: right;
 }
 
-.services .widget-accueil p{
+.services .widget-accueil p {
     margin: 0;
 }
 
 .services .widget {
     margin-top: 5vh;
 }
+
+/*oui*/
 
 
 /* ----------------------- */

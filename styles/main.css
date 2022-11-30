@@ -659,6 +659,7 @@ footer .bottom-details {
 .services-position {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 7vh;
 }
 
 .un-service {

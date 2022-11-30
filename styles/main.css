@@ -569,6 +569,12 @@ footer .bottom-details {
     border-radius: 30px;
 }
 
+.evenement {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
 .evenement-position img {
     height: 25vh;
     width: 20vw;
@@ -582,6 +588,7 @@ footer .bottom-details {
 
 .evenement-infos {
     text-align: left;
+    width: 25vw;
 }
 
 .evenement-infos,
@@ -593,6 +600,7 @@ footer .bottom-details {
     height: 10vh;
     align-items: center;
     text-align: center;
+    width: 8vw;
 }
 
 

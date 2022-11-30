@@ -584,6 +584,7 @@ footer .bottom-details {
 .evenement-date p,
 .evenement-lieu p {
     margin: 0;
+    vertical-align: baseline;
 }
 
 .evenement-infos {

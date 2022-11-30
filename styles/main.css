@@ -623,13 +623,7 @@ footer .bottom-details {
     list-style-type: none;
 }
 
-.btn-inscription{
-    background: linear-gradient(to left, #FF8E01, #DC0019);
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
-    color: white;
-}
+
 
 /* ----------------------- */
 /*        Responsive       */

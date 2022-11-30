@@ -46,30 +46,25 @@ Template Name: Cours
         <div class=table-tarif>
             <table>
                 <tr class="titre-table">
-                    <th>Étudiant</th>
-                    <th>À la leçon</th>
-                    <th>Adulte</th>
-                    <th>À la leçon</th>
+                    <th>Prix à la leçon</th>
+                    <th>40 minutes par semaine</th>
+                    <th>50 minutes par semaine</th>
+                    <th>60 minutes par semaine</th>
                 </tr>
 
                 <tr class="text-table">
-                    <td>40 minutes par semaine</td>
+                    <td>Étudiant</td>
                     <td>23,60$</td>
-                    <td>40 minutes par semaine</td>
-                    <td>27,20$</td>
-                </tr>
-                <tr class="text-table">
-                    <td>50 minutes par semaine</td>
                     <td>29,50$</td>
-                    <td>50 minutes par semaine</td>
-                    <td>34,00$</td>
+                    <td>35,40$</td>
                 </tr>
                 <tr class="text-table">
-                    <td>60 minutes par semaine</td>
-                    <td>35,40$</td>
-                    <td>60 minutes par semaine</td>
+                    <td>Adulte</td>
+                    <td>27,20$</td>
+                    <td>30,00$</td>
                     <td>40,80$</td>
                 </tr>
+
             </table>
         </div>
         <div class="text-tarif">

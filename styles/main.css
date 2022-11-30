@@ -744,6 +744,10 @@ footer .bottom-details {
     list-style-type: none;
 }
 
+.text-tarif li {
+    padding: 1vh;
+}
+
 /* ----------------------- */
 /*        Responsive       */
 /* ----------------------- */

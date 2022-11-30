@@ -723,7 +723,7 @@ footer .bottom-details {
 }
 
 .table-tarif {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(211, 211, 211);
     display: flex;
     float: left;
     border-radius: 20px;
@@ -748,6 +748,14 @@ footer .bottom-details {
     padding: 1vh;
 }
 
+tr{
+    text-align: center;
+}
+
+.titre-table{
+    border-radius: 20px;
+    background-color: #919191;
+}
 /* ----------------------- */
 /*        Responsive       */
 /* ----------------------- */

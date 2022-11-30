@@ -73,11 +73,11 @@ Template Name: Cours
             </table>
         </div>
         <div class="text-tarif">
-                     > 26,50$ / heure pour les élèves du niveau de base au niveau 4. <br> 
-
-                    >  29,50$ / heure pour les élèves de niveau 5 et plus en instrument ou en chant. <br>
-
-                    > Les élèves inscrits en instrument à vent ou à cordes (sauf guitare) pourraient avoir des frais de pianiste accompagnateur à l’occasion de classes d’ensemble, de pratiques, de concerts et d’examens instrumentaux.
+            <ul>
+                <li> 26,50$ / heure pour les élèves du niveau de base au niveau 4.</li>
+                <li>29,50$ / heure pour les élèves de niveau 5 et plus en instrument ou en chant.</li>
+                <li>Les élèves inscrits en instrument à vent ou à cordes (sauf guitare) pourraient avoir des frais de pianiste accompagnateur à l’occasion de classes d’ensemble, de pratiques, de concerts et d’examens instrumentaux.</li>
+            </ul>            
         </div>
     </div>
 

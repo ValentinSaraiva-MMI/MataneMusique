@@ -48,6 +48,8 @@ h3 {
 .container {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container img {
@@ -179,7 +181,7 @@ h3 {
 footer {
     background: #242424;
     width: 100%;
-    height: 500px;
+    height: 480px;
     bottom: 0;
     left: 0;
     border-radius: 100px 100px 0px 0px;
@@ -198,7 +200,6 @@ footer p {
 footer .content {
     max-width: 1250px;
     margin: auto;
-    padding: 30px 40px 40px 40px;
 }
 
 footer .content .top {
@@ -238,6 +239,7 @@ footer .content .top {
 
 footer .content .link-boxes .box {
     width: calc(100% / 5 - 10px);
+    height: 100px;
 }
 
 .content .link-boxes .box .link_name {
@@ -565,23 +567,49 @@ footer .bottom-details {
     justify-content: space-between;
     height: 25vh;
     width: 70vw;
-    background-color: #FF8F0012;
+    background-color: #FF8F0030;
     border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+.evenement {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
 }
 
 .evenement-position img {
     height: 25vh;
     width: 20vw;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .evenement-date p,
 .evenement-lieu p {
     margin: 0;
+    vertical-align: baseline;
+    font-weight: bold;
 }
 
-.evenement-infos {
+.evenement-categorie p {
+    font-weight: bold;
+}
+
+.evenement .evenement-infos {
     text-align: left;
+    width: 25vw;
+    align-items: flex-start;
+}
+
+.evenement-categorie {
+    background-color: #F46706;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    margin-top: -12px;
 }
 
 .evenement-infos,
@@ -593,6 +621,7 @@ footer .bottom-details {
     height: 10vh;
     align-items: center;
     text-align: center;
+    width: 8vw;
 }
 
 
@@ -658,7 +687,7 @@ footer .bottom-details {
     list-style-type: none;
 }
 
-.table-tarif{
+.table-tarif {
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     float: left;
@@ -668,6 +697,14 @@ footer .bottom-details {
 .tarif-ind{
     display: flex;
     float: right;
+}
+
+.services .widget-accueil p{
+    margin: 0;
+}
+
+.services .widget {
+    margin-top: 5vh;
 }
 
 

@@ -694,6 +694,20 @@ footer .bottom-details {
     border-radius: 20px;
 }
 
+/*services*/
+.services .widget-accueil {
+    max-width: 20vw;
+    height: auto;
+    padding: 2vh;
+}
+
+.services .widget-accueil p {
+    margin: 0;
+}
+
+.services .widget {
+    margin-top: 5vh;
+}
 
 
 /* ----------------------- */

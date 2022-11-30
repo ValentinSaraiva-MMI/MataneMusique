@@ -736,30 +736,21 @@ table {
     border-color: #E0E0E0;
     border-style: solid;
     color: #2E2E2E;
-  }
+    display: flex;
+    float: left;
+}
 
-  table td, table th {
+table td, table th {
     border-width: 0px;
     border-color: #E0E0E0;
     border-style: solid;
     padding: 5px;
-  }
+}
 
-  table thead {
+table thead {
     background-color: #B3B3B3;
-  }
-
-/*  .table-tarif {
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    float: left;
-    border-radius: 20px;
 }
-
-.text-tarif {
-    width: 30vw;
-}
-
+  
 .tarif-ind {
     display: flex;
     align-items: center;
@@ -767,19 +758,18 @@ table {
     margin-top: 4vh;
 }
 
-.text-tarif ul {
-    list-style-type: none;
+.text-tarif {
+        width: 30vw;
 }
 
 .text-tarif li {
     padding: 1vh;
-}
+}   
 
-tr {
-    text-align: center;
-}
- */
+.text-tarif ul {
+    list-style-type: none;
 
+}
 
 /* ----------------------- */
 /*        Responsive       */

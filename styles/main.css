@@ -591,6 +591,11 @@ footer .bottom-details {
 .evenement-lieu p {
     margin: 0;
     vertical-align: baseline;
+    font-weight: bold;
+}
+
+.evenement-categorie p {
+    font-weight: bold;
 }
 
 .evenement .evenement-infos {

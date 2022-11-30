@@ -44,26 +44,26 @@ Template Name: Cours
     <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
         <div class=table-tarif>
             <table>
-                <tr>
+                <tr class="titre-table">
                     <th>Étudiant</th>
                     <th>À la leçon</th>
                     <th>Adulte</th>
                     <th>À la leçon</th>
                 </tr>
 
-                <tr>
+                <tr class="text-table">
                     <td>40 minutes par semaine</td>
                     <td>23,60$</td>
                     <td>40 minutes par semaine</td>
                     <td>27,20$</td>
                 </tr>
-                <tr>
+                <tr class="text-table">
                     <td>50 minutes par semaine</td>
                     <td>29,50$</td>
                     <td>50 minutes par semaine</td>
                     <td>34,00$</td>
                 </tr>
-                <tr>
+                <tr class="text-table">
                     <td>60 minutes par semaine</td>
                     <td>35,40$</td>
                     <td>60 minutes par semaine</td>

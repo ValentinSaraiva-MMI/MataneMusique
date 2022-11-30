@@ -660,18 +660,19 @@ footer .bottom-details {
 }
 
 .titre-cours-individuel,
+.text-cours-ind,
 .text-cours-ind ul {
     text-align: center;
     list-style-type: none;
 }
 
-.btn-inscription {
-    background: linear-gradient(to left, #FF8E01, #DC0019);
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
-    color: white;
+.table-tarif{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    float: left;
+    border-radius: 20px;
 }
+
 
 
 /* ----------------------- */

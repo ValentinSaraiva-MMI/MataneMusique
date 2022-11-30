@@ -628,6 +628,7 @@ footer .bottom-details {
 
 .services h2 {
     line-height: 30px;
+    margin: 0;
 }
 
 .services .widget-accueil {

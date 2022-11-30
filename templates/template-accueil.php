@@ -107,7 +107,6 @@ $query = new WP_query($args);
     <?php while ($query->have_posts()):
             $query->the_post(); ?>
     <article>
-        <h3><?php the_field('titre_'); ?></h3>
         <div class="evenement-position">
             <img src="<?php the_field('image_evenement') ?>" alt="">
             <div class="evenement">

@@ -584,6 +584,7 @@ footer .bottom-details {
 .evenement-date p,
 .evenement-lieu p {
     margin: 0;
+    vertical-align: baseline;
 }
 
 .evenement-infos {
@@ -666,7 +667,7 @@ footer .bottom-details {
     list-style-type: none;
 }
 
-.table-tarif{
+.table-tarif {
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     float: left;

@@ -643,7 +643,7 @@ footer .bottom-details {
     width: 30vw;
 }
 
-.services-image {
+.services-image img {
     width: 25vw;
     height: 80vh;
     object-fit: cover;

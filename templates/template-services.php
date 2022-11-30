@@ -52,7 +52,9 @@ Template Name: Services
             <?php
                 $args = array(
                 'post_type' => 'post',
-                'tag' => 'artsetudes','examens','boncadeau',
+                'tag' => 'artsetudes',
+                'tag' => 'examens',
+                'tag' => 'boncadeau',
                 );
                 $query = new WP_Query($args);
             ?>

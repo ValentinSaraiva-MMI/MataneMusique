@@ -58,7 +58,7 @@ Template Name: Cours
                     <td>29,50$</td>
                     <td>35,40$</td>
                 </tr>
-                <tr class="text-table">
+                <tr>
                     <td>Adulte</td>
                     <td>27,20$</td>
                     <td>30,00$</td>

@@ -628,7 +628,7 @@ footer .bottom-details {
 
 .services h2 {
     line-height: 30px;
-    margin: 0;
+    margin-top: 0;
 }
 
 .services .widget-accueil {
@@ -738,13 +738,6 @@ table {
     border-width: 0px;
     border-style: solid;
     color: #2E2E2E;
-    overflow: hidden;
-    text-align: center;
-}
-
-.orange{
-    color: #e0620d;
-    font-weight: bold;
 }
 
 table td, table th {
@@ -752,6 +745,19 @@ table td, table th {
     border-color: #E0E0E0;
     border-style: solid;
     padding: 5px;
+}
+
+table thead {
+    background-color: #B3B3B3;
+}
+
+/*  .table-tarif {
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    float: left;
+    border-radius: 20px;
+=======
+>>>>>>> d09582c6c7964f8ed3a891d207bc7203f78e6f76
 }
 
 table thead {

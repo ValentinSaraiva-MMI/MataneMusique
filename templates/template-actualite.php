@@ -32,7 +32,7 @@
                 <?php the_title(); ?>
             </h3>
             <p>
-                <?php the_excerpt(); ?>
+                <?php the_content(); ?>
             </p>
             <p><a href="<?php the_permalink(); ?>">En savoir plus </a></p>
         </article>

@@ -56,28 +56,7 @@ Template Name: Cours
     <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
     <div class=tarif-ind>
 
-        <div class=table-tarif>
-    <?php
-        $args = array(
-        'post_type' => 'post',
-        'tag' => 'text-info-tarif-ind',
-        );
-        $querytarifind = new WP_Query($args);
-        ?>
-        <?php if ($querytarifind->have_posts()): ?>
-        <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
-        <div class="">
-            <h3>
-                <?php the_title(); ?>
-            </h3>
-            <div class="text-tarif"> <?php the_content(); ?> </div>
-        </div>
-<?php endwhile; ?>
-<?php endif; ?>
-        </div>
-
-        <div class="">
-    <?php
+        <div class=table-tarif>    <?php
         $args = array(
         'post_type' => 'post',
         'tag' => 'table_tarif_ind',
@@ -86,6 +65,27 @@ Template Name: Cours
         ?>
         <?php if ($querytabletarif->have_posts()): ?>
         <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
+        <div class="">
+            <h3>
+                <?php the_title(); ?>
+            </h3>
+            <div class="text-tarif"> <?php the_content(); ?> </div>
+        </div>
+<?php endwhile; ?>
+<?php endif; ?>
+   
+        </div>
+
+        <div class="">
+ <?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'text-info-tarif-ind',
+        );
+        $querytarifind = new WP_Query($args);
+        ?>
+        <?php if ($querytarifind->have_posts()): ?>
+        <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
         <div class="">
             <h3>
                 <?php the_title(); ?>

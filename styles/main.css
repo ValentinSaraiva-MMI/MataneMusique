@@ -733,6 +733,13 @@ footer .bottom-details {
     list-style-type: none;
 }
 
+.tarif-ind{
+    display: flex;
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /* TABLEAU */
 
 table {

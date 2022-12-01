@@ -15,14 +15,25 @@ Template Name: Cours
     ?>
     <h1>Nos cours</h1>
 
-    <h2 class="titre-cours-individuel"> Cours en individuel </h2>
-    <div class="text-cours-ind">
-            <ul>
-                <li>Cette activité consiste en un cours de musique privé avec un professeur.</li>
-                <li>L’horaire est déterminé selon les disponibilités de l’élève et du professeur.</li>
-                <li>L’enseignement est adapté selon l’âge, le niveau et les connaissances de l’élève.</li>
-                <li>L’élève fait l’apprentissage d’un instrument et développe sa technique et sa musicalité.</li>
-            </ul>
+    <div class="">
+<?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'description_cours_individuel',
+        );
+        $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()): $query->the_post(); ?>
+        <div class="">
+            <h2>
+                <?php the_title(); ?>
+            </h2>
+            <div class="text-cours-ind"> <?php the_content(); ?> </div>
+        </div>
+<?php endwhile; ?>
+
+<?php endif; ?>
             <button class="btn-bordure"><a href="">S'inscrire</a></button>
     </div>
     <div class="grid-cours">

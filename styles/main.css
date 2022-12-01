@@ -689,7 +689,7 @@ footer .bottom-details {
 
 .btn-cours {
     margin-top: 1vh;
-    float: right;
+    
     background: linear-gradient(to left, #FF8E01, #DC0019);
     border: none;
     border-radius: 10px;
@@ -699,6 +699,8 @@ footer .bottom-details {
     left: 61px;
     color: white;
 }
+
+
 
 .titre-cours {
     margin-top: 61px;

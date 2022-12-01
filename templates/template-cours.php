@@ -66,9 +66,6 @@ Template Name: Cours
         <?php if ($querytabletarif->have_posts()): ?>
         <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
         <div class="">
-            <h3>
-                <?php the_title(); ?>
-            </h3>
             <div class="text-tarif"> <?php the_content(); ?> </div>
         </div>
 <?php endwhile; ?>

@@ -15,7 +15,7 @@ Template Name: Cours
     ?>
     <h1>Nos cours</h1>
 
-    <div class="">
+    <div class="description-cours">
 <?php
         $args = array(
         'post_type' => 'post',

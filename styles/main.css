@@ -634,8 +634,9 @@ footer .bottom-details {
 }
 
 .mission-historique .services-image img {
-    width: 15vw;
-    height: 44vh;
+    width: 14vw;
+    height: 38vh;
+    margin-right: 2vw;
 }
 
 .mission-historique .services-position {

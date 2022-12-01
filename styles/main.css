@@ -668,7 +668,7 @@ footer .bottom-details {
 }
 
 .un-service:first-child h2 {
-    margin-top: 2vh;
+    margin-top: 0;
 }
 
 
@@ -733,7 +733,7 @@ footer .bottom-details {
     list-style-type: none;
 }
 
-.tarif-ind{
+.tarif-ind {
     display: flex;
     margin-top: 3vh;
     align-items: center;

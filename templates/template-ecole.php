@@ -63,11 +63,17 @@ Template Name: Notre école
         <?php while ($query->have_posts()):
                 $query->the_post(); ?>
         <article class="article-enseignant">
+            <img class="img-enseignant" src="<?php the_field('photo_du_professeur_') ?>" alt="">
             <h3 class="titre-enseignant">
-                <?php the_field('titre_du_cour'); ?>
+                <?php the_field('prenom_nom_enseignants_'); ?>
             </h3>
-            <img class="img-enseignant" src="<?php the_field('image_du_cours_') ?>" alt="">
-            <button class="btn-cours"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+            <div>
+                <?php the_field('description_professeur_'); ?>
+            </div>
+            <div>
+                <?php the_field('instrument_professeur'); ?>
+            </div>
+            <button class="btn-cours"><a href="<?php the_permalink('bouton_cours_'); ?>">En savoir plus</a></button>
         </article>
         <?php endwhile; ?>
         <?php endif; ?>

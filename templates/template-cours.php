@@ -48,7 +48,7 @@ Template Name: Cours
 
                 <thead>
                     <tr class="titre-table">
-                        <th>Prix à la leçon</th>
+                        <th><bold> Prix à la leçon</bold></th>
                         <th>40 minutes par semaine</th>
                         <th>50 minutes par semaine</th>
                         <th>60 minutes par semaine</th>
@@ -57,13 +57,13 @@ Template Name: Cours
 
                 <tbody>
                     <tr class="text-table">
-                        <td>Étudiant</td>
+                        <td class="orange">Étudiant</td>
                         <td>23,60$</td>
                         <td>29,50$</td>
                         <td>35,40$</td>
                     </tr>
                     <tr>
-                        <td>Adulte</td>
+                        <td class="orange">Adulte</td>
                         <td>27,20$</td>
                         <td>30,00$</td>
                         <td>40,80$</td>

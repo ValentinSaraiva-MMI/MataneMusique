@@ -4,6 +4,49 @@ Template Name: Notre école
 */
 ?>
 
+<h1>Notre école</h1>
+
+<section>
+    <h2>Mission & Historique</h2>
+    <div class="services-position">
+        <div service-img>
+            <?php
+                $args = array(
+                'post_type' => 'post',
+                'tag' => 'services',
+                );
+                $query = new WP_Query($args);
+            ?>
+            <?php if($query -> have_posts()): $query->the_post(); ?>
+                <?php if(has_post_thumbnail()) : ?> <!--Si le post à une image-->
+                    <div class="services-image">
+                        <?php the_post_thumbnail();?> <!--Affiche l'image-->
+                    </div>
+                <?php endif; ?>   
+            <?php endif; ?>   
+        </div>
+        <div class="nos-services">
+            <?php
+                $args = array(
+                'post_type' => 'post',
+                'tag' => 'mission_et_historique',
+                );
+                $query = new WP_Query($args);
+            ?>
+            <?php if ($query->have_posts()): ?>
+                <?php while ($query->have_posts()): $query->the_post(); ?>
+                    <div class="un-service">
+                        <h2> 
+                            <?php the_title(); ?> 
+                        </h2>
+                        <div class="services-infos"> <?php the_content(); ?> </div>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>    
+    </div>
+</section>
+
 <section>
     <?php
     $args = array(

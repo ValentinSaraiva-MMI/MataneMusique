@@ -25,7 +25,7 @@ Template Name: Cours
         ?>
         <?php if ($querycours->have_posts()): ?>
         <?php while ($querycours->have_posts()): $querycours->the_post(); ?>
-        <div class="article-cours">
+        <div class="">
             <h2>
                 <?php the_title(); ?>
             </h2>

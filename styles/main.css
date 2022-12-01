@@ -629,6 +629,10 @@ footer .bottom-details {
     text-align: left;
 }
 
+.mission-historique h3:first-child {
+    margin-top: 0;
+}
+
 .mission-historique .services-image img {
     width: 15vw;
     height: 44vh;

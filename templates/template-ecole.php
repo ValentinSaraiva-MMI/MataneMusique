@@ -6,8 +6,9 @@ Template Name: Notre école
 
 <?php get_header(); ?>
 
-
-<h1>Notre école</h1>
+<section>
+    <h1>Notre école</h1>
+</section>
 
 <section>
     <h2>Mission & Historique</h2>

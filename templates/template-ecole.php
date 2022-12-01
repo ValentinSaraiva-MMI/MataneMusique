@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Notre équipe
+Template Name: Notre école
 */
 ?>
 

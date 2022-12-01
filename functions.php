@@ -39,6 +39,7 @@ function ecole_musique_post_types()
         'has_archive' => true,
         'supports' => array('title', 'editor', 'thumbnail'),
         'menu_position' => 5,
+        'taxonomies' => array('category','post_tag'),
         'menu_icon' => 'dashicons-businessman',
         'rewrite' => array('slug' => 'enseignant')
     );

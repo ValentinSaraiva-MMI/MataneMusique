@@ -10,6 +10,7 @@ function demotheme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'demotheme_enqueue_styles');
 
 
+
 // Theme support
 function demotheme_add_theme_support()
 {
@@ -179,3 +180,8 @@ function demotheme_register_menu()
     );
 }
 add_action('after_setup_theme', 'demotheme_register_menu');
+
+function reg_tag() {
+    register_taxonomy_for_object_type('post_tag', 'Enseignant');
+}
+add_action('init', 'reg_tag');

@@ -4,6 +4,9 @@ Template Name: Notre école
 */
 ?>
 
+<?php get_header(); ?>
+
+
 <h1>Notre école</h1>
 
 <section>
@@ -77,3 +80,5 @@ Template Name: Notre école
     <?php endwhile; ?>
     <?php endif; ?>
 </section>
+
+<?php get_footer(); ?>

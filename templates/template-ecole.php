@@ -40,9 +40,9 @@ Template Name: Notre école
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
                     <div class="un-service">
-                        <h2> 
+                        <h3> 
                             <?php the_title(); ?> 
-                        </h2>
+                        </h3>
                         <div class="services-infos"> <?php the_content(); ?> </div>
                     </div>
                 <?php endwhile; ?>

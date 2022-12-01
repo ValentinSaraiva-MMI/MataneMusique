@@ -625,11 +625,11 @@ footer .bottom-details {
 }
 
 /* école */
-.mission-historique h2 {
+.mission-historique h3 {
     text-align: left;
 }
 
-.mission-historique img {
+.mission-historique .services-image img {
     width: 15vw;
     height: 44vh;
 }

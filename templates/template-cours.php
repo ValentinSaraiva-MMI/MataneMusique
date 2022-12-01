@@ -21,10 +21,10 @@ Template Name: Cours
         'post_type' => 'post',
         'tag' => 'description_cours_individuel',
         );
-        $query = new WP_Query($args);
+        $querycours = new WP_Query($args);
         ?>
-        <?php if ($query->have_posts()): ?>
-        <?php while ($query->have_posts()): $query->the_post(); ?>
+        <?php if ($querycours->have_posts()): ?>
+        <?php while ($querycours->have_posts()): $querycours->the_post(); ?>
         <div class="">
             <h2>
                 <?php the_title(); ?>
@@ -32,10 +32,11 @@ Template Name: Cours
             <div class="text-cours-ind"> <?php the_content(); ?> </div>
         </div>
 <?php endwhile; ?>
-
 <?php endif; ?>
+
+        </div>
             <button class="btn-bordure"><a href="">S'inscrire</a></button>
-    </div>
+   
     <div class="grid-cours">
         <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()):

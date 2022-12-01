@@ -71,15 +71,15 @@ Template Name: Services
             <?php
                 $args = array(
                 'post_type' => 'post',
-                'tag' => 'imageservices',
+                'tag' => 'services',
                 );
                 $query = new WP_Query($args);
             ?>
-            <?php if ($query->have_posts()): ?>
-                <?php while ($query->have_posts()): $query->the_post(); ?>
-                    <div class="services-image"> <?php the_content(); ?> </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
+            <?php if(has_post_thumbnail()) : ?> <!--Si le post à une image-->
+                <div class="item-half services-image">
+                    <?php the_post_thumbnail();?> <!--Affiche l'image-->
+                </div>
+            <?php endif; ?>   
         </div>
     </div>
 </section>

@@ -6,11 +6,8 @@ Template Name: Notre école
 
 <?php get_header(); ?>
 
-<section>
-    <h1>Notre école</h1>
-</section>
-
 <section class="mission-historique">
+    <h1>Notre école</h1>
     <h2>Mission & Historique</h2>
     <div class="services-position">
         <div service-img>

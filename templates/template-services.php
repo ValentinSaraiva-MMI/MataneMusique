@@ -76,7 +76,7 @@ Template Name: Services
                 $query = new WP_Query($args);
             ?>
             <?php if(has_post_thumbnail()) : ?> <!--Si le post à une image-->
-                <div class="item-half services-image">
+                <div class="services-image">
                     <?php the_post_thumbnail();?> <!--Affiche l'image-->
                 </div>
             <?php endif; ?>   

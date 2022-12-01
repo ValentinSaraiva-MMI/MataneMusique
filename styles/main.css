@@ -667,7 +667,7 @@ footer .bottom-details {
     padding-left: 2vw;
 }
 
-.nos-services:first-child h2 {
+.un-service:first-child h2 {
     margin-top: 2vh;
 }
 
@@ -753,7 +753,8 @@ table {
     overflow: hidden;
 }
 
-table td, table th {
+table td,
+table th {
     border-width: 0px;
     border-color: #E0E0E0;
     border-style: solid;
@@ -764,7 +765,7 @@ table thead {
     background-color: #B3B3B3;
 }
 
-.orange{
+.orange {
     color: #FF8F00;
     font-weight: bold;
 }

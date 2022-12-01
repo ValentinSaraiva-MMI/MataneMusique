@@ -81,6 +81,7 @@ Template Name: Services
                     <?php the_post_thumbnail();?> <!--Affiche l'image-->
                 </div>
             <?php endif; ?>   
+            <?php endif; ?>   
         </div>
     </div>
 </section>

@@ -10,7 +10,7 @@ Template Name: Notre école
     <h1>Notre école</h1>
 </section>
 
-<section>
+<section class="mission-historique">
     <h2>Mission & Historique</h2>
     <div class="services-position">
         <div service-img>

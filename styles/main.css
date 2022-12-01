@@ -624,6 +624,24 @@ footer .bottom-details {
     width: 8vw;
 }
 
+/* école */
+.mission-historique h2 {
+    text-align: left;
+}
+
+.mission-historique img {
+    width: 15vw;
+    height: 44vh;
+}
+
+.mission-historique .services-position {
+    justify-content: center;
+}
+
+.mission-historique .service-img {
+    margin-right: 2vw;
+}
+
 /*services*/
 
 .services h2 {

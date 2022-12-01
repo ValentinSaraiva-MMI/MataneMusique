@@ -55,36 +55,8 @@ Template Name: Cours
 
     <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
     <div class=tarif-ind>
+
         <div class=table-tarif>
-            <table>
-
-                <thead>
-                    <tr class="titre-table">
-                        <th><bold> Prix à la leçon</bold></th>
-                        <th>40 minutes par semaine</th>
-                        <th>50 minutes par semaine</th>
-                        <th>60 minutes par semaine</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr class="text-table">
-                        <td class="orange">Étudiant</td>
-                        <td>23,60$</td>
-                        <td>29,50$</td>
-                        <td>35,40$</td>
-                    </tr>
-                    <tr>
-                        <td class="orange">Adulte</td>
-                        <td>27,20$</td>
-                        <td>30,00$</td>
-                        <td>40,80$</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
-        <div class="">
     <?php
         $args = array(
         'post_type' => 'post',
@@ -95,9 +67,29 @@ Template Name: Cours
         <?php if ($querytarifind->have_posts()): ?>
         <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
         <div class="">
-            <h2>
+            <h3>
                 <?php the_title(); ?>
-            </h2>
+            </h3>
+            <div class="text-tarif"> <?php the_content(); ?> </div>
+        </div>
+<?php endwhile; ?>
+<?php endif; ?>
+        </div>
+
+        <div class="">
+    <?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'table_tarif_ind',
+        );
+        $querytabletarif = new WP_Query($args);
+        ?>
+        <?php if ($querytabletarif->have_posts()): ?>
+        <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
+        <div class="">
+            <h3>
+                <?php the_title(); ?>
+            </h3>
             <div class="text-tarif"> <?php the_content(); ?> </div>
         </div>
 <?php endwhile; ?>

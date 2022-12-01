@@ -667,6 +667,10 @@ footer .bottom-details {
     padding-left: 2vw;
 }
 
+.nos-services:first-child h2 {
+    margin-top: 2vh;
+}
+
 
 /******** Cours *********/
 .article-cours {

@@ -624,6 +624,29 @@ footer .bottom-details {
     width: 8vw;
 }
 
+/* école */
+.mission-historique h3 {
+    text-align: left;
+}
+
+.mission-historique h3:first-child {
+    margin-top: 0;
+}
+
+.mission-historique .services-image img {
+    width: 14vw;
+    height: 38vh;
+    margin-right: 2vw;
+}
+
+.mission-historique .services-position {
+    justify-content: center;
+}
+
+.mission-historique .service-img {
+    margin-right: 2vw;
+}
+
 /*services*/
 
 .services h2 {
@@ -668,7 +691,7 @@ footer .bottom-details {
 }
 
 .un-service:first-child h2 {
-    margin-top: 2vh;
+    margin-top: 0;
 }
 
 
@@ -735,7 +758,7 @@ footer .bottom-details {
     list-style-type: none;
 }
 
-.tarif-ind{
+.tarif-ind {
     display: flex;
     margin-top: 3vh;
     align-items: center;

@@ -45,7 +45,7 @@ Template Name: Accueil
     <?php
     $args = array(
         'post_type' => 'post',
-        'category_name' => 'Ecole',
+        'tag' => 'ecole',
     );
     $query = new WP_Query($args);
     ?>

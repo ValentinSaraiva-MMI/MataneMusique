@@ -723,7 +723,11 @@ footer .bottom-details {
     color: white;
 }
 
-
+.description-cours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .titre-cours {
     margin-top: 61px;

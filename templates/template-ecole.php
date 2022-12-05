@@ -64,20 +64,58 @@ Template Name: Notre école
                 $query->the_post(); ?>
         <article class="article-enseignant">
             <img class="img-enseignant" src="<?php the_field('photo_du_professeur_') ?>" alt="">
-            <h3 class="titre-enseignant">
-                <?php the_field('prenom_nom_enseignants_'); ?>
-            </h3>
-            <div>
-                <?php the_field('description_professeur_'); ?>
+            <div class="textes_enseignants">
+                <h3 class="titre-enseignant">
+                    <?php the_field('prenom_nom_enseignants_'); ?>
+                </h3>
+                <div class="description_prof">
+                    <?php the_field('description_professeur_'); ?>
+                </div>
+                <div class="instru_prof">
+                    <?php the_field('instrument_professeur'); ?>
+                </div>
+                <button class="btn-bordure prof"><a href="<?php the_permalink('bouton_cours_'); ?>">En savoir plus</a></button>
             </div>
-            <div>
-                <?php the_field('instrument_professeur'); ?>
-            </div>
-            <button class="btn-cours"><a href="<?php the_permalink('bouton_cours_'); ?>">En savoir plus</a></button>
         </article>
         <?php endwhile; ?>
         <?php endif; ?>
     </div>
 </section>
+
+<section class="fondation">
+<h2> Fondation </h2> 
+<?php
+        $args = array(
+            'post_type' => 'post',
+            'tag' => 'fondation',
+        );
+        $queryfondation = new WP_Query($args);
+    ?>
+    <?php if ($queryfondation->have_posts()): ?>
+        <?php while ($queryfondation->have_posts()): $queryfondation->the_post(); ?>
+            <div class="ecole-info"> <?php the_content(); ?> </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+
+<button class="btn-bordure"><a href="">Faire un don</a></button>
+    <div class="infos-dons">
+        <?php
+            $args = array(
+                'post_type' => 'post',
+                'tag' => 'fondations-infos',
+            );
+            $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
+                <div class="infos-fondation">
+                    <h3> <?php the_title(); ?> </h3>
+                    <div class="fondations-textes"> <?php the_content(); ?> </div>
+                </div>
+            <?php endwhile; ?>
+            <?php endif; ?>
+    </div>
+</section>
+
 
 <?php get_footer(); ?>

@@ -68,7 +68,7 @@
                     <button type="submit" value="Rechercher" class="header_search"> <i
                             class="fa-solid fa-magnifying-glass"></i> </button>
                 </form>
-                <button class="header_button" onclick="<?php echo esc_url(home_url('/don')); ?>" >Faire un don</button>
+                <a href="<?php echo esc_url(home_url('/don')) ?>"> <button class="header_button">Faire un don</button> </a>
                 <button class="header_button">S’inscrire</button>
                 <a class="header_telephone" href="tel:+1-418-562-4212"> 418-562-4212</a>
                 <a href="https://www.facebook.com/people/%C3%89cole-de-musique-de-Matane/100063641619675/"

@@ -779,9 +779,10 @@ table {
     border-collapse: collapse;
     border-width: 0px;
     border-style: solid;
-    color: #2E2E2E;
+    color: rgba(0, 0, 0, 0.62);;
     text-align: center;
     overflow: hidden;
+    border-radius: 18px;
 }
 
 table td,
@@ -793,7 +794,7 @@ table th {
 }
 
 table thead {
-    background-color: #B3B3B3;
+    background-color: rgba(153, 153, 153, 0.15);
 }
 
 .orange {

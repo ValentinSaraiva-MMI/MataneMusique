@@ -83,7 +83,7 @@ Template Name: Cours
         ?>
         <?php if ($querytarifind->have_posts()): ?>
         <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
-        <div class="">
+        <div class="frais-accompagnement">
             <h3>
                 <?php the_title(); ?>
             </h3>

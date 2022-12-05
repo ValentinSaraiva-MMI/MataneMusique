@@ -769,6 +769,8 @@ footer .bottom-details {
     margin-top: 3vh;
     align-items: center;
     justify-content: space-evenly;
+    margin-left:5%;
+    margin-right: 5%;
 }
 
 /* TABLEAU */

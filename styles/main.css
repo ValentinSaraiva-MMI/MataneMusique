@@ -376,8 +376,7 @@ footer .bottom-details {
 }
 
 .menu a:hover {
-    color: #DC0019;
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 
@@ -704,6 +703,8 @@ footer .bottom-details {
     margin-bottom: 3vh;
 }
 
+
+
 .img-cours {
     width: 30vh;
     border-radius: 3vh;
@@ -727,6 +728,7 @@ footer .bottom-details {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 8vh;
 }
 
 .titre-cours {

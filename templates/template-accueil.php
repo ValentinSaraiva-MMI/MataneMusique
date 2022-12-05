@@ -103,6 +103,10 @@ $query = new WP_query($args);
 
 <section>
     <h2>Évenements à venir</h2>
+    <?php if(post_password_required()) : ?>
+
+    <?php echo get_the_password_form(); ?>
+    
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):
             $query->the_post(); ?>
@@ -131,9 +135,10 @@ $query = new WP_query($args);
                     </div>
                 </div>
             </div>
-        </div>  
+        </div> 
     </article>
     <?php endwhile; ?>
+    <?php endif; ?>
     <?php endif; ?>
 </section>
 

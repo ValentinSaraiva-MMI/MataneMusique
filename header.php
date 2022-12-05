@@ -43,7 +43,7 @@
                     wp_nav_menu($args);
                     ?>
                     <div class="mobile-nav">
-                        <button class="header_button_mobile">Faire un don</button>
+                        <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/don')); ?>" >Faire un don</button>
                         <button class="header_button_mobile">S’inscrire</button>
                         <button class="header_button_mobile"> <img
                                 src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
@@ -61,13 +61,14 @@
             </div>-->
 
 
+
             <div class="div_header_haut">
                 <form action="<?php echo esc_url(home_url('/')) ?>" class="search-form" method="get">
                     <input type="text" class="search-input" name="s" placeholder="Rechercher">
                     <button type="submit" value="Rechercher" class="header_search"> <i
                             class="fa-solid fa-magnifying-glass"></i> </button>
                 </form>
-                <button class="header_button">Faire un don</button>
+                <a href="<?php echo esc_url(home_url('/don')) ?>"> <button class="header_button">Faire un don</button> </a>
                 <button class="header_button">S’inscrire</button>
                 <a class="header_telephone" href="tel:+1-418-562-4212"> 418-562-4212</a>
                 <a href="https://www.facebook.com/people/%C3%89cole-de-musique-de-Matane/100063641619675/"

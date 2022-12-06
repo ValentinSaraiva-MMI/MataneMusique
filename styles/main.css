@@ -980,20 +980,20 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 .tarif-ind {
-    display: flex;
-    margin-top: 3vh;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  margin-top: 3vh;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.frais-accompagnement{
-    width: 30vw;
-    border-left: 3px solid #ff8e00;
-    padding-left: 2vw;
+.frais-accompagnement {
+  width: 30vw;
+  border-left: 3px solid #ff8e00;
+  padding-left: 2vw;
 }
 
 .text-tarif ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* TABLEAU */
@@ -1027,6 +1027,14 @@ table thead {
   font-weight: bold;
 }
 
+
+/*--- Dons ---*/
+image-don img {
+  width: 25vw;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
 
 
 

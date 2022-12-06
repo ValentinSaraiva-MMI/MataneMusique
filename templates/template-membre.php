@@ -10,6 +10,8 @@ Template Name: Page Membre
 
 <?php echo get_the_password_form(); ?>
 
+    
+
 <?php else : ?>
 <?php endif ?>
 <?php 

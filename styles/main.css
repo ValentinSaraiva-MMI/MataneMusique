@@ -1031,7 +1031,7 @@ table thead {
 /*--- Dons ---*/
 .image-don img {
   width: 20vw;
-  height: 20vh;
+  height: 26vh;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -1041,9 +1041,6 @@ table thead {
 }
 
 .faire-don {
-  width: 55vw;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 5vh;
 }
 
@@ -1053,10 +1050,19 @@ table thead {
 
 .faire-don .btn-actu {
   padding: 15px;
+  float: left;
 }
 
 .position-don {
   display: flex;
+}
+
+.faire-don .un-service:not(:first-child) {
+  margin-top: 0;
+}
+
+.faire-don .un-service {
+  margin-left: 2vw;
 }
 
 

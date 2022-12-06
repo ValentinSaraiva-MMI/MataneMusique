@@ -75,7 +75,7 @@
                     target="_blank"> <img
                         src="<?php echo get_template_directory_uri() . '/images/icons/facebooklogo.png' ?> "
                         class="header_icons" alt="icons facebook"> </a>
-                <a href="#"> <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
+                <a href="<?php echo esc_url(home_url('/membre')); ?>"> <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
                         class="header_icons2" alt="icons profile"> </a>
 
             </div>

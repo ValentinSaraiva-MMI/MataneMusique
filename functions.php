@@ -64,6 +64,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
+    'taxonomies' => array('category'),
     'menu_icon' => 'dashicons-book-alt',
     'rewrite' => array('slug' => 'Cours')
 );

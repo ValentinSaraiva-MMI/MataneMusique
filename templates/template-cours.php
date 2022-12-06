@@ -13,38 +13,35 @@ Template Name: Cours
         );
         $query = new WP_query($args);
     ?>
+
     <h1>Nos cours</h1>
 
+    <!-- description générale des cours individuels -->
     <div class="description-cours">
         <?php
             $args = array(
             'post_type' => 'post',
+            'tag' => 'description_cours_individuel',
             );
             $querycours = new WP_Query($args);
         ?>
         <?php if ($querycours->have_posts()): ?>
             <?php while ($querycours->have_posts()): $querycours->the_post(); ?>
-                <div class="">
-                    <h2>
-                        <?php the_title(); ?>
-                    </h2>
-                    <div class="text-cours-ind"> <?php the_content(); ?> </div>
-                </div>
+            <div class="">
+                <h2>
+                    <?php the_title(); ?>
+                </h2>
+                <div class="text-cours-ind"> <?php the_content(); ?> </div>
+            </div>
             <?php endwhile; ?>
         <?php endif; ?>
         <button class="btn-bordure"><a href="">S'inscrire</a></button>
     </div>
 
-   
+    <!-- grille de cours individuels -->
     <div class="grid-cours">
-        <?php
-            $args = array(
-            'post_type' => 'post',
-            );
-            $querycoursind = new WP_Query($args);
-        ?>
-        <?php if ($querycoursind->have_posts()): ?>
-            <?php while ($querycoursind->have_posts()): $query->the_post(); ?>
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
                 <article class="article-cours">
                     <h2 class="titre-cours">
                         <?php the_field('titre_du_cour'); ?>
@@ -56,13 +53,15 @@ Template Name: Cours
         <?php endif; ?>
     </div>
 
-
     <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
+
     <div class=tarif-ind>
+        <!-- tableau tarif -->
         <div class=table-tarif>    
             <?php
                 $args = array(
                 'post_type' => 'post',
+                'tag' => 'table_tarif_ind',
                 );
                 $querytabletarif = new WP_Query($args);
             ?>
@@ -74,63 +73,27 @@ Template Name: Cours
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-
+    
+        <!-- texte tarif -->
         <div class="">
             <?php
                 $args = array(
                 'post_type' => 'post',
+                'tag' => 'text-info-tarif-ind',
                 );
                 $querytarifind = new WP_Query($args);
             ?>
             <?php if ($querytarifind->have_posts()): ?>
                 <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
-                    <div class="frais-accompagnement">
+                    <div class="">
                         <h3>
                             <?php the_title(); ?>
                         </h3>
                         <div class="text-tarif"> <?php the_content(); ?> </div>
                     </div>
                 <?php endwhile; ?>
-            <?php endif; ?> 
+            <?php endif; ?>   
         </div>
-    </div>
-     
-
-    <div class="description-cours">
-        <?php
-            $args = array(
-            'post_type' => 'post',
-            );
-            $querycoursgroupe = new WP_Query($args);
-        ?>
-        <?php if ($querycoursgroupe->have_posts()): ?>
-            <?php while ($querycoursgroupe->have_posts()): $querycoursgroupe->the_post(); ?>
-                <div class="">
-                    <h2> <?php the_title(); ?> </h2>
-                    <div class="text-cours-groupe"> <?php the_content(); ?> </div>
-                </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
-        <button class="btn-bordure"><a href="">S'inscrire</a></button>
-    </div>
-    <div class="grid-cours">
-        <?php
-            $args = array(
-            'post_type' => 'post',
-            );
-            $querycoursgroupe = new WP_Query($args);
-        ?>
-        <?php if ($querycoursgroupe->have_posts()): ?>
-            <?php while ($querycoursgroupe->have_posts()): $querycoursgroupe->the_post(); ?>
-                <article class="article-cours">
-                    <h2 class="titre-cours">
-                        <?php the_field('titre_du_cour'); ?>
-                    </h2>
-                    <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="image instrument">
-                    <button class="btn-cours"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
-                </article>
-            <?php endwhile; ?>
-        <?php endif; ?>
     </div>
 
 </section>

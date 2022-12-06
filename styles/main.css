@@ -1029,7 +1029,7 @@ table thead {
 
 
 /*--- Dons ---*/
-image-don img {
+.image-don img {
   width: 25vw;
   height: 25vh;
   object-fit: cover;

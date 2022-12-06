@@ -15,7 +15,7 @@
             ?>
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
-                    <div class="un-service">
+                    <div class="">
                         <div class=""> <?php the_content(); ?> </div>
                     </div>
                 <?php endwhile; ?>

@@ -924,6 +924,7 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   width: 30vh;
   border-radius: 3vh;
   object-fit: cover;
+  height: 42vh;
 }
 
 .btn-cours {

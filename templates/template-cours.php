@@ -38,6 +38,13 @@ Template Name: Cours
 
    
     <div class="grid-cours">
+    <?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'image_cours_individuel',
+        );
+        $querycours = new WP_Query($args);
+        ?>
         <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()):
                 $query->the_post(); ?>
@@ -93,6 +100,51 @@ Template Name: Cours
 <?php endif; ?>
            
         </div>
+    </div>
+
+            
+
+    <div class="description-cours">
+<?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'description_cours_groupe',
+        );
+        $querycours = new WP_Query($args);
+        ?>
+        <?php if ($querycours->have_posts()): ?>
+        <?php while ($querycours->have_posts()): $querycours->the_post(); ?>
+        <div class="">
+            <h2>
+                <?php the_title(); ?>
+            </h2>
+            <div class="text-cours-groupe"> <?php the_content(); ?> </div>
+        </div>
+<?php endwhile; ?>
+<?php endif; ?>
+            <button class="btn-bordure"><a href="">S'inscrire</a></button>
+        </div>
+
+        <div class="grid-cours">
+        <?php
+        $args = array(
+        'post_type' => 'post',
+        'tag' => 'image_cours_groupe',
+        );
+        $querycours = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()):
+                $query->the_post(); ?>
+        <article class="article-cours">
+            <h2 class="titre-cours">
+                <?php the_field('titre_du_cour'); ?>
+            </h2>
+            <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="image instrument">
+            <button class="btn-cours"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
     </div>
 
 </section>

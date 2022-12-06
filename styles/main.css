@@ -1051,9 +1051,17 @@ table thead {
   font-size: 1.5em;
 }
 
-.faire-don .btn-actu a {
+.faire-don .btn-actu {
   padding: 15px;
-  margin-top: 5vh;
+  margin-top: 7vh;
+}
+
+.ecole-info p:last-child {
+  width: 20vw;
+}
+
+.position-don {
+  display: flex;
 }
 
 

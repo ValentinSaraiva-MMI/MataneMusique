@@ -132,7 +132,7 @@ Template Name: Cours
         'post_type' => 'post',
         'tag' => 'image_cours_groupe',
         );
-        $querycoursgruope = new WP_Query($args);
+        $querycoursgroupe = new WP_Query($args);
         ?>
         <?php if ($querycoursgroupe->have_posts()): ?>
         <?php while ($querycoursgroupe->have_posts()):

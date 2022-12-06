@@ -16,13 +16,13 @@
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
                     <div class="un-service">
-                        <div class="services-infos"> <?php the_content(); ?> </div>
+                        <div class=""> <?php the_content(); ?> </div>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php if($query -> have_posts()): $query->the_post(); ?>
                 <?php if(has_post_thumbnail()) : ?> <!--Si le post à une image-->
-                    <div class="">
+                    <div class="image-don">
                         <?php the_post_thumbnail();?> <!--Affiche l'image-->
                     </div>
                 <?php endif; ?>   

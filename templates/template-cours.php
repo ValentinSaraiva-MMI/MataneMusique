@@ -43,10 +43,10 @@ Template Name: Cours
         'post_type' => 'post',
         'tag' => 'image_cours_individuel',
         );
-        $querycours = new WP_Query($args);
+        $querycoursind = new WP_Query($args);
         ?>
-        <?php if ($query->have_posts()): ?>
-        <?php while ($query->have_posts()):
+        <?php if ($querycoursind->have_posts()): ?>
+        <?php while ($querycoursind->have_posts()):
                 $query->the_post(); ?>
         <article class="article-cours">
             <h2 class="titre-cours">

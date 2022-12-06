@@ -13,6 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  overflow: overlay;
 }
 
 section {
@@ -45,7 +46,7 @@ h3 {
 
 * {
   scrollbar-width: auto;
-  scrollbar-color: #ff8e00 #ffffff;
+  scrollbar-color: #ff8e00 transparent;
 }
 
 *::-webkit-scrollbar {
@@ -201,7 +202,7 @@ h3 {
 
 footer {
   background: #242424;
-  width: 100%;
+  width: 100vw;
   height: 480px;
   bottom: 0;
   left: 0;
@@ -588,8 +589,8 @@ footer .bottom-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 25vh;
-  width: 70vw;
+  height: 20vh;
+  width: 44vw;
   background-color: #ff8f0030;
   border-radius: 30px;
   margin-left: auto;
@@ -599,13 +600,14 @@ footer .bottom-details {
 
 .evenement {
   display: flex;
-  justify-content: space-evenly;
-  width: 50vw;
+  justify-content: space-around;
+  width: 32vw;
+  align-items: center;
 }
 
 .evenement-position img {
-  height: 25vh;
-  width: 20vw;
+  height: 20vh;
+  width: 12vw;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -615,6 +617,7 @@ footer .bottom-details {
   margin: 0;
   vertical-align: baseline;
   font-weight: bold;
+  margin-bottom: 0.5vh;
 }
 
 .evenement-categorie p {
@@ -623,7 +626,7 @@ footer .bottom-details {
 
 .evenement .evenement-infos {
   text-align: left;
-  width: 25vw;
+  width: 20vw;
   align-items: flex-start;
 }
 
@@ -632,7 +635,7 @@ footer .bottom-details {
   color: white;
   padding: 12px;
   border-radius: 50px;
-  margin-top: -12px;
+  margin-top: -20px;
 }
 
 .evenement-infos,
@@ -645,6 +648,11 @@ footer .bottom-details {
   align-items: center;
   text-align: center;
   width: 8vw;
+}
+
+.evenement-date,
+.evenement-lieu {
+  justify-content: center;
 }
 
 /* ----------- Nous joindre ------------*/
@@ -749,7 +757,7 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 
 .mission-historique .services-image img {
   width: 14vw;
-  height: 38vh;
+  height: 41vh;
   margin-right: 2vw;
 }
 
@@ -924,6 +932,7 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   border-radius: 3vh;
   object-fit: cover;
   height: 42vh;
+  box-shadow: inset 0px -150px 80px -30px rgba(0, 0, 0, 0.4);
 }
 
 .btn-cours {

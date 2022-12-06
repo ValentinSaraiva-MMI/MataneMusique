@@ -40,6 +40,12 @@ Template Name: Cours
 
     <!-- grille de cours individuels -->
     <div class="grid-cours">
+        <?php
+            $args = array(
+            'post_type' => 'Cours',
+            );
+            $querycours = new WP_Query($args);
+        ?>
         <?php if ($query->have_posts()): ?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
                 <article class="article-cours">

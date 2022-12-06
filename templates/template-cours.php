@@ -43,6 +43,7 @@ Template Name: Cours
         <?php
             $args = array(
             'post_type' => 'Cours',
+            'post_name' => 'Cours_individuels'
             );
             $querycours = new WP_Query($args);
         ?>

@@ -21,6 +21,13 @@
                 </div>
             <?php endif; ?>   
         <?php endif; ?>
+        <?php
+            $args = array(
+            'post_type' => 'post',
+            'tag' => 'don',
+            );
+            $query = new WP_Query($args);
+        ?>
         <?php if ($query->have_posts()): ?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
                 <div class="un-service">

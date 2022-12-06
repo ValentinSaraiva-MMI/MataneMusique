@@ -980,24 +980,31 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 .tarif-ind {
-  display: flex;
-  margin-top: 3vh;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 5%;
-  margin-right: 5%;
+    display: flex;
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.frais-accompagnement{
+    width: 30vw;
+    border-left: 3px solid #ff8e00;
+    padding-left: 2vw;
+}
+
+.text-tarif ul {
+    list-style-type: none;
 }
 
 /* TABLEAU */
 
 table {
-  width: 100%;
+  width: 86%;
   background-color: #F0F0F0;
   border-collapse: collapse;
   border-width: 0px;
   border-style: solid;
   color: rgba(0, 0, 0, 0.62);
-  ;
   text-align: center;
   overflow: hidden;
   border-radius: 18px;
@@ -1008,7 +1015,7 @@ table th {
   border-width: 0px;
   border-color: #E0E0E0;
   border-style: solid;
-  padding: 5px;
+  padding: 15px;
 }
 
 table thead {

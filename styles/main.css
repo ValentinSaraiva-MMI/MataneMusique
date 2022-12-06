@@ -981,20 +981,20 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 .tarif-ind {
-    display: flex;
-    margin-top: 3vh;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  margin-top: 3vh;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.frais-accompagnement{
-    width: 30vw;
-    border-left: 3px solid #ff8e00;
-    padding-left: 2vw;
+.frais-accompagnement {
+  width: 30vw;
+  border-left: 3px solid #ff8e00;
+  padding-left: 2vw;
 }
 
 .text-tarif ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* TABLEAU */
@@ -1027,6 +1027,40 @@ table thead {
   color: #FF8F00;
   font-weight: bold;
 }
+
+
+/*--- Dons ---*/
+.image-don img {
+  width: 20vw;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.ecole-info.don {
+  text-align: left;
+}
+
+.faire-don {
+  width: 55vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+.faire-don .btn-actu a {
+  font-size: 1.5em;
+}
+
+.faire-don .btn-actu {
+  padding: 15px;
+}
+
+.position-don {
+  display: flex;
+}
+
+
 
 
 

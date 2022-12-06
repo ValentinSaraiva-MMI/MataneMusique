@@ -45,7 +45,7 @@
                     <div class="mobile-nav">
                         <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/don')); ?>" >Faire un don</button>
                         <button class="header_button_mobile">S’inscrire</button>
-                        <button class="header_button_mobile"> <img
+                        <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/membre')); ?>"> <img
                                 src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
                                 class="header_icons2" alt="icons profile"> </button>
                     </div>

@@ -44,7 +44,7 @@ function ecole_musique_post_types()
         'rewrite' => array('slug' => 'enseignant')
     );
     register_post_type('Enseignant', $args);
-}
+
 
 // CPT cours
 $labels = array(
@@ -64,6 +64,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
+    'taxonomies' => array('category', 'post_tag'),
     'menu_icon' => 'dashicons-book-alt',
     'rewrite' => array('slug' => 'Cours')
 );
@@ -166,7 +167,7 @@ $args = array(
 register_post_type('Evenement', $args);
 
 
-
+}
 
 add_action('init', 'ecole_musique_post_types');
 

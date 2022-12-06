@@ -103,9 +103,6 @@ $query = new WP_query($args);
 
 <section>
     <h2>Évenements à venir</h2>
-    <?php if(post_password_required()) : ?>
-
-    <?php echo get_the_password_form(); ?>
     
     <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()):
@@ -139,9 +136,10 @@ $query = new WP_query($args);
     </article>
     <?php endwhile; ?>
     <?php endif; ?>
-    <?php endif; ?>
 </section>
 
 
 
-<?php get_footer(); ?>
+<?php 
+wp_reset_postdata(); 
+get_footer(); ?>

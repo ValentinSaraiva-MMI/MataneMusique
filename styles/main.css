@@ -926,9 +926,8 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   margin-bottom: 3vh;
 }
 
-
 .img-cours {
-  width: 30vh;
+  width: 15vw;
   border-radius: 3vh;
   object-fit: cover;
   height: 42vh;
@@ -937,7 +936,6 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 
 .btn-cours {
   margin-top: 1vh;
-
   background: linear-gradient(to left, #FF8E01, #DC0019);
   border: none;
   border-radius: 10px;
@@ -964,7 +962,7 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   top: 228px;
   left: 61px;
   color: white;
-
+  z-index: 1;
 }
 
 .btn-cours a {
@@ -1003,6 +1001,33 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 
 .text-tarif ul {
   list-style-type: none;
+}
+
+/*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
+
+.ombre-cours {
+  position: relative;
+  width: 15vw;
+  border-radius: 3vh;
+  object-fit: cover;
+  height: 42vh;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ombre-cours::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-box-shadow: inset 0px -155px 80px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0px -155px 860px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px -155px 80px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
 }
 
 /* TABLEAU */

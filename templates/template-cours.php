@@ -54,7 +54,9 @@ Template Name: Cours
                         <h2 class="titre-cours">
                             <?php the_field('titre_du_cour'); ?>
                         </h2>
-                        <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
+                        <div class="ombre-cours">
+                            <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
+                        </div>
                         <button class="btn-cours"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
                     </article>
                 <?php endwhile; ?>
@@ -143,7 +145,9 @@ Template Name: Cours
                         <h2 class="titre-cours">
                             <?php the_field('titre_du_cour'); ?>
                         </h2>
-                        <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
+                        <div class="ombre-cours">
+                            <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
+                        </div>
                         <button class="btn-cours"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
                     </article>
                 <?php endwhile; ?>

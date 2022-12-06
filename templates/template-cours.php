@@ -111,10 +111,10 @@ Template Name: Cours
         'post_type' => 'post',
         'tag' => 'description_cours_groupe',
         );
-        $querycours = new WP_Query($args);
+        $querycoursgroupe = new WP_Query($args);
         ?>
-        <?php if ($querycours->have_posts()): ?>
-        <?php while ($querycours->have_posts()): $querycours->the_post(); ?>
+        <?php if ($querycoursgroupe->have_posts()): ?>
+        <?php while ($querycoursgroupe->have_posts()): $querycoursgroupe->the_post(); ?>
         <div class="">
             <h2>
                 <?php the_title(); ?>

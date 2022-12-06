@@ -1030,11 +1030,34 @@ table thead {
 
 /*--- Dons ---*/
 .image-don img {
-  width: 25vw;
-  height: 25vh;
+  width: 20vw;
+  height: 20vh;
   object-fit: cover;
   border-radius: 15px;
 }
+
+.ecole-info.don {
+  text-align: left;
+}
+
+.faire-don {
+  width: 55vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+.faire-don .btn-actu a {
+  font-size: 1.5em;
+}
+
+.faire-don .btn-actu a {
+  padding: 15px;
+  margin-top: 5vh;
+}
+
+
+
 
 
 

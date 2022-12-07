@@ -254,6 +254,9 @@ footer {
   border-radius: 100px 100px 0px 0px;
 }
 
+footer ul{
+  list-style-type: none;
+}
 
 .link-boxes{
   display: flex;
@@ -270,6 +273,7 @@ footer {
 
 .box-infos li:not(:first-child){
   margin-bottom:1vh;
+  color: #cfcfcf
 }
 
 .link-name{

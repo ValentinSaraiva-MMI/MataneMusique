@@ -179,7 +179,7 @@ Template Name: Cours
             </div>
         
             <!-- texte tarif groupe -->
-            <div class="">
+
                 <?php
                     $args = array(
                     'post_type' => 'post',
@@ -197,7 +197,7 @@ Template Name: Cours
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>   
-            </div>
+
         </div>
     </div>
 

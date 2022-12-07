@@ -251,6 +251,18 @@ footer {
   border-radius: 100px 100px 0px 0px;
 }
 
+.link-boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.box-infos{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
 
 footer p {
   color: white;

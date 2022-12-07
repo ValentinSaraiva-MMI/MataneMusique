@@ -251,6 +251,9 @@ footer {
   border-radius: 100px 100px 0px 0px;
 }
 
+footer ul {
+  list-style-type: none;
+}
 
 .link-boxes {
   display: flex;
@@ -265,8 +268,14 @@ footer {
   width: 49%;
 }
 
+
 .box-infos li:not(:first-child) {
   margin-bottom: 1vh;
+}
+
+.box-infos li:not(:first-child) {
+  margin-bottom: 1vh;
+  color: #cfcfcf
 }
 
 .link-name {
@@ -1266,6 +1275,18 @@ table thead {
   .widget-accueil {
     max-width: 19vw;
     padding: 2.5vh 1vw;
+  }
+
+  /* ----------- Nous joindre ------------*/
+
+  /*coordonnées*/
+
+  .des-coordonnees {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47vh;
+    margin-top: 5vh;
   }
 }
 

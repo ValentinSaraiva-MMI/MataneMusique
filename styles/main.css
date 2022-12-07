@@ -252,7 +252,7 @@ footer {
 }
 
 
-.link-boxes{
+.link-boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -265,11 +265,11 @@ footer {
   width: 49%;
 }
 
-.box-infos li:not(:first-child){
-  margin-bottom:1vh;
+.box-infos li:not(:first-child) {
+  margin-bottom: 1vh;
 }
 
-.link-name{
+.link-name {
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
@@ -449,7 +449,7 @@ footer .content {
   font-weight: bold;
 }
 
-/* Test anim btn bordure */
+/* Boutons bordures -> l'école */
 
 .test-btn {
   margin-top: 2vh;
@@ -478,7 +478,7 @@ footer .content {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 320, 0;
+  stroke-dasharray: 370, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -488,9 +488,26 @@ footer .content {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 300, 340;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
 }
+
+/* Bouton plus d'actu */
+
+.actualite .test-btn a svg {
+  width: 18vw;
+}
+
+.actualite .test-btn a svg rect {
+  stroke-dasharray: 290, 0;
+  width: 17.5vw;
+}
+
+.actualite .test-btn a:hover svg rect {
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
+}
+
 
 /* Actu Accueil */
 

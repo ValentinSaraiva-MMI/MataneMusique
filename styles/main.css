@@ -265,27 +265,25 @@ footer ul {
 .box-infos {
   display: flex;
   flex-direction: column;
-  width: 49%;
-}
-
-
-.box-infos li:not(:first-child) {
-  margin-bottom: 1vh;
+  width: 28%;
 }
 
 .box-infos li:not(:first-child) {
-  margin-bottom: 1vh;
   color: #cfcfcf
 }
 
-.link-name {
+li .link-name {
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
 }
 
+li .li-marge {
+  margin-bottom: 1vh;
+}
+
 .icones {
-  width: 9%;
+  width: 13%;
 }
 
 footer .content {
@@ -458,7 +456,7 @@ footer .content {
   font-weight: bold;
 }
 
-/* Boutons bordures -> l'école */
+/* Test anim btn bordure */
 
 .test-btn {
   margin-top: 2vh;
@@ -487,7 +485,7 @@ footer .content {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 370, 0;
+  stroke-dasharray: 320, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -496,9 +494,9 @@ footer .content {
 }
 
 .test-btn a:hover svg rect {
-  stroke-width: 3;
-  stroke-dasharray: 70%, 30%;
-  stroke-dashoffset: 10%;
+  stroke-width: 4;
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
 }
 
 /* Bouton plus d'actu */
@@ -508,13 +506,13 @@ footer .content {
 }
 
 .actualite .test-btn a svg rect {
-  stroke-dasharray: 387, 0;
+  stroke-dasharray: 290, 0;
   width: 17.5vw;
 }
 
 .actualite .test-btn a:hover svg rect {
-  stroke-dasharray: 190, 365;
-  stroke-dashoffset: 305;
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
 }
 
 

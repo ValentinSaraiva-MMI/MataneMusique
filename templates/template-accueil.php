@@ -105,7 +105,22 @@ $query = new WP_query($args);
         <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    <button class="btn-bordure"><a href="">Découvrir plus de nouvelles</a></button>
+    <!-- Test animation btn bordure -->
+    <div class="test-btn">
+                <a href="http://marcel-pirnay.be/">
+                <svg>
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="#dc0019"/>
+                            <stop offset="100%" stop-color="#ff8e01" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
+                </svg>
+                <!--<span>Voir mes réalisations</span>-->
+                    <span>Découvrir plus de nouvelles</span>
+                </a>
+            </div>
 </section>
 
 <?php

@@ -496,9 +496,9 @@ footer .content {
 }
 
 .test-btn a:hover svg rect {
-  stroke-width: 4;
-  stroke-dasharray: 182, 360;
-  stroke-dashoffset: 290;
+  stroke-width: 3;
+  stroke-dasharray: 70%, 30%;
+  stroke-dashoffset: 10%;
 }
 
 /* Bouton plus d'actu */
@@ -508,13 +508,13 @@ footer .content {
 }
 
 .actualite .test-btn a svg rect {
-  stroke-dasharray: 290, 0;
+  stroke-dasharray: 387, 0;
   width: 17.5vw;
 }
 
 .actualite .test-btn a:hover svg rect {
-  stroke-dasharray: 182, 360;
-  stroke-dashoffset: 290;
+  stroke-dasharray: 190, 365;
+  stroke-dashoffset: 305;
 }
 
 

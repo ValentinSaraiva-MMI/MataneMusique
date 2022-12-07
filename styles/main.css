@@ -546,6 +546,11 @@ footer .bottom-details {
 
 .ecole-info {
   text-align: center;
+  margin-bottom: 3vh;
+}
+
+.ecole-info .btn-bordure {
+  margin-bottom: 3vh;
 }
 
 .btn-bordure {
@@ -569,6 +574,10 @@ footer .bottom-details {
 
 /* Test anim btn bordure */
 
+.test-btn {
+  margin-top: 2vh;
+}
+
 .test-btn a {
   position: relative;
   display: inline-block;
@@ -577,15 +586,17 @@ footer .bottom-details {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  color: #242424;
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .test-btn a svg {
   position: absolute;
-  top: -2.5vh;
-  left: -2.8vw;
-  width: 15vw;
-  height: 7vh;
+  top: -1.5vh;
+  left: -1.2vw;
+  width: 12vw;
+  height: 6vh;
 }
 
 .test-btn a svg rect {
@@ -594,30 +605,8 @@ footer .bottom-details {
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
-  width: 14vw;
-  height: 6vh;
-}
-
-.test-btn a span {
-  background: rgb(255, 130, 130);
-  background: -moz-linear-gradient(
-    left,
-    rgba(255, 130, 130, 1) 0%,
-    rgba(225, 120, 237, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 130, 130, 1) 0%,
-    rgba(225, 120, 237, 1) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 130, 130, 1) 0%,
-    rgba(225, 120, 237, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 11.5vw;
+  height: 5vh;
 }
 
 .test-btn a:hover svg rect {
@@ -895,8 +884,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .textes_enseignants {
   width: 23vw;
-  border-left: 3px solid #ff8e00;
-  padding-left: 2vw;
+  padding: 0;
 }
 
 .textes_enseignants .instru_prof {
@@ -906,8 +894,8 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .article-enseignant {
   display: flex;
-  justify-content: space-between;
-  width: 37vw;
+  justify-content: center;
+  width: 35vw;
   margin-top: 8vh;
 }
 
@@ -1119,6 +1107,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .table-tarif .tableau-cours-ind {
   width: 37vw;
+}
+
+.table-tarif .tableau-cours-ind {
+  width: 41.5vw;
 }
 
 .grid-cours
@@ -1486,6 +1478,10 @@ table thead {
 }
 
 @media all and (max-width: 748px) {
+  * {
+    overflow-x: hidden;
+  }
+
   /*général*/
 
   h3 {

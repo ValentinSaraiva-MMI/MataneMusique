@@ -245,11 +245,12 @@ h3 {
 footer {
   background: #242424;
   width: 100vw;
-  height: 480px;
+  height: 33vh;
   bottom: 0;
   left: 0;
   border-radius: 100px 100px 0px 0px;
 }
+
 
 .link-boxes{
   display: flex;
@@ -264,8 +265,18 @@ footer {
   width: 49%;
 }
 
-footer p {
+.box-infos li:not(:first-child){
+  margin-bottom:1vh;
+}
+
+.link-name{
+  font-weight: bold;
   color: white;
+  margin-bottom: 2vh;
+}
+
+.icones {
+  width: 9%;
 }
 
 footer .content {

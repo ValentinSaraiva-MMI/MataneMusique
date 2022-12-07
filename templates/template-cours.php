@@ -111,7 +111,7 @@ Template Name: Cours
     <!-- Cours de groupe -->
     <div>
         <!-- description générale des cours de groupe -->
-        <div class="description-cours">
+        <div class="description-cours  cours-groupe">
             <?php
                 $args = array(
                 'post_type' => 'post',
@@ -133,7 +133,7 @@ Template Name: Cours
         </div>
 
         <!-- grille de cours de groupe -->
-        <div class="grid-cours cours-groupe">
+        <div class="grid-cours">
             <?php
                 $args = array(
                 'post_type' => 'Cours',

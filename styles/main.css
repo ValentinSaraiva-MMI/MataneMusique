@@ -198,11 +198,20 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(90deg, #ff8e01, #dc0019, #ff8e01) 0 0 / 400% 100%;
+  background: linear-gradient(
+      90deg,
+      #ff8e01,
+      #ff8e01,
+      #dc0019,
+      #dc0019,
+      #ff8e01,
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   height: 3px;
   border: none;
   margin: 0;
-  animation: anim-barre 10s linear infinite;
+  animation: anim-barre 18s linear infinite;
 }
 
 @keyframes anim-barre {
@@ -523,6 +532,12 @@ footer .bottom-details {
 
 /* Info école */
 
+.ecole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ecole-info p {
   width: 55vw;
   margin-left: auto;
@@ -552,10 +567,63 @@ footer .bottom-details {
   font-weight: bold;
 }
 
-.ecole {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Test anim btn bordure */
+
+.test-btn a {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #242424;
+}
+
+.test-btn a svg {
+  position: absolute;
+  top: -2.5vh;
+  left: -2.8vw;
+  width: 15vw;
+  height: 7vh;
+}
+
+.test-btn a svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+  width: 14vw;
+  height: 6vh;
+}
+
+.test-btn a span {
+  background: rgb(255, 130, 130);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 130, 130, 1) 0%,
+    rgba(225, 120, 237, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 130, 130, 1) 0%,
+    rgba(225, 120, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 130, 130, 1) 0%,
+    rgba(225, 120, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.test-btn a:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
 }
 
 /* Actu Accueil */
@@ -1032,7 +1100,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .frais-accompagnement {
-  width: 30vw;
+  width: 31vw;
   border-left: 3px solid #ff8e00;
   padding-left: 2vw;
 }
@@ -1049,6 +1117,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   margin-top: 9vh;
 }
 
+.grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
 -webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
 

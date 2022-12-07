@@ -269,7 +269,7 @@ footer ul {
 }
 
 .box-infos li:not(:first-child) {
-  color: #cfcfcf
+  color: #cfcfcf;
 }
 
 li.link-name {

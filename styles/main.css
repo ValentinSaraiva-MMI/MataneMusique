@@ -272,13 +272,13 @@ footer ul{
   color: #cfcfcf
 }
 
-li .link-name{
+li.link-name{
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
 }
 
-li .li-marge{
+li.li-marge{
   margin-bottom:1vh;
 }
 

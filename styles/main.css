@@ -198,16 +198,13 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01
-    )
-    0 0 / 400% 100%;
+      #ff8e01) 0 0 / 400% 100%;
   height: 3px;
   border: none;
   margin: 0;
@@ -254,9 +251,17 @@ footer {
   border-radius: 100px 100px 0px 0px;
 }
 
-.icones {
-  height: 40px;
-  width: 40px;
+.link-boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.box-infos{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
 }
 
 footer p {
@@ -268,147 +273,13 @@ footer .content {
   margin: auto;
 }
 
-footer .content .top {
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
 
 .content .top .logo-details {
   color: #fff;
   font-size: 30px;
 }
 
-.content .top .media-icons {
-  display: flex;
-}
 
-.content .top .media-icons a {
-  height: 40px;
-  width: 40px;
-  margin: 0 8px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  font-size: 17px;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-
-.content .link-boxes {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .content .link-boxes .box {
-  width: calc(100% / 5 - 10px);
-  height: 100px;
-}
-
-.content .link-boxes .box .link_name {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.link-boxes .box .link_name::before {
-  content: "";
-  left: 0;
-  bottom: -2px;
-  height: 2px;
-  width: 35px;
-  background: rgb(255, 255, 255);
-}
-
-.content .link-boxes .box li {
-  margin: 6px 0;
-  list-style: none;
-}
-
-.content .link-boxes .box li a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: all 0.4s ease;
-}
-
-.content .link-boxes .box li a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.content .link-boxes .input-box {
-  margin-right: 55px;
-}
-
-.link-boxes .input-box input {
-  height: 40px;
-  width: calc(100% + 55px);
-  outline: none;
-  border: 2px solid #ffffff;
-  background: #e0620d;
-  border-radius: 4px;
-  padding: 0 15px;
-  font-size: 15px;
-  color: #fff;
-  margin-top: 5px;
-}
-
-.link-boxes .input-box input::placeholder {
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.link-boxes .input-box input[type="button"] {
-  background: #fff;
-  color: #f1742c;
-  border: none;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 4px 0;
-  opacity: 0.8;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-
-.input-box input[type="button"]:hover {
-  opacity: 1;
-}
-
-footer .bottom-details {
-  width: 100%;
-}
-
-.bottom-details .bottom_text {
-  max-width: 1250px;
-  margin: auto;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bottom-details .bottom_text span,
-.bottom-details .bottom_text a {
-  font-size: 14px;
-  font-weight: 300;
-  color: #fff;
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.bottom-details .bottom_text a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.bottom-details .bottom_text a {
-  margin-right: 10px;
-}
 
 /* Menu */
 
@@ -500,11 +371,9 @@ footer .bottom-details {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 60%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 60%);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -552,6 +421,7 @@ footer .bottom-details {
 .ecole-info .btn-bordure {
   margin-bottom: 3vh;
 }
+
 
 .btn-bordure {
   border: solid 3px transparent;
@@ -601,7 +471,7 @@ footer .bottom-details {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 350, 0;
+  stroke-dasharray: 250, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -611,8 +481,8 @@ footer .bottom-details {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 210, 280;
-  stroke-dashoffset: 280;
+  stroke-dasharray: 100, 100;
+  stroke-dashoffset: 300;
 }
 
 /* Actu Accueil */
@@ -648,7 +518,7 @@ footer .bottom-details {
   text-align: center;
 }
 
-.actu-contient img ~ div p {
+.actu-contient img~div p {
   text-align: left;
 }
 
@@ -934,7 +804,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: flex;
   width: 43vw;
   justify-content: space-between;
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 .infos-fondation {
@@ -1572,12 +1442,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked + .menu-burger {
+  .toggle-button input:checked+.menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked ~ .nav-container {
+  .toggle-button input:checked~.nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1585,30 +1455,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar {
+  .toggle-button input:checked+.menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked + .menu-burger .bar:after {
+  .toggle-button input:checked+.menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar:before {
+  .toggle-button input:checked+.menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input + .menu-burger + ul,
-  .toggle-button input + .menu-burger + div {
+  .toggle-button input+.menu-burger+ul,
+  .toggle-button input+.menu-burger+div {
     display: none;
   }
 
-  .toggle-button input:checked + .menu-burger + ul,
-  .toggle-button input:checked + .menu-burger + div {
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
     opacity: 1;
     margin-right: 0;
     display: flex;

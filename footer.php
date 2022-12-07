@@ -3,11 +3,11 @@
         <div class="content">
             <div class="link-boxes">
                 <ul class="box-infos">
-                    <li class="link_name">Nous joindre</li><br>
-                    <p>Du lundi au jeudi de 13h a 19h</p> <br>
-                    <p>611, avenue Saint-Rédempteur C.P. 192 Matane (Quebec) G4W 3N1</p> <br>
-                    <p>418 562-4212</p> <br>
-                    <p>Suivez nous</p>
+                    <li class="link_name">Nous joindre</li>
+                    <li>Du lundi au jeudi de 13h a 19h</li> 
+                    <li>611, avenue Saint-Rédempteur C.P. 192 Matane (Quebec) G4W 3N1</li> 
+                    <li>418 562-4212</li>
+                    <li>Suivez nous</li>
                     <div class="top media-icons content">
                         <a href="https://fr-ca.facebook.com/" target="_blank"><img class="icones"
                                 src="<?php  echo (get_template_directory_uri() . '/images/facebookicone2.png')?>" alt=""></a>

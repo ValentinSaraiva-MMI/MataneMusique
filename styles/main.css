@@ -593,22 +593,6 @@ footer .bottom-details {
   height: 6vh;
 }
 
-.test-btn a span {
-  background: rgb(255, 130, 130);
-  background: -moz-linear-gradient(left,
-      rgba(255, 130, 130, 1) 0%,
-      rgba(225, 120, 237, 1) 100%);
-  background: -webkit-linear-gradient(left,
-      rgba(255, 130, 130, 1) 0%,
-      rgba(225, 120, 237, 1) 100%);
-  background: linear-gradient(to right,
-      rgba(255, 130, 130, 1) 0%,
-      rgba(225, 120, 237, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .test-btn a:hover svg rect {
   stroke-width: 4;
   stroke-dasharray: 196, 543;

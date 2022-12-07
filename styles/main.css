@@ -164,8 +164,7 @@ h3 {
   --gradient-hover: #dc0019, #ff8e01;
 }
 
-.header_telephone:hover,
-.menu a:hover {
+.header_telephone:hover {
   background-position: left bottom;
 }
 
@@ -426,14 +425,7 @@ footer .bottom-details {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5em;
-  /*dégradé sur texte*/
-  background: linear-gradient(to right, var(--gradient-hover) 50%, #242424 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*transition hover*/
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out;
+  color: #242424;
 }
 
 .footer-text {

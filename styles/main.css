@@ -1117,10 +1117,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   margin-top: 9vh;
 }
 
-.table-tarif .tableau-cours-ind{
+.table-tarif .tableau-cours-ind {
   width: 37vw;
 }
-
 
 .grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
@@ -1487,9 +1486,6 @@ table thead {
 }
 
 @media all and (max-width: 748px) {
-  * {
-    overflow-x: hidden;
-  }
   /*général*/
 
   h3 {
@@ -1739,7 +1735,30 @@ table thead {
     margin-left: -2vw;
   }
 
-  /*--- Dons ---*/
+  /*Dons*/
+
+  .image-don img {
+    width: 93vw;
+    height: 32vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .faire-don .btn-actu {
+    padding: 15px;
+    float: left;
+    margin-top: 2vh;
+    margin-left: 7vw;
+  }
+
+  .position-don {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faire-don .un-service:not(:first-child) {
+    margin-top: 5vh;
+  }
 }
 
 @media all and (max-width: 640px) {

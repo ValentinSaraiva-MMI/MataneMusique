@@ -103,39 +103,42 @@ $query = new WP_query($args);
 
 <section>
     <h2>Évenements à venir</h2>
-    
-    <?php if ($query->have_posts()): ?>
-    <?php while ($query->have_posts()):
-            $query->the_post(); ?>
-    <article>
-        <div class="evenement-position">
-            <img src="<?php the_field('image_evenement') ?>" alt="">
-            <div class="evenement">
-                <div class="evenement-infos">    
-                    <div class="evenement-categorie">
-                        <?php the_field('categorie_evenement_'); ?>
+    <div class="position-evenement">
+        <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()):
+                $query->the_post(); ?>
+        <article>
+            <div class="evenement-position">
+                <img src="<?php the_field('image_evenement') ?>" alt="">
+                <div class="evenement">
+                    <div class="evenement-infos">    
+                        <div class="evenement-categorie">
+                            <?php the_field('categorie_evenement_'); ?>
+                        </div>
+                        <div>
+                            <?php the_field('paragraphe_evenement_'); ?>
+                        </div>
                     </div>
-                    <div>
-                        <?php the_field('paragraphe_evenement_'); ?>
+                    <div class="date-lieu">
+                        <div class="evenement-date">
+                            <p> DATE </p>
+                            <div>
+                                <?php the_field('date_evenement_'); ?>
+                            </div>
+                        </div>
+                        <div class="evenement-lieu">
+                            <p> LIEU </p>
+                            <div>
+                                <?php the_field('lieu_evenement_'); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="evenement-date">
-                    <p> DATE </p>
-                    <div>
-                        <?php the_field('date_evenement_'); ?>
-                    </div>
-                </div>
-                <div class="evenement-lieu">
-                    <p> LIEU </p>
-                    <div>
-                        <?php the_field('lieu_evenement_'); ?>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </article>
-    <?php endwhile; ?>
-    <?php endif; ?>
+            </div> 
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
 </section>
 
 

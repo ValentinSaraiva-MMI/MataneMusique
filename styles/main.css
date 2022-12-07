@@ -1097,6 +1097,9 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   margin-top: 9vh;
 }
 
+.table-tarif .tableau-cours-ind{
+  width: 37vw;
+}
 
 .grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);

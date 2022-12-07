@@ -251,14 +251,14 @@ footer {
   border-radius: 100px 100px 0px 0px;
 }
 
-.link-boxes{
+.link-boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
 
-.box-infos{
+.box-infos {
   display: flex;
   flex-direction: column;
   width: 49%;
@@ -471,7 +471,7 @@ footer .content {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 250, 0;
+  stroke-dasharray: 320, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -481,8 +481,8 @@ footer .content {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 100, 100;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 215, 300;
+  stroke-dashoffset: 290;
 }
 
 /* Actu Accueil */

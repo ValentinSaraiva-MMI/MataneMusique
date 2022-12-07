@@ -569,6 +569,10 @@ footer .bottom-details {
 
 /* Test anim btn bordure */
 
+.test-btn {
+  margin-top: 2vh;
+}
+
 .test-btn a {
   position: relative;
   display: inline-block;
@@ -577,15 +581,17 @@ footer .bottom-details {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  color: #242424;
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .test-btn a svg {
   position: absolute;
-  top: -2.5vh;
-  left: -2.8vw;
-  width: 15vw;
-  height: 7vh;
+  top: -1.5vh;
+  left: -1.2vw;
+  width: 12vw;
+  height: 6vh;
 }
 
 .test-btn a svg rect {
@@ -594,8 +600,8 @@ footer .bottom-details {
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
-  width: 14vw;
-  height: 6vh;
+  width: 11.5vw;
+  height: 5vh;
 }
 
 .test-btn a:hover svg rect {
@@ -1095,7 +1101,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 
-.table-tarif .tableau-cours-ind{
+.table-tarif .tableau-cours-ind {
   width: 41.5vw;
 }
 

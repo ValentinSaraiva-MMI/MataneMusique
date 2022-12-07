@@ -414,11 +414,12 @@ footer .bottom-details {
   padding: 0;
   width: 45vw;
   justify-content: space-between;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .menu li {
-  list-style-type: none;
-  transition: 0.5s;
+  list-style: outside none none;
 }
 
 .menu a {
@@ -426,9 +427,14 @@ footer .bottom-details {
   font-weight: 700;
   font-size: 1.5em;
   color: #242424;
+  transition: all 0.3s ease-in-out;
 }
 
-.footer-text {
+.menu a:hover {
+  color: #dc0019;
+}
+
+.menu .footer-text {
   font-size: 1.5em;
 }
 

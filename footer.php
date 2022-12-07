@@ -5,12 +5,12 @@
                 <ul class="box-infos">
 
                     <li class="link_name">NOUS JOINDRE</li>
-                    <li>Du lundi au jeudi de 13h a 19h</li> 
+                    <li class="li-marge">Du lundi au jeudi de 13h a 19h</li> 
                     <li> École de musique de Matane Inc. </li>
                     <li> C.P. 192, 611, avenue Saint-Rédempteur </li>
-                    <li> École Marie-Guyart, entrée 4 </li>                        
-                    <li>418 562-4212</li>
-                    <li>Suivez nous</li>
+                    <li class="li-marge"> École Marie-Guyart, entrée 4 </li>                        
+                    <li class="li-marge">418 562-4212</li>
+                    <li class="li-marge">Suivez nous</li>
 
                     <div class="media-icons">
                         <a href="https://fr-ca.facebook.com/" target="_blank"><img class="icones"
@@ -22,7 +22,7 @@
                     </div>
 
                 </ul>
-                
+
                 <ul class="box-lien">
                     <li><a href="#">Notre ecole</a></li>
                     <li><a href="#">Nos cours</a></li>

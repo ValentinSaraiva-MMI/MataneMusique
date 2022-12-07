@@ -265,22 +265,25 @@ footer ul{
 .box-infos {
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 28%;
 }
 
 .box-infos li:not(:first-child){
-  margin-bottom:1vh;
   color: #cfcfcf
 }
 
-.link-name{
+li .link-name{
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
 }
 
+li .li-marge{
+  margin-bottom:1vh;
+}
+
 .icones {
-  width: 9%;
+  width: 13%;
 }
 
 footer .content {

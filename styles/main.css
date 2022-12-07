@@ -1244,6 +1244,18 @@ table thead {
     max-width: 19vw;
     padding: 2.5vh 1vw;
   }
+
+  /* ----------- Nous joindre ------------*/
+
+  /*coordonnées*/
+
+  .des-coordonnees {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47vh;
+    margin-top: 5vh;
+  }
 }
 
 @media all and (max-width: 1024px) {

@@ -591,7 +591,7 @@ footer .bottom-details {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 353, 0;
+  stroke-dasharray: 350, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -601,8 +601,8 @@ footer .bottom-details {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 196, 543;
-  stroke-dashoffset: 437;
+  stroke-dasharray: 210, 280;
+  stroke-dashoffset: 280;
 }
 
 /* Actu Accueil */
@@ -874,7 +874,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .textes_enseignants {
   width: 23vw;
-  padding:0;
+  padding: 0;
 }
 
 .textes_enseignants .instru_prof {

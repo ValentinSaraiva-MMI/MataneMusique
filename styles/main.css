@@ -30,6 +30,7 @@ h3 {
 
 h1 {
   font-size: 48pt;
+  margin-top: 0;
 }
 
 h2 {
@@ -1039,12 +1040,12 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 
-.tarification-familiale{
+.tarification-familiale {
   height: 31vh;
 }
 
-.cours-groupe{
-  margin-top:9vh;
+.cours-groupe {
+  margin-top: 9vh;
 }
 
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);

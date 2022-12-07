@@ -874,8 +874,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .textes_enseignants {
   width: 23vw;
-  border-left: 3px solid #ff8e00;
-  padding-left: 2vw;
+  padding:0;
 }
 
 .textes_enseignants .instru_prof {
@@ -885,7 +884,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .article-enseignant {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 37vw;
   margin-top: 8vh;
 }

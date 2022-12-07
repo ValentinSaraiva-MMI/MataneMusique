@@ -1033,6 +1033,15 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   list-style-type: none;
 }
 
+
+.tarification-familiale{
+  height: 31vh;
+}
+
+.cours-groupe{
+  margin-top:9vh;
+}
+
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
 -webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
 

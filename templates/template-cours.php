@@ -133,7 +133,7 @@ Template Name: Cours
         </div>
 
         <!-- grille de cours de groupe -->
-        <div class="grid-cours">
+        <div class="grid-cours cours-groupe">
             <?php
                 $args = array(
                 'post_type' => 'Cours',
@@ -189,7 +189,7 @@ Template Name: Cours
                 ?>
                 <?php if ($querytarifind->have_posts()): ?>
                     <?php while ($querytarifind->have_posts()): $querytarifind->the_post(); ?>
-                        <div class="frais-accompagnement">
+                        <div class="frais-accompagnement tarification-familiale">
                             <h3>
                                 <?php the_title(); ?>
                             </h3>

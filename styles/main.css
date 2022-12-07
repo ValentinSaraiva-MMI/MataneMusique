@@ -1396,9 +1396,6 @@ table thead {
 }
 
 @media all and (max-width: 748px) {
-  * {
-    overflow-x: hidden;
-  }
 
   /*général*/
 

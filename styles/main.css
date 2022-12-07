@@ -1101,10 +1101,16 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   margin-top: 9vh;
 }
 
-.tableau-groupe {
-  width: 94%;
+
+.table-tarif-groupe {
+  width: 30vw;
 }
 
+.table-tarif-individuel {
+  width: 73vw;
+}
+
+.grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
 -webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
 

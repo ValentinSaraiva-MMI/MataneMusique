@@ -66,7 +66,7 @@ Template Name: Cours
 
         <div class=tarif-ind>
             <!-- tableau tarif -->
-            <div class=table-tarif>    
+            <div class="table-tarif table-tarif-individuel">    
                 <?php
                     $args = array(
                     'post_type' => 'post',
@@ -158,7 +158,7 @@ Template Name: Cours
 
         <div class=tarif-ind>
             <!-- tableau tarif groupe -->
-            <div class=table-tarif>    
+            <div class="table-tarif table-tarif-groupe">    
                 <?php
                     $args = array(
                     'post_type' => 'post',
@@ -168,7 +168,7 @@ Template Name: Cours
                 ?>
                 <?php if ($querytabletarif->have_posts()): ?>
                     <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
-                        <div class="tableau-groupe">
+                        <div >
                             <h3>
                                 <?php the_title(); ?>
                             </h3>

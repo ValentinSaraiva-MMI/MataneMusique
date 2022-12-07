@@ -428,6 +428,38 @@ footer .bottom-details {
   color: #242424;
 }
 
+.menu a::before,
+.menu a::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  transition: all 0.35s ease;
+  position: absolute;
+  opacity: 0;
+}
+
+.menu a::before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #e57364;
+  border-top: 3px solid #e57364;
+  transform: translate(-100%, 50%);
+}
+
+.menu a::after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #e57364;
+  border-bottom: 3px solid #e57364;
+  transform: translate(100%, -50%);
+}
+
+.menu a:hover::before,
+.menu a:hover::after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .footer-text {
   font-size: 1.5em;
 }

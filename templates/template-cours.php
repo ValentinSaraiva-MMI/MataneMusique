@@ -63,7 +63,6 @@ Template Name: Cours
             <?php endif; ?>
         </div>
 
-        <h2 class="titre-cours-individuel"> Tarification individuelle </h2>
 
         <div class=tarif-ind>
             <!-- tableau tarif -->
@@ -78,6 +77,9 @@ Template Name: Cours
                 <?php if ($querytabletarif->have_posts()): ?>
                     <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
                         <div class="">
+                            <h3>
+                                <?php the_title(); ?>
+                            </h3>
                             <div class="text-tarif"> <?php the_content(); ?> </div>
                         </div>
                     <?php endwhile; ?>
@@ -160,13 +162,16 @@ Template Name: Cours
                 <?php
                     $args = array(
                     'post_type' => 'post',
-                    'tag' => 'table_cours_groupe',
+                    'tag' => 'table_tarif_groupe',
                     );
                     $querytabletarif = new WP_Query($args);
                 ?>
                 <?php if ($querytabletarif->have_posts()): ?>
                     <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
                         <div class="">
+                            <h3>
+                                <?php the_title(); ?>
+                            </h3>
                             <div class="text-tarif"> <?php the_content(); ?> </div>
                         </div>
                     <?php endwhile; ?>

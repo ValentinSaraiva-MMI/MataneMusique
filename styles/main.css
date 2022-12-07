@@ -201,8 +201,7 @@ h3 {
   height: 3px;
   border: none;
   margin: 0;
-
-  animation: anim-barre 6s linear infinite;
+  animation: anim-barre 10s linear infinite;
 }
 
 @keyframes anim-barre {

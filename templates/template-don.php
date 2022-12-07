@@ -32,6 +32,7 @@
             <?php while ($query->have_posts()): $query->the_post(); ?>
                 <div class="un-service">
                     <div class="ecole-info don"> <?php the_content(); ?> </div>
+                    <button class="btn-actu"><a> Soutenir l'école </a></button>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>

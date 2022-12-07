@@ -1475,6 +1475,11 @@ table thead {
     object-fit: cover;
     border-radius: 15px;
   }
+
+  .ecole-info.don {
+    text-align: left;
+    padding-top: 2vh;
+  }
 }
 
 @media all and (max-width: 748px) {

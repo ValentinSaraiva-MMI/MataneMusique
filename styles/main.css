@@ -544,7 +544,7 @@ footer .bottom-details {
   margin-bottom: 3vh;
 }
 
-.ecole-info .btn-bordure{
+.ecole-info .btn-bordure {
   margin-bottom: 3vh;
 }
 
@@ -596,7 +596,7 @@ footer .bottom-details {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 350, 0;
+  stroke-dasharray: 353, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -606,7 +606,7 @@ footer .bottom-details {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 210, 280;
+  stroke-dasharray: 210, 100;
   stroke-dashoffset: 280;
 }
 

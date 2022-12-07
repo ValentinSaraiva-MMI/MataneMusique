@@ -198,13 +198,16 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01) 0 0 / 400% 100%;
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   height: 3px;
   border: none;
   margin: 0;
@@ -273,13 +276,10 @@ footer .content {
   margin: auto;
 }
 
-
 .content .top .logo-details {
   color: #fff;
   font-size: 30px;
 }
-
-
 
 /* Menu */
 
@@ -371,9 +371,11 @@ footer .content {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 60%
+  );
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -421,7 +423,6 @@ footer .content {
 .ecole-info .btn-bordure {
   margin-bottom: 3vh;
 }
-
 
 .btn-bordure {
   border: solid 3px transparent;
@@ -518,7 +519,7 @@ footer .content {
   text-align: center;
 }
 
-.actu-contient img~div p {
+.actu-contient img ~ div p {
   text-align: left;
 }
 
@@ -1345,6 +1346,11 @@ table thead {
     object-fit: cover;
     border-radius: 15px;
   }
+
+  .ecole-info.don {
+    text-align: left;
+    padding-top: 2vh;
+  }
 }
 
 @media all and (max-width: 748px) {
@@ -1437,12 +1443,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked+.menu-burger {
+  .toggle-button input:checked + .menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked~.nav-container {
+  .toggle-button input:checked ~ .nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1450,30 +1456,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar {
+  .toggle-button input:checked + .menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked+.menu-burger .bar:after {
+  .toggle-button input:checked + .menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar:before {
+  .toggle-button input:checked + .menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input+.menu-burger+ul,
-  .toggle-button input+.menu-burger+div {
+  .toggle-button input + .menu-burger + ul,
+  .toggle-button input + .menu-burger + div {
     display: none;
   }
 
-  .toggle-button input:checked+.menu-burger+ul,
-  .toggle-button input:checked+.menu-burger+div {
+  .toggle-button input:checked + .menu-burger + ul,
+  .toggle-button input:checked + .menu-burger + div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -1648,6 +1654,28 @@ table thead {
 
   footer .content .link-boxes .input-box {
     width: 100%;
+  }
+
+  /*Dons*/
+
+  .image-don img {
+    width: 93vw;
+    height: 32vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .position-don {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faire-don .un-service:not(:first-child) {
+    margin-top: 2vh;
+  }
+
+  .ecole-info {
+    margin-bottom: 0vh;
   }
 
   /* widget accueil */

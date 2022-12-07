@@ -122,7 +122,6 @@ h3 {
 }
 
 .header_button {
-  background-color: #efefef;
   border-radius: 20px;
   border-width: 0;
   color: #6a6a6a;
@@ -138,6 +137,36 @@ h3 {
   height: 3.5vh;
   padding-left: 0.8vw;
   padding-right: 0.8vw;
+  /*transition hover*/
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #efefef 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.header_button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.header_telephone {
+  /*dégradé sur texte*/
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #6a6a6a 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*transition hover*/
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+:root {
+  --gradient-hover: #dc0019, #ff8e01;
+}
+
+.header_telephone:hover,
+.menu a:hover {
+  background-position: left bottom;
 }
 
 .div_header {
@@ -169,10 +198,18 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(to left, #ff8e01, #dc0019);
+  background: linear-gradient(90deg, #ff8e01, #dc0019, #ff8e01) 0 0 / 400% 100%;
   height: 3px;
   border: none;
   margin: 0;
+
+  animation: anim-barre 6s linear infinite;
+}
+
+@keyframes anim-barre {
+  to {
+    background-position: 400% 0;
+  }
 }
 
 .header_telephone {
@@ -387,15 +424,16 @@ footer .bottom-details {
 
 .menu a {
   text-decoration: none;
-  color: #242424;
-  transition: all 250ms ease;
   font-weight: 700;
   font-size: 1.5em;
-  transition: 0.5s;
-}
-
-.menu a:hover {
-  font-size: 1.8em;
+  /*dégradé sur texte*/
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #242424 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*transition hover*/
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
 .footer-text {
@@ -1118,6 +1156,7 @@ table thead {
   justify-content: center;
   row-gap: 4vh;
   column-gap: 2vw;
+  align-items: flex-start;
 }
 
 .search-results section:first-child {

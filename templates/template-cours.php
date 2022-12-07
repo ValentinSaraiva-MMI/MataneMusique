@@ -168,7 +168,7 @@ Template Name: Cours
                 ?>
                 <?php if ($querytabletarif->have_posts()): ?>
                     <?php while ($querytabletarif->have_posts()): $querytabletarif->the_post(); ?>
-                        <div >
+                        <div class="tableau-cours-ind">
                             <h3>
                                 <?php the_title(); ?>
                             </h3>

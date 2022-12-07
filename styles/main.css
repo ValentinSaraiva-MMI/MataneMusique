@@ -459,7 +459,7 @@ footer .content {
 
 .test-btn a svg rect {
   stroke-width: 3;
-  stroke-dasharray: 114, 0;
+  stroke-dasharray: 250, 0;
   stroke-dashoffset: 0;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
@@ -469,11 +469,8 @@ footer .content {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 196, 110;
-  stroke-dashoffset: 437;
-
-  stroke-dasharray: 196, 543;
-  stroke-dashoffset: 437;
+  stroke-dasharray: 100, 100;
+  stroke-dashoffset: 300;
 }
 
 /* Actu Accueil */

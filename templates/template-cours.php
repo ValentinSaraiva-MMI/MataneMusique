@@ -87,7 +87,7 @@ Template Name: Cours
             <?php endif; ?>
             <button class="btn-bordure"><a href="">S'inscrire</a></button>
         </div>
-
+        </div>
         <!-- grille de cours de groupe -->
         <div class="grid-cours">
             <?php
@@ -112,7 +112,7 @@ Template Name: Cours
             <?php endif; ?>
         </div>
 
-        <div class=tarif-ind>
+
             <!-- tableau tarif groupe -->
             <div class=table-tarif>    
                 <?php
@@ -151,8 +151,8 @@ Template Name: Cours
                     <?php endwhile; ?>
                 <?php endif; ?>   
             </div>
-        </div>
-    </div>
+
+ 
 
     <!-- Tableau tarif groupe -->
 

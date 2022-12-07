@@ -64,7 +64,7 @@ Template Name: Accueil
                             <stop offset="100%" stop-color="#E178ED" />
                         </linearGradient>
                     </defs>
-                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
+                    <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
                 <!--<span>Voir mes réalisations</span>-->
                     <span>Welcome in my world</span>

@@ -521,6 +521,12 @@ footer .bottom-details {
 
 /* Info école */
 
+.ecole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ecole-info p {
   width: 55vw;
   margin-left: auto;
@@ -557,30 +563,21 @@ footer .bottom-details {
   display: inline-block;
   width: auto;
   height: auto;
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 60px;
   text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
   cursor: pointer;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 17px;
-  letter-spacing: 0.045em;
+  color: #242424;
 }
 
 .test-btn a svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2.5vh;
+  left: -2.8vw;
   width: 15vw;
   height: 7vh;
 }
 
 .test-btn a svg rect {
-  /*stroke: #EC0033;*/
   stroke-width: 3;
   stroke-dasharray: 353, 0;
   stroke-dashoffset: 0;
@@ -606,11 +603,7 @@ footer .bottom-details {
   stroke-dashoffset: 437;
 }
 
-.ecole {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 /* Actu Accueil */
 

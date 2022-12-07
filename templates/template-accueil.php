@@ -57,14 +57,14 @@ Template Name: Accueil
             <!-- Test animation btn bordure -->
             <div class="test-btn">
                 <a href="http://marcel-pirnay.be/">
-                <svg width="277" height="62">
+                <svg>
                     <defs>
                         <linearGradient id="grad1">
                             <stop offset="0%" stop-color="#FF8282"/>
                             <stop offset="100%" stop-color="#E178ED" />
                         </linearGradient>
                     </defs>
-                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
                 <!--<span>Voir mes réalisations</span>-->
                     <span>Welcome in my world</span>

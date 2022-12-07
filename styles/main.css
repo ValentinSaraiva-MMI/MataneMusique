@@ -541,6 +541,11 @@ footer .bottom-details {
 
 .ecole-info {
   text-align: center;
+  margin-bottom: 3vh;
+}
+
+.ecole-info .btn-bordure{
+  margin-bottom: 3vh;
 }
 
 .btn-bordure {
@@ -885,7 +890,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 .article-enseignant {
   display: flex;
   justify-content: center;
-  width: 37vw;
+  width: 35vw;
   margin-top: 8vh;
 }
 

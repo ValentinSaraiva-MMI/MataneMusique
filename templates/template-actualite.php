@@ -85,3 +85,4 @@ $query = new WP_query($args);
         <?php endif; ?>
     </div>
 </section>
+<?php get_footer(); ?>

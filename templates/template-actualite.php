@@ -108,6 +108,5 @@
     console.log(nb_actualite)
 
     for (let nb_actualite = 0; nb_actualite < 3; nb_actualite++) {
-            
     }
 </script>

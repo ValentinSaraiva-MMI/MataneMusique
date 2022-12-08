@@ -282,8 +282,8 @@ footer ul {
   margin-bottom: 2vh;
 }
 
-li.li-marge{
-  margin-bottom:1vh;
+li.li-marge {
+  margin-bottom: 1vh;
 }
 
 .icones {
@@ -300,7 +300,7 @@ footer .content {
   font-size: 30px;
 }
 
-.lien-emploi{
+.lien-emploi {
   margin-top: 3vh;
 }
 
@@ -537,6 +537,10 @@ footer .content {
   stroke-dashoffset: 290;
 }
 
+/*actu et evenements*/
+.position-actu-evnmt {
+  display: flex;
+}
 
 /* Actu Accueil */
 

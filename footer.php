@@ -34,8 +34,8 @@
 
                 <ul class="box-infolettre">
                     <li class="link_name">Abonnez-vous a notre infolettre 😊</li>
-                    <li><a href="#">Nos cours</a></li>
-
+                    <li><input type="text" placeholder="Votre adresse couriel"></li>
+                    <li><input type="button" value="s'inscrire"></li>
                 </ul>
             </div>
         </div>

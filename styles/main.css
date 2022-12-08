@@ -47,6 +47,44 @@ h3 {
   color: #0c2d48;
 }
 
+/* --------------- */
+/*    dark mode    */
+/* --------------- */
+
+.wp-dark-mode-switcher.floating,
+.wp-dark-mode-side-toggle-wrap.floating {
+  top: 6.3vh;
+  position: absolute;
+}
+
+.wp-dark-mode-switcher.right_bottom,
+.wp-dark-mode-side-toggle-wrap.right_bottom {
+  right: 2.5vw;
+  height: fit-content;
+}
+
+.wp-dark-mode-active .header_button {
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #2c2e2e 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  color: #a69d90;
+}
+
+.wp-dark-mode-active .header_button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.wp-dark-mode-active .header_telephone {
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #7c7872 50%);
+}
+
+.wp-dark-mode-active .search-input {
+  color: #7c7872;
+}
+
+
 /* scrolbar*/
 
 * {
@@ -185,7 +223,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 40vw;
-  margin-left: 5vw;
+  margin-left: 0.3vw;
 }
 
 .header_icons,
@@ -340,9 +378,7 @@ li.link_name {
   background-color: #fbfbfb;
 }
 
-.input-inscrire{
-
-}
+.input-inscrire {}
 
 
 /* Menu */
@@ -572,13 +608,12 @@ li.link_name {
   flex-wrap: wrap;
 }
 
-.position-actu-evnmt section:first-child {
+.nouvelles.position-actu-evnmt section:first-child {
   width: 100%;
   margin-bottom: 0;
 }
 
-.position-actu-evnmt section:not(:first-child) {
-  flex: 1;
+.nouvelles.position-actu-evnmt section:not(:first-child) {
   margin-top: 0;
 }
 
@@ -588,6 +623,7 @@ li.link_name {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 38vw;
 }
 
 .actu {
@@ -657,6 +693,7 @@ li.link_name {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vh;
+  width: 38vw;
 }
 
 .evenement {

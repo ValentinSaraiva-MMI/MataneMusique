@@ -11,7 +11,7 @@ $args = array(
 $query = new WP_query($args);
 ?>
 
-<div class="position-actu-evnmt">
+<div class="position-actu-evnmt nouvelles">
     <section>
         <h1> Nouvelles </h1>
     </section>
@@ -107,3 +107,5 @@ $query = new WP_query($args);
         </div>
     </section>
 </div>
+
+<?php get_footer(); ?>

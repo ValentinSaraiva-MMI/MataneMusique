@@ -12,7 +12,9 @@ $query = new WP_query($args);
 ?>
 
 <div class="position-actu-evnmt">
-    <h1> Nouvelles </h1>
+    <section>
+        <h1> Nouvelles </h1>
+    </section>
     <section class="actualite">
         <h2>Actualités</h2>
         <div class="actu-section">

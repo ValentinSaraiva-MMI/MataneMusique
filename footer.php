@@ -24,12 +24,12 @@
                 </ul>
 
                 <ul class="box-lien">
-                    <li><a href="#">Notre ecole</a></li>
+                    <li><a href="#">Notre école</a></li>
                     <li><a href="#">Nos cours</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Nouvelles</a></li>
                     <li><a href="#">Nous joindre</a></li>
-                    <li><a href="#">Emplois</a></li>
+                    <li><a href="#" class="lien-emploi">Emplois</a></li>
                 </ul>
 
                 <ul class="box-infolettre">

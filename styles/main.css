@@ -393,7 +393,19 @@ li.link_name {
   background-color: #fbfbfb;
 }
 
-.input-inscrire {}
+.input-inscrire {
+  border-radius: 6px;
+  margin-top: 2vh;
+  padding: 5px;
+  background-color: #ddd;
+  color: #555;
+}
+
+.input-inscrire:hover {
+  background-color: grey;
+  color: lightgrey;
+  transition: 0.3s;
+}
 
 
 /* Menu */

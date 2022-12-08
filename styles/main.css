@@ -64,11 +64,10 @@ h3 {
 }
 
 .wp-dark-mode-active .header_button {
-  background: linear-gradient(to right, var(--gradient-hover) 50%, #2c2e2e 50%);
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #303232 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
-  color: #a69d90;
 }
 
 .wp-dark-mode-active .header_button:hover {
@@ -76,9 +75,28 @@ h3 {
   color: white;
 }
 
-.wp-dark-mode-active .header_telephone {
-  background: linear-gradient(to right, var(--gradient-hover) 50%, #7c7872 50%);
+.search-input {
+  background-color: #303232;
+  color: #a69d90;
 }
+
+.wp-dark-mode-active .header_telephone {
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #a69d90 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*transition hover*/
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.wp-dark-mode-active .header_telephone:hover {
+  background-position: left bottom;
+}
+
+
+
+.wp-dark-mode-active .header_telephone:hover {}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;

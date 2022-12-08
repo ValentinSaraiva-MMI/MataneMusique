@@ -412,6 +412,11 @@ li.link_name {
   transition: 0.3s;
 }
 
+li.suivez-nous{
+  color: white;
+  font-weight: bold;
+  margin-top: 2vh;
+}
 
 /* Menu */
 

@@ -573,14 +573,17 @@ li.link_name {
   display: flex;
   justify-content: space-between;
   margin-top: 3vh;
+  flex-wrap: wrap;
 }
 
 .position-actu-evnmt section:first-child {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .position-actu-evnmt section:not(:first-child) {
   flex: 1;
+  margin-top: 0;
 }
 
 /* Actu Accueil */
@@ -653,7 +656,6 @@ li.link_name {
   align-items: center;
   justify-content: space-between;
   height: 20vh;
-  width: 44vw;
   background-color: #ff8f0030;
   border-radius: 30px;
   margin-left: auto;
@@ -664,7 +666,7 @@ li.link_name {
 .evenement {
   display: flex;
   justify-content: space-around;
-  width: 32vw;
+  width: 25vw;
   align-items: center;
 }
 
@@ -689,7 +691,7 @@ li.link_name {
 
 .evenement .evenement-infos {
   text-align: left;
-  width: 20vw;
+  width: 15vw;
   align-items: flex-start;
 }
 

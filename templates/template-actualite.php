@@ -13,6 +13,7 @@ $query = new WP_query($args);
 
 <div class="position-actu-evnmt">
     <section class="actualite">
+        <h1> Nouvelles </h1>
         <h2>Actualités</h2>
         <div class="actu-section">
             <?php if ($query->have_posts()): ?>

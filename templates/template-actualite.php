@@ -5,7 +5,6 @@
 <?php
     $args = array(
         'post_type' => 'Actualités',
-        'posts_per_page' => 3
     );
     $query = new WP_query($args);
 ?>
@@ -18,24 +17,23 @@
         <h2>Actualités</h2>
         <div class="actu-section">
             <?php if ($query->have_posts()): ?>
-            <?php while ($query->have_posts()):
-                $query->the_post(); ?>
-            <article class="actu">
-                <h3 class="actu-titre">
-                    <?php the_field('titre_'); ?>
-                </h3>
-                <div class="actu-contient">
-                    <?php $image=get_field('image_article_') ?>
-                    <?php if(!empty($image)): ?>
-                        <img src="<?php the_field('image_article_') ?>" alt="">
-                    <?php endif; ?>
-                    <div>
-                        <?php the_field('paragraphe_actualite'); ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
+                <article class="actu">
+                    <h3 class="actu-titre">
+                        <?php the_field('titre_'); ?>
+                    </h3>
+                    <div class="actu-contient">
+                        <?php $image=get_field('image_article_') ?>
+                        <?php if(!empty($image)): ?>
+                            <img src="<?php the_field('image_article_') ?>" alt="">
+                        <?php endif; ?>
+                        <div>
+                            <?php the_field('paragraphe_actualite'); ?>
+                        </div>
                     </div>
-                </div>
-                <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
-                <hr class="header_hr">
-            </article>
+                    <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+                    <hr class="header_hr">
+                </article>
             <?php endwhile; ?>
             <?php endif; ?>
         </div>
@@ -59,7 +57,6 @@
     <?php
         $args = array(
             'post_type' => 'Evenement',
-            'posts_per_page' => 3,
         );
         $query = new WP_query($args);
     ?>
@@ -105,3 +102,5 @@
 </div>
 
 <?php get_footer(); ?>
+
+<script src="js/compte-nouvelles.js"></script>

@@ -10,13 +10,13 @@
                     <li> C.P. 192, 611, avenue Saint-Rédempteur </li>
                     <li class="li-marge"> École Marie-Guyart, entrée 4 </li>                        
                     <li class="li-marge">418 562-4212</li>
-                    <li class="li-marge">Suivez nous</li>
+                    <li class="li-marge suivez-nous">Suivez nous</li>
 
                     <div class="media-icons">
-                        <a href="https://fr-ca.facebook.com/" target="_blank"><img class="icones"
+                        <a href="https://fr-ca.facebook.com/people/%C3%89cole-de-musique-de-Matane/100063641619675/" target="_blank"><img class="icones"
                                 src="<?php  echo (get_template_directory_uri() . '/images/facebookicone2.png')?>" alt=""></a>
                        
-                        <a href="https://www.youtube.com/" target="_blank"><img class="icones" 
+                        <a href="https://www.youtube.com/channel/UC55hzRGP1Kw7jceQT2xolSQ" target="_blank"><img class="icones" 
                                 src="<?php  echo (get_template_directory_uri() . '/images/youtubeicone.png')?>"
                                 alt=""></a>
                     </div>

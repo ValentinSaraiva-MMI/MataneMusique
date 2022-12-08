@@ -269,17 +269,17 @@ footer ul {
 }
 
 .box-infos li:not(:first-child) {
-  color: #cfcfcf;
+  color: #cfcfcf
 }
 
-.link-name {
+li.link-name {
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
 }
 
 li.li-marge{
-  margin-bottom:1vh;
+  margin-bottom:2vh;
 }
 
 .icones {
@@ -294,6 +294,24 @@ footer .content {
 .content .top .logo-details {
   color: #fff;
   font-size: 30px;
+}
+
+.lien-emploi{
+  margin-top: 3vh;
+}
+
+.box-lien li a:hover {
+  text-decoration: underline;
+}
+
+.box-lien li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box-lien li {
+  margin-bottom: 0.7vh;
 }
 
 /* Menu */
@@ -1336,16 +1354,6 @@ table thead {
     font-size: 1.4em;
   }
 
-  /*footer*/
-
-  footer .content .link-boxes {
-    flex-wrap: wrap;
-  }
-
-  footer .content .link-boxes .input-box {
-    width: 40%;
-    margin-top: 10px;
-  }
 
   /* widget accueil */
 
@@ -1562,35 +1570,7 @@ table thead {
     margin-top: 15vh;
   }
 
-  /*footer*/
 
-  footer {
-    position: relative;
-  }
-
-  .content .top .logo-details {
-    font-size: 26px;
-  }
-
-  .content .top .media-icons a {
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
-  }
-
-  footer .content .link-boxes .box {
-    width: calc(100% / 3 - 10px);
-  }
-
-  footer .content .link-boxes .input-box {
-    width: 60%;
-  }
-
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a {
-    font-size: 12px;
-  }
 
   /* accueil */
 

@@ -24,18 +24,18 @@
                 </ul>
 
                 <ul class="box-lien">
-                    <li><a href="#">Notre ecole</a></li>
+                    <li><a href="#">Notre école</a></li>
                     <li><a href="#">Nos cours</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Nouvelles</a></li>
                     <li><a href="#">Nous joindre</a></li>
-                    <li><a href="#">Emplois</a></li>
+                    <li><a href="#" class="lien-emploi">Emplois</a></li>
                 </ul>
 
                 <ul class="box-infolettre">
                     <li class="link_name">Abonnez-vous a notre infolettre 😊</li>
-                    <li><input type="text" placeholder="Votre adresse couriel"></li>
-                    <li><input type="button" value="s'inscrire"></li>
+                    <li><a href="#">Nos cours</a></li>
+
                 </ul>
             </div>
         </div>

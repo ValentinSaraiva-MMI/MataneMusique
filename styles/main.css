@@ -538,6 +538,10 @@ footer .content {
   stroke-dashoffset: 290;
 }
 
+/*actu et evenements*/
+.position-actu-evnmt {
+  display: flex;
+}
 
 /* Actu Accueil */
 

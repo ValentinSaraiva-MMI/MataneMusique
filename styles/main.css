@@ -319,9 +319,6 @@ footer ul {
   margin-bottom: 2vh;
 }
 
-.box-infos li:last-child {
-  font-weight: bold;
-}
 
 
 li.li-marge {
@@ -342,7 +339,7 @@ footer .content {
   font-size: 30px;
 }
 
-.lien-emploi {
+li.lien-emploi {
   margin-top: 3vh;
 }
 
@@ -367,7 +364,7 @@ li.link_name {
 }
 
 .input-mail {
-  font-size: 16px;
+  font-size: 0.8em;
   border-width: 2px;
   border-radius: 14px;
   text-align: left;

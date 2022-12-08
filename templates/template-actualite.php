@@ -32,14 +32,15 @@ $query = new WP_query($args);
                         <?php the_field('paragraphe_actualite'); ?>
                     </div>
                 </div>
-                <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
-                <hr class="header_hr">
-            </article>
-            <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
-        <button class="btn-bordure"><a href="">Découvrir plus de nouvelles</a></button>
-    </section>
+            </div>
+            <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+            <hr class="header_hr">
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+    <button class="btn-bordure"><a href="">Découvrir plus de nouvelles</a></button>
+</section>
 
     <?php
     $args = array(
@@ -83,10 +84,10 @@ $query = new WP_query($args);
                             </div>
                         </div>
                     </div>
-                </div> 
-            </article>
-            <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
-    </section>
-</div>
+                </div>
+            </div> 
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+</section>

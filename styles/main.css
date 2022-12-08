@@ -16,6 +16,10 @@ body {
   overflow: overlay;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   margin: 40px 0;
 }

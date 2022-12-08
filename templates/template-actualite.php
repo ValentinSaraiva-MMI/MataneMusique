@@ -6,14 +6,13 @@
 <?php
 $args = array(
     'post_type' => 'Actualités',
-    'posts_per_page' => 3,
+    'posts_per_page' => 3
 );
 $query = new WP_query($args);
 ?>
 
 <div class="position-actu-evnmt">
     <section class="actualite">
-        <h1>Nouvelles</h1>
         <h2>Actualités</h2>
         <div class="actu-section">
             <?php if ($query->have_posts()): ?>
@@ -32,15 +31,29 @@ $query = new WP_query($args);
                         <?php the_field('paragraphe_actualite'); ?>
                     </div>
                 </div>
-            </div>
-            <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
-            <hr class="header_hr">
-        </article>
-        <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
-    <button class="btn-bordure"><a href="">Découvrir plus de nouvelles</a></button>
-</section>
+                <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
+                <hr class="header_hr">
+            </article>
+            <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+        <!-- Test animation btn bordure -->
+        <div class="test-btn">
+                    <a href="http://marcel-pirnay.be/">
+                    <svg>
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" stop-color="#dc0019"/>
+                                <stop offset="100%" stop-color="#ff8e01" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
+                    </svg>
+                    <!--<span>Voir mes réalisations</span>-->
+                        <span>Découvrir plus de nouvelles</span>
+                    </a>
+                </div>
+    </section>
 
     <?php
     $args = array(
@@ -84,10 +97,10 @@ $query = new WP_query($args);
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-        </article>
-        <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
-</section>
+                </div> 
+            </article>
+            <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+    </section>
+</div>

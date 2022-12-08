@@ -103,4 +103,11 @@
 
 <?php get_footer(); ?>
 
-<script src="js/compte-nouvelles.js"></script>
+<script>
+    var nb_actualite = document.querySelectorAll(".actu").length;
+    console.log(nb_actualite)
+
+    for (let nb_actualite = 0; nb_actualite < 3; nb_actualite++) {
+            
+    }
+</script>

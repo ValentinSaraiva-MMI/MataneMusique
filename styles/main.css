@@ -1805,7 +1805,16 @@ table thead {
 
   /*Cours*/
 
-  
+  .grid-cours {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
 
 }
 

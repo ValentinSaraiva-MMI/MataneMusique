@@ -561,6 +561,16 @@ li.link_name {
 /*actu et evenements*/
 .position-actu-evnmt {
   display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+
+.position-actu-evnmt h1 {
+  width: 100%;
+}
+
+.position-actu-evnmt section {
+  flex: 1;
 }
 
 /* Actu Accueil */

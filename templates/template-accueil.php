@@ -75,7 +75,8 @@ Template Name: Accueil
 
 <?php
 $args = array(
-    'post_type' => 'Actualités'
+    'post_type' => 'Actualités',
+    'posts_per_page' => 3
 );
 $query = new WP_query($args);
 ?>
@@ -125,7 +126,8 @@ $query = new WP_query($args);
 
     <?php
     $args = array(
-        'post_type' => 'Evenement'
+        'post_type' => 'Evenement',
+        'posts_per_page' => 3,
     );
     $query = new WP_query($args);
     ?>

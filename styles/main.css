@@ -540,6 +540,8 @@ footer .content {
 /*actu et evenements*/
 .position-actu-evnmt {
   display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
 }
 
 /* Actu Accueil */

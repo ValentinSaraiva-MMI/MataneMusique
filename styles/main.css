@@ -1375,6 +1375,16 @@ table thead {
     object-fit: cover;
     border-radius: 15px;
   }
+
+  /* Cours */
+
+  .titre-cours{
+    left: 50px;
+  }
+
+  .btn-cours{
+    left: 50px;
+  }
 }
 
 @media all and (max-width: 1280px) {
@@ -1521,6 +1531,27 @@ table thead {
   .ecole-info.don {
     text-align: left;
     padding-top: 2vh;
+  }
+
+  /* Cours */
+
+  .btn-cours{
+    top: 249px;
+    left: 33px
+  }
+  
+  .titre-cours{
+    top: 161px;
+    left: 33px;
+    font-size: 2.1vh;
+  }
+
+  .img-cours{
+    width: 18vw;
+  }
+
+  .ombre-cours{
+    width: 18vw;
   }
 }
 
@@ -1771,6 +1802,11 @@ table thead {
   .faire-don .un-service:not(:first-child) {
     margin-top: 5vh;
   }
+
+  /*Cours*/
+
+  
+
 }
 
 @media all and (max-width: 640px) {

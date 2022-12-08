@@ -75,7 +75,11 @@ h3 {
   color: white;
 }
 
-.search-input {
+.wp-dark-mode-active .search-input::placeholder {
+  color: #a69d90;
+}
+
+.wp-dark-mode-active .search-input {
   background-color: #303232;
   color: #a69d90;
 }

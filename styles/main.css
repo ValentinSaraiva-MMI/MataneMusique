@@ -1834,9 +1834,31 @@ table thead {
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-  }
 }
 
+.article-cours{
+  width: 34vw;
+}
+
+.grid-cours .ombre-cours {
+  width: fit-content;
+}
+
+.table-tarif-individuel{
+  width: 54vw;
+}
+
+
+  .tarification-familiale {
+    height: 48vh;
+  }
+
+ div.table-tarif.table-tarif-groupe{
+  width: 38vw;;
+ }
+
+}
+  
 @media all and (max-width: 640px) {
   /*footer*/
 

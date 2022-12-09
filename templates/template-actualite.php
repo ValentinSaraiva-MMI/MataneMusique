@@ -39,7 +39,7 @@
         </div>
         <!-- Test animation btn bordure -->
         <div class="test-btn">
-            <a href="#">
+            <a class="btn-plus-actu" href="#">
                 <svg>
                     <defs>
                         <linearGradient id="grad1">
@@ -49,7 +49,7 @@
                     </defs>
                     <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
-                <span id="btn-plus-actu" class="btn-plus-actu"> Découvrir plus d'actualités </span>
+                <span id="btn-plus-actu" > Découvrir plus d'actualités </span>
             </a>
         </div>
     </section>
@@ -100,15 +100,13 @@
         </div>
     </section>
 </div>
-
-<?php get_footer(); ?>
-
 <script>
     let btn_actu = document.querySelector(".btn-plus-actu");
     console.log(btn_actu)
-    btn_actu.addEventListener("click", compte());
+    btn_actu.addEventListener("click", compte);
 
     function compte() {
+        console.log("compte")
         let nb_actualite = document.querySelectorAll(".actu").length;
         let actu = document.querySelector(".actu");
 
@@ -120,6 +118,8 @@
             }
         }
     }
+
+    compte()
 
 
     /*var nb_actualite = document.querySelectorAll(".actu").length;
@@ -144,3 +144,5 @@
 
     
 </script>
+<?php get_footer(); ?>
+

@@ -21,7 +21,7 @@ html {
 }
 
 section {
-  margin: 40px 0;
+  margin: 8vh 0;
 }
 
 h1,
@@ -98,14 +98,12 @@ h3 {
   background-position: left bottom;
 }
 
-
-
-.wp-dark-mode-active .header_telephone:hover {}
+.wp-dark-mode-active .header_telephone:hover {
+}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
 }
-
 
 /* scrolbar*/
 
@@ -261,13 +259,16 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01) 0 0 / 400% 100%;
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   height: 3px;
   border: none;
   margin: 0;
@@ -333,7 +334,11 @@ footer ul {
 }
 
 .box-infos li:not(:first-child) {
-  color: #cfcfcf
+  margin-bottom: 1vh;
+}
+
+.link-name {
+  color: #cfcfcf;
 }
 
 .box-infos li:first-child {
@@ -341,8 +346,6 @@ footer ul {
   color: white;
   margin-bottom: 2vh;
 }
-
-
 
 li.li-marge {
   margin-bottom: 1vh;
@@ -412,7 +415,7 @@ li.link_name {
   transition: 0.3s;
 }
 
-li.suivez-nous{
+li.suivez-nous {
   color: white;
   font-weight: bold;
   margin-top: 2vh;
@@ -508,9 +511,11 @@ li.suivez-nous{
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 60%
+  );
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -519,11 +524,11 @@ li.suivez-nous{
 .widget-accueil {
   -webkit-box-shadow: 0px 5px 10px 3px #cfcfcf;
   box-shadow: 0px 5px 10px 3px #cfcfcf;
-  max-width: 10vw;
+  max-width: 12vw;
   border-radius: 45px;
-  height: 25vh;
+  height: auto;
   text-align: center;
-  padding-top: 2.5vh;
+  padding: 2.5vh 1vw;
 }
 
 .widget-accueil a {
@@ -533,7 +538,6 @@ li.suivez-nous{
 .widget {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 15vh;
 }
 
 /* Info école */
@@ -688,7 +692,7 @@ li.suivez-nous{
   text-align: center;
 }
 
-.actu-contient img~div p {
+.actu-contient img ~ div p {
   text-align: left;
 }
 
@@ -1364,6 +1368,10 @@ table thead {
     max-width: 14vw;
   }
 
+  .widget {
+    margin-top: 7vh;
+  }
+
   .actu {
     width: 38vw;
   }
@@ -1378,11 +1386,11 @@ table thead {
 
   /* Cours */
 
-  .titre-cours{
+  .titre-cours {
     left: 50px;
   }
 
-  .btn-cours{
+  .btn-cours {
     left: 50px;
   }
 }
@@ -1485,7 +1493,6 @@ table thead {
     font-size: 1.4em;
   }
 
-
   /* widget accueil */
 
   .container {
@@ -1535,28 +1542,27 @@ table thead {
 
   /* Cours */
 
-  .btn-cours{
+  .btn-cours {
     top: 249px;
-    left: 33px
+    left: 33px;
   }
-  
-  .titre-cours{
+
+  .titre-cours {
     top: 161px;
     left: 33px;
     font-size: 2.1vh;
   }
 
-  .img-cours{
+  .img-cours {
     width: 18vw;
   }
 
-  .ombre-cours{
+  .ombre-cours {
     width: 18vw;
   }
 }
 
 @media all and (max-width: 748px) {
-
   /*général*/
 
   h3 {
@@ -1642,12 +1648,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked+.menu-burger {
+  .toggle-button input:checked + .menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked~.nav-container {
+  .toggle-button input:checked ~ .nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1655,30 +1661,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar {
+  .toggle-button input:checked + .menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked+.menu-burger .bar:after {
+  .toggle-button input:checked + .menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar:before {
+  .toggle-button input:checked + .menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input+.menu-burger+ul,
-  .toggle-button input+.menu-burger+div {
+  .toggle-button input + .menu-burger + ul,
+  .toggle-button input + .menu-burger + div {
     display: none;
   }
 
-  .toggle-button input:checked+.menu-burger+ul,
-  .toggle-button input:checked+.menu-burger+div {
+  .toggle-button input:checked + .menu-burger + ul,
+  .toggle-button input:checked + .menu-burger + div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -1721,8 +1727,6 @@ table thead {
     height: 50vh;
     margin-top: 15vh;
   }
-
-
 
   /* accueil */
 
@@ -1803,6 +1807,24 @@ table thead {
     margin-top: 5vh;
   }
 
+  /*Nous Joindre */
+
+  .joindre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  .des-coordonnees {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 47vh;
+    margin-top: 5vh;
+    align-items: center;
+    margin-left: 0;
+  }
+
   /*Cours*/
 
   .grid-cours {
@@ -1812,19 +1834,20 @@ table thead {
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-  }
+}
 
-  .article-cours{
-    width: 34vw;
-  }
+.article-cours{
+  width: 34vw;
+}
 
-  .grid-cours .ombre-cours {
-    width: fit-content;
-  }
+.grid-cours .ombre-cours {
+  width: fit-content;
+}
 
-  .table-tarif-individuel{
-    width: 54vw;
-  }
+.table-tarif-individuel{
+  width: 54vw;
+}
+
 
   .tarification-familiale {
     height: 48vh;

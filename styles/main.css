@@ -175,7 +175,8 @@ h3 {
 /********* Header **********/
 
 .header_logo {
-  width: 4.1vh;
+  width: 7.1vh;
+  margin-right: 1vw;
 }
 
 .header_logo_description {
@@ -183,7 +184,7 @@ h3 {
   color: #585858;
   font-weight: 700;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 .header_button {
@@ -300,13 +301,12 @@ h3 {
 }
 
 .header_logo_column {
-  flex-direction: column;
+  flex-direction: row;
   flex-basis: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7vw;
-  text-align: center;
+  width: 11vw;
 }
 
 /********* Footer **********/

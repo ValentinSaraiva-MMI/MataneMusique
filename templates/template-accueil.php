@@ -55,7 +55,7 @@ Template Name: Accueil
             <div class="ecole-info"> <?php the_content(); ?> </div>
             <!-- Test animation btn bordure -->
             <div class="test-btn">
-                <a href="http://marcel-pirnay.be/">
+                <a href="">
                 <svg>
                     <defs>
                         <linearGradient id="grad1">

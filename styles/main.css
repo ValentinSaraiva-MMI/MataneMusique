@@ -16,8 +16,12 @@ body {
   overflow: overlay;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
-  margin: 40px 0;
+  margin: 8vh 0;
 }
 
 h1,
@@ -41,6 +45,64 @@ h2 {
 
 h3 {
   color: #0c2d48;
+}
+
+/* --------------- */
+/*    dark mode    */
+/* --------------- */
+
+.wp-dark-mode-switcher.floating,
+.wp-dark-mode-side-toggle-wrap.floating {
+  top: 6.3vh;
+  position: absolute;
+}
+
+.wp-dark-mode-switcher.right_bottom,
+.wp-dark-mode-side-toggle-wrap.right_bottom {
+  right: 2.5vw;
+  height: fit-content;
+}
+
+.wp-dark-mode-active .header_button {
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #303232 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.wp-dark-mode-active .header_button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.wp-dark-mode-active .search-input::placeholder {
+  color: #a69d90;
+}
+
+.wp-dark-mode-active .search-input {
+  background-color: #303232;
+  color: #a69d90;
+}
+
+.wp-dark-mode-active .header_telephone {
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #a69d90 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*transition hover*/
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.wp-dark-mode-active .header_telephone:hover {
+  background-position: left bottom;
+}
+
+.wp-dark-mode-active .header_telephone:hover {
+}
+
+.wp-dark-mode-active .search-input {
+  color: #7c7872;
 }
 
 /* scrolbar*/
@@ -71,8 +133,7 @@ h3 {
 .container {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  min-height: 48vh;
 }
 
 .img-container img {
@@ -182,7 +243,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 40vw;
-  margin-left: 5vw;
+  margin-left: 0.3vw;
 }
 
 .header_icons,
@@ -252,6 +313,11 @@ footer {
   bottom: 0;
   left: 0;
   border-radius: 100px 100px 0px 0px;
+  margin-top: 10vh;
+}
+
+footer ul {
+  list-style-type: none;
 }
 
 .link-boxes {
@@ -264,7 +330,7 @@ footer {
 .box-infos {
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 28%;
 }
 
 .box-infos li:not(:first-child) {
@@ -272,13 +338,21 @@ footer {
 }
 
 .link-name {
+  color: #cfcfcf;
+}
+
+.box-infos li:first-child {
   font-weight: bold;
   color: white;
   margin-bottom: 2vh;
 }
 
+li.li-marge {
+  margin-bottom: 1vh;
+}
+
 .icones {
-  width: 9%;
+  width: 13%;
 }
 
 footer .content {
@@ -289,6 +363,62 @@ footer .content {
 .content .top .logo-details {
   color: #fff;
   font-size: 30px;
+}
+
+li.lien-emploi {
+  margin-top: 3vh;
+}
+
+.box-lien li a:hover {
+  text-decoration: underline;
+}
+
+.box-lien li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box-lien li {
+  margin-bottom: 0.7vh;
+}
+
+li.link_name {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.input-mail {
+  font-size: 0.8em;
+  border-width: 2px;
+  border-radius: 14px;
+  text-align: left;
+  border-style: solid;
+  padding: 8px;
+  color: #5c5c5c;
+  border-color: #ff8d01;
+  background-color: #fbfbfb;
+}
+
+.input-inscrire {
+  border-radius: 6px;
+  margin-top: 2vh;
+  padding: 5px;
+  background-color: #ddd;
+  color: #555;
+}
+
+.input-inscrire:hover {
+  background-color: grey;
+  color: lightgrey;
+  transition: 0.3s;
+}
+
+li.suivez-nous {
+  color: white;
+  font-weight: bold;
+  margin-top: 2vh;
 }
 
 /* Menu */
@@ -394,11 +524,11 @@ footer .content {
 .widget-accueil {
   -webkit-box-shadow: 0px 5px 10px 3px #cfcfcf;
   box-shadow: 0px 5px 10px 3px #cfcfcf;
-  max-width: 10vw;
+  max-width: 12vw;
   border-radius: 45px;
-  height: 25vh;
+  height: auto;
   text-align: center;
-  padding-top: 2.5vh;
+  padding: 2.5vh 1vw;
 }
 
 .widget-accueil a {
@@ -408,7 +538,6 @@ footer .content {
 .widget {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 15vh;
 }
 
 /* Info école */
@@ -492,8 +621,41 @@ footer .content {
 
 .test-btn a:hover svg rect {
   stroke-width: 4;
-  stroke-dasharray: 300, 340;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
+}
+
+/* Bouton plus d'actu */
+
+.actualite .test-btn a svg {
+  width: 18vw;
+}
+
+.actualite .test-btn a svg rect {
+  stroke-dasharray: 290, 0;
+  width: 17.5vw;
+}
+
+.actualite .test-btn a:hover svg rect {
+  stroke-dasharray: 182, 360;
+  stroke-dashoffset: 290;
+}
+
+/*actu et evenements*/
+.position-actu-evnmt {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+  flex-wrap: wrap;
+}
+
+.nouvelles.position-actu-evnmt section:first-child {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.nouvelles.position-actu-evnmt section:not(:first-child) {
+  margin-top: 0;
 }
 
 /* Actu Accueil */
@@ -502,6 +664,7 @@ footer .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 38vw;
 }
 
 .actu {
@@ -566,18 +729,18 @@ footer .content {
   align-items: center;
   justify-content: space-between;
   height: 20vh;
-  width: 44vw;
   background-color: #ff8f0030;
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vh;
+  width: 38vw;
 }
 
 .evenement {
   display: flex;
   justify-content: space-around;
-  width: 32vw;
+  width: 25vw;
   align-items: center;
 }
 
@@ -602,7 +765,7 @@ footer .content {
 
 .evenement .evenement-infos {
   text-align: left;
-  width: 20vw;
+  width: 15vw;
   align-items: flex-start;
 }
 
@@ -1205,6 +1368,10 @@ table thead {
     max-width: 14vw;
   }
 
+  .widget {
+    margin-top: 7vh;
+  }
+
   .actu {
     width: 38vw;
   }
@@ -1215,6 +1382,16 @@ table thead {
     height: 34vh;
     object-fit: cover;
     border-radius: 15px;
+  }
+
+  /* Cours */
+
+  .titre-cours {
+    left: 50px;
+  }
+
+  .btn-cours {
+    left: 50px;
   }
 }
 
@@ -1316,17 +1493,6 @@ table thead {
     font-size: 1.4em;
   }
 
-  /*footer*/
-
-  footer .content .link-boxes {
-    flex-wrap: wrap;
-  }
-
-  footer .content .link-boxes .input-box {
-    width: 40%;
-    margin-top: 10px;
-  }
-
   /* widget accueil */
 
   .container {
@@ -1373,13 +1539,30 @@ table thead {
     text-align: left;
     padding-top: 2vh;
   }
+
+  /* Cours */
+
+  .btn-cours {
+    top: 249px;
+    left: 33px;
+  }
+
+  .titre-cours {
+    top: 161px;
+    left: 33px;
+    font-size: 2.1vh;
+  }
+
+  .img-cours {
+    width: 18vw;
+  }
+
+  .ombre-cours {
+    width: 18vw;
+  }
 }
 
 @media all and (max-width: 748px) {
-  * {
-    overflow-x: hidden;
-  }
-
   /*général*/
 
   h3 {
@@ -1545,36 +1728,6 @@ table thead {
     margin-top: 15vh;
   }
 
-  /*footer*/
-
-  footer {
-    position: relative;
-  }
-
-  .content .top .logo-details {
-    font-size: 26px;
-  }
-
-  .content .top .media-icons a {
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
-  }
-
-  footer .content .link-boxes .box {
-    width: calc(100% / 3 - 10px);
-  }
-
-  footer .content .link-boxes .input-box {
-    width: 60%;
-  }
-
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a {
-    font-size: 12px;
-  }
-
   /* accueil */
 
   .container {
@@ -1670,6 +1823,17 @@ table thead {
     margin-top: 5vh;
     align-items: center;
     margin-left: 0;
+  }
+
+  /*Cours*/
+
+  .grid-cours {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 

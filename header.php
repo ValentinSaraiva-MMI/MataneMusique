@@ -51,16 +51,6 @@
                     </div>
                 </div>
             </label>
-            <!--<div class="">
-                <input type="checkbox">
-                <a href="#">
-                    <span class="bar"> </span>
-                    <span class="bar"> </span>
-                    <span class="bar"> </span>
-                </a>
-            </div>-->
-
-
 
             <div class="div_header_haut">
                 <form action="<?php echo esc_url(home_url('/')) ?>" class="search-form" method="get">
@@ -77,7 +67,6 @@
                         class="header_icons" alt="icons facebook"> </a>
                 <a href="<?php echo esc_url(home_url('/membre')); ?>"> <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
                         class="header_icons2" alt="icons profile"> </a>
-
             </div>
 
             <nav>
@@ -89,12 +78,7 @@
                     wp_nav_menu($args);
                     ?>
                 </div>
-                <hr class="header_hr">
-                <!-- <ul class="menu">
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">À propos</a></li>
-    </ul> -->
+                <hr class="header_hr anim-header">
             </nav>
         </div>
 

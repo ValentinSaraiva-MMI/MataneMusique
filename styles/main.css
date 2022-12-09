@@ -1582,7 +1582,7 @@ table thead {
   .grid-cours {
     justify-content: space-evenly;
   }
-  
+
 }
 
 @media all and (max-width: 748px) {
@@ -1943,4 +1943,46 @@ table thead {
   }
 
   /* widget accueil */
+
+  /* Cours */
+
+  .btn-cours{
+    top: 160px;
+    left: 16px;
+    font-size: 3vw;
+  }
+
+  .titre-cours{
+    top: 76px;
+    left: 20px;
+  }
+
+  .img-cours {
+    width: 38vw;
+    height: 31vh;
+  }
+
+  .grid-cours .ombre-cours {
+    width: 38vw;
+    height: 31vh;
+  }
+
+  .tarif-ind{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .table-tarif-individuel{
+    width: 95%;
+  }
+
+  .frais-accompagnement {
+    width: 82vw;
+    margin-top: 6vh;
+  }
+
+  table{
+    font-size: 0.9em;
+  }
 }

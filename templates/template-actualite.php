@@ -101,6 +101,7 @@
     </section>
 </div>
 <script>
+ 
     let btn_actu = document.querySelector(".btn-plus-actu");
     console.log(btn_actu)
     btn_actu.addEventListener("click", affiche_plus);
@@ -108,7 +109,6 @@
     let nb_actualite = document.querySelectorAll(".actu").length;
     let actu = document.querySelector(".actu");
     
-
     function compte() {
         console.log("compte")
         for (let i = 0; i < nb_actualite; i++) {
@@ -124,30 +124,9 @@
 
     function affiche_plus() {
         actu.style.display="block";
-    }
-
-
-    /*var nb_actualite = document.querySelectorAll(".actu").length;
-    console.log(nb_actualite)
-
-    for (let i = 0; i < 3; i++) {
-        console.log(nb_actualite[i]);
-        nb_actualite[i].style.display="none";
-    }*/
-
-    /*function montre_plus_actu() {
-        var nb_actualite = document.querySelectorAll(".actu").length;
-        var actu = document.querySelector(".actu");
-        for (let i = 0; i <= nb_actualite; i++) {
-            console.log("oui")
-            if (actu[i] > 3 ) {
-                console.log("ca marche");
-                actu[i].style.display="none"; 
-            }
-        }
-    }*/
-
+    }  
     
 </script>
+
 <?php get_footer(); ?>
 

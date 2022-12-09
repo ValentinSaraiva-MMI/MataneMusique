@@ -107,6 +107,7 @@
 
     let nb_actualite = document.querySelectorAll(".actu").length;
     let actu = document.querySelector(".actu");
+    
 
     function compte() {
         console.log("compte")

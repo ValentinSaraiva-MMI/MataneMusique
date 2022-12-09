@@ -1542,24 +1542,47 @@ table thead {
 
   /* Cours */
 
+ 
+  .article-cours{
+    width: 34vw;
+  }
+
+  .grid-cours .ombre-cours {
+    width: fit-content;
+  }
+
+  .table-tarif-individuel{
+    width: 54vw;
+  }
+
+
+  .tarification-familiale {
+    height: 48vh;
+  }
+
+  div.table-tarif.table-tarif-groupe{
+    width: 38vw;;
+  }
+
+
+  .img-cours {
+    width: 34vw;
+  }
+
   .btn-cours {
-    top: 249px;
-    left: 33px;
+    top: 308px;
+    left: 27px;
   }
 
   .titre-cours {
-    top: 161px;
-    left: 33px;
-    font-size: 2.1vh;
+    top: 223px;
+    left: 27px;
   }
 
-  .img-cours {
-    width: 18vw;
+  .grid-cours {
+    justify-content: space-evenly;
   }
-
-  .ombre-cours {
-    width: 18vw;
-  }
+  
 }
 
 @media all and (max-width: 748px) {
@@ -1836,29 +1859,44 @@ table thead {
     justify-content: space-evenly;
 }
 
-.article-cours{
-  width: 34vw;
-}
+  .article-cours{
+    width: 34vw;
+  }
 
-.grid-cours .ombre-cours {
-  width: fit-content;
-}
+  .grid-cours .ombre-cours {
+    width: fit-content;
+  }
 
-.table-tarif-individuel{
-  width: 54vw;
-}
+  .table-tarif-individuel{
+    width: 54vw;
+  }
 
 
   .tarification-familiale {
     height: 48vh;
   }
 
- div.table-tarif.table-tarif-groupe{
-  width: 38vw;;
- }
+  div.table-tarif.table-tarif-groupe{
+    width: 38vw;;
+  }
+
+
+  .img-cours {
+    width: 34vw;
+  }
+
+  .btn-cours {
+    top: 308px;
+    left: 27px;
+  }
+
+  .titre-cours {
+    top: 223px;
+    left: 27px;
+  }
 
 }
-  
+
 @media all and (max-width: 640px) {
   /*footer*/
 

@@ -49,7 +49,7 @@
                     </defs>
                     <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
-                <span id="btn-plus-actu" > Découvrir plus d'actualités </span>
+                <span> Découvrir plus d'actualités </span>
             </a>
         </div>
     </section>
@@ -66,7 +66,7 @@
         <div class="position-evenement">
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
-                    <article>
+                    <article class="plus-evenmt">
                         <div class="evenement-position">
                             <img src="<?php the_field('image_evenement') ?>" alt="">
                             <div class="evenement">
@@ -98,10 +98,26 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
+        <div class="test-btn">
+            <a class="btn-plus-evenement" href="#">
+                <svg>
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="#dc0019"/>
+                            <stop offset="100%" stop-color="#ff8e01" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
+                </svg>
+                <span> Découvrir plus d'actualités </span>
+            </a>
+        </div>
     </section>
 </div>
 <script>
- 
+    
+    /* Actu */
+
     let btn_actu = document.querySelector(".btn-plus-actu");
     console.log(btn_actu)
     btn_actu.addEventListener("click", affiche_plus);
@@ -125,7 +141,30 @@
     function affiche_plus() {
         actu.style.display="block";
     }  
+
+
+    /* Evenement */
+
+    let btn_evenement = document.querySelector(".btn-plus-evenement");
+    btn_evenement.addEventListener("click", affiche_plus_evenement);
+
+    let nb_evenement = document.querySelectorAll(".plus-evenmt").length;
+    let evnmt = document.querySelector(".plus-evenmt");
     
+    function compte_evenement() {
+        for (let i = 0; i < nb_evenement; i++) {
+            if (i >= 3) {
+                evnmt.style.display="none";
+            }
+        }
+    }
+
+    compte_evenement()
+
+    function affiche_plus_evenement() {
+        evnmt.style.display="block";
+    } 
+
 </script>
 
 <?php get_footer(); ?>

@@ -16,7 +16,7 @@
     <section class="actualite">
         <h2>Actualités</h2>
         <div class="actu-section">
-            <?php if ($query->have_posts()): ?>
+            <?php if ($query->have_posts()):?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
                 <article class="actu">
                     <h3 class="actu-titre">
@@ -39,7 +39,7 @@
         </div>
         <!-- Test animation btn bordure -->
         <div class="test-btn">
-            <a href="http://marcel-pirnay.be/">
+            <a href="#">
                 <svg>
                     <defs>
                         <linearGradient id="grad1">
@@ -49,7 +49,7 @@
                     </defs>
                     <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
-                <span> Découvrir plus d'actualités </span>
+                <span id="btn-plus-actu" class="btn-plus-actu"> Découvrir plus d'actualités </span>
             </a>
         </div>
     </section>
@@ -104,9 +104,43 @@
 <?php get_footer(); ?>
 
 <script>
-    var nb_actualite = document.querySelectorAll(".actu").length;
+    let btn_actu = document.querySelector(".btn-plus-actu");
+    console.log(btn_actu)
+    btn_actu.addEventListener("click", compte());
+
+    function compte() {
+        let nb_actualite = document.querySelectorAll(".actu").length;
+        let actu = document.querySelector(".actu");
+
+        for (let i = 0; i < nb_actualite; i++) {
+            console.log("ca marche");
+            if (i >= 3) {
+                console.log("encore mieux")
+                actu.style.display="none";
+            }
+        }
+    }
+
+
+    /*var nb_actualite = document.querySelectorAll(".actu").length;
     console.log(nb_actualite)
 
-    for (let nb_actualite = 0; nb_actualite < 3; nb_actualite++) {
-    }
+    for (let i = 0; i < 3; i++) {
+        console.log(nb_actualite[i]);
+        nb_actualite[i].style.display="none";
+    }*/
+
+    /*function montre_plus_actu() {
+        var nb_actualite = document.querySelectorAll(".actu").length;
+        var actu = document.querySelector(".actu");
+        for (let i = 0; i <= nb_actualite; i++) {
+            console.log("oui")
+            if (actu[i] > 3 ) {
+                console.log("ca marche");
+                actu[i].style.display="none"; 
+            }
+        }
+    }*/
+
+    
 </script>

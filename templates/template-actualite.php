@@ -103,13 +103,13 @@
 <script>
     let btn_actu = document.querySelector(".btn-plus-actu");
     console.log(btn_actu)
-    btn_actu.addEventListener("click", compte);
+    btn_actu.addEventListener("click", affiche_plus);
+
+    let nb_actualite = document.querySelectorAll(".actu").length;
+    let actu = document.querySelector(".actu");
 
     function compte() {
         console.log("compte")
-        let nb_actualite = document.querySelectorAll(".actu").length;
-        let actu = document.querySelector(".actu");
-
         for (let i = 0; i < nb_actualite; i++) {
             console.log("ca marche");
             if (i >= 3) {
@@ -120,6 +120,10 @@
     }
 
     compte()
+
+    function affiche_plus() {
+        actu.style.display="block";
+    }
 
 
     /*var nb_actualite = document.querySelectorAll(".actu").length;

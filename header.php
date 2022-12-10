@@ -14,20 +14,24 @@
 
     <?php wp_body_open(); ?>
 
+
+
     <div class="div_header">
         <div> 
             <figure class="header_logo_column">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php echo get_template_directory_uri() . '/images/logoEcoleDeMusique.png' ?> "
-                        class="header_logo" alt="logo ecole de musique de Matane"></a>
-                <!-- <figcaption class="header_logo_description">École de musique de Matane</figcaption> -->
-                <figcaption><a href="<?php echo esc_url(home_url('/')); ?>" class="header_logo_description">
+                        class="header_logo" alt="logo ecole de musique de Matane">
+                </a>
+                <figcaption>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="header_logo_description">
                         <?php bloginfo('name'); ?>
-                    </a></figcaption>
+                    </a>
+                </figcaption>
             </figure>
         </div>
 
-
+        <!-- Menu mobile -->
 
         <div class="header_parent">
             <label class="toggle-button">
@@ -37,20 +41,22 @@
                 </span>
                 <div class="nav-container mobile">
                     <?php
-                    $args = array(
-                        'theme_location' => 'menu-principal'
-                    );
-                    wp_nav_menu($args);
+                        $args = array(
+                            'theme_location' => 'menu-principal'
+                        );
+                        wp_nav_menu($args);
                     ?>
                     <div class="mobile-nav">
                         <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/don')); ?>" >Faire un don</button>
                         <button class="header_button_mobile">S’inscrire</button>
-                        <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/membre')); ?>"> <img
-                                src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> "
-                                class="header_icons2" alt="icons profile"> </button>
+                        <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/membre')); ?>"> 
+                            <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> " class="header_icons2" alt="icons profile"> 
+                        </button>
                     </div>
                 </div>
             </label>
+
+            <!-- Menu desktop -->
 
             <div class="div_header_haut">
                 <form action="<?php echo esc_url(home_url('/')) ?>" class="search-form" method="get">
@@ -81,22 +87,6 @@
                 <hr class="header_hr anim-header">
             </nav>
         </div>
-
     </div>
-
-
-    <div>
-
-    </div>
-
-    <!-- <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
--->
-
-
 
     <main class="container">

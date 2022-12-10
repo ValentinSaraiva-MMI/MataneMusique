@@ -760,7 +760,7 @@ li.suivez-nous {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .evenement-position img {
@@ -793,7 +793,6 @@ li.suivez-nous {
   padding: 12px;
   border-radius: 50px;
   width: fit-content;
-  margin-bottom: 1vh;
 }
 
 /* ----------- Nous joindre ------------*/
@@ -1335,7 +1334,7 @@ table thead {
   }
 
   .div_header_haut {
-    width: 48vw;
+    width: 46.5vw;
   }
 
   .header_search {
@@ -1375,7 +1374,7 @@ table thead {
   }
 
   .actu {
-    width: 38vw;
+    width: inherit;
   }
 
   /*--- Dons ---*/
@@ -1398,8 +1397,13 @@ table thead {
 }
 
 @media all and (max-width: 1280px) {
-  /* header */
+  /* Général */
 
+  .container {
+    width: 90vw;
+  }
+
+  /* header */
   .menu {
     width: 58vw;
   }
@@ -1410,7 +1414,7 @@ table thead {
   }
 
   .div_header_haut {
-    width: 53vw;
+    width: 50.5vw;
   }
 
   .header_search {
@@ -1429,9 +1433,27 @@ table thead {
 
   /* accueil */
 
+  .banner {
+    margin-left: -3vw;
+  }
+
+  div#n2-ss-3 .n2-font-4d12397fcda4b2f20806e3532e4ead12-hover {
+    font-size: 2em !important;
+  }
+
   .widget-accueil {
     max-width: 19vw;
     padding: 2.5vh 1vw;
+  }
+
+
+  .evenement-position,
+  .actualite {
+    width: 42vw;
+  }
+
+  .evenement {
+    width: 30vw;
   }
 
   /* ----------- Nous joindre ------------*/
@@ -1458,7 +1480,11 @@ table thead {
   }
 
   .div_header_haut {
-    width: 64vw;
+    width: 65vw;
+  }
+
+  .header_parent {
+    width: 75vw;
   }
 
   .header_search {
@@ -1475,6 +1501,10 @@ table thead {
     width: 14vw;
   }
 
+  .header_logo_description {
+    font-size: 0.9em;
+  }
+
   /*bannière*/
 
   .banner {
@@ -1485,14 +1515,47 @@ table thead {
     height: 45vh;
   }
 
-  /*actu*/
-
-  .actu {
-    width: 55vw;
+  div#n2-ss-3 .n2-font-4d12397fcda4b2f20806e3532e4ead12-hover {
+    font-size: 1.5em !important;
   }
+
+  /*actu*/
 
   .btn-bordure a {
     font-size: 1.4em;
+  }
+
+  .position-actu-evnmt {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evenement-position,
+  .actualite {
+    width: 70vw;
+  }
+
+  .position-actu-evnmt section {
+    margin-top: 3vh;
+  }
+
+  .evenement {
+    width: 47vw;
+    padding: 1vh 1vw 1vh 2vw;
+  }
+
+  .evenement-position img {
+    width: 23vw;
+  }
+
+  .actu-contient img {
+    width: 23vw;
+    height: 23vw;
+  }
+
+  .actu-contient p {
+    margin-left: 2vw;
   }
 
   /* widget accueil */
@@ -1503,7 +1566,7 @@ table thead {
 
   .widget {
     justify-content: space-between;
-    margin-top: 3vh;
+    margin-top: 6vh;
     width: 93vw;
     margin-left: -1.5vw;
   }
@@ -1603,7 +1666,8 @@ table thead {
   }
 
   .nav-container.desktop,
-  .div_header_haut {
+  .div_header_haut,
+  .header_hr.anim-header {
     display: none;
   }
 
@@ -1617,11 +1681,11 @@ table thead {
 
   .toggle-button .menu-burger {
     position: absolute;
-    right: -100px;
-    top: -100px;
+    right: 1vw;
+    top: -10vh;
     z-index: 10;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 14vh;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -1716,8 +1780,10 @@ table thead {
     display: flex;
     flex-direction: column;
     text-align: center;
-    left: -47vw;
+    left: 28vw;
     top: 47vh;
+    height: 100vh;
+    justify-content: flex-start;
   }
 
   .toggle-button a {
@@ -1741,17 +1807,30 @@ table thead {
     display: flex;
     flex-direction: column;
     width: 66vw;
-    height: 30vh;
+    height: 25vh;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6vh;
   }
 
   .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50vh;
-    margin-top: 15vh;
+    height: 45vh;
+    margin-top: 12vh;
+  }
+
+  .wp-dark-mode-switcher.right_bottom,
+  .wp-dark-mode-side-toggle-wrap.right_bottom {
+    right: 10.5vw;
+    height: fit-content;
+  }
+
+  .wp-dark-mode-switcher.floating,
+  .wp-dark-mode-side-toggle-wrap.floating {
+    top: 9.4vh;
+    position: absolute;
   }
 
   /* accueil */
@@ -1780,9 +1859,9 @@ table thead {
   }
 
   .widget {
-    margin-top: 3vh;
-    width: 92.5vw;
-    margin-left: -1vw;
+    margin-top: 6vh;
+    width: 95vw;
+    margin-left: 0;
   }
 
   .widget-img {
@@ -1804,8 +1883,8 @@ table thead {
   /*bannière*/
 
   .banner {
-    width: 94vw;
-    margin-left: -2vw;
+    width: 95vw;
+    margin-left: 0vw;
   }
 
   /*Dons*/

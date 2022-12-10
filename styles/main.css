@@ -104,7 +104,7 @@ h3 {
   color: #7c7872;
 }
 
-.wp-dark-mode-active .btn-bordure{
+.wp-dark-mode-active .btn-bordure {
   background-image: linear-gradient(#4a4a4a, #4a4a4a), linear-gradient(to left, #ff8e01, #dc0019);
 }
 
@@ -753,6 +753,14 @@ li.suivez-nous {
   width: 26vw;
   justify-content: space-between;
   padding: 1vh 1vw;
+  height: inherit;
+}
+
+.evenement .date-lieu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .evenement-position img {
@@ -784,8 +792,8 @@ li.suivez-nous {
   color: white;
   padding: 12px;
   border-radius: 50px;
-  margin-top: -20px;
   width: fit-content;
+  margin-bottom: 1vh;
 }
 
 /* ----------- Nous joindre ------------*/

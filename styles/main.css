@@ -1978,6 +1978,13 @@ table thead {
     left: 27px;
   }
 
+  .table-tarif .tableau-cours-ind {
+    width: 69.5vw;
+}
+
+  .table-tarif-groupe.tableau-cours-ind.text-tarif{
+    width: 75vw;
+  }
 }
 
 @media all and (max-width: 640px) {

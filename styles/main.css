@@ -1433,6 +1433,10 @@ table thead {
 
   /* accueil */
 
+  .header_logo_description {
+    font-size: 1em;
+  }
+
   .banner {
     margin-left: -3vw;
   }
@@ -1470,6 +1474,9 @@ table thead {
 }
 
 @media all and (max-width: 1024px) {
+
+
+
   .menu {
     width: 66vw;
   }
@@ -1659,6 +1666,10 @@ table thead {
   }
 
   /*menu*/
+
+  .header_logo_column {
+    width: 25vw;
+  }
 
   .toggle-button {
     display: block;
@@ -2011,6 +2022,10 @@ table thead {
   }
 
   /* Accueil */
+
+  .header_logo_column {
+    width: 37vw;
+  }
 
   p {
     font-size: 14px;

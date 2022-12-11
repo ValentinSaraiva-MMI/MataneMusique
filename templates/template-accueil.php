@@ -127,9 +127,9 @@ $query = new WP_query($args);
                     <img src="<?php the_field('image_evenement') ?>" alt="">
                     <div class="evenement">
                         <div class="evenement-infos">    
-                            <div class="evenement-categorie">
+                            <p class="evenement-categorie">
                                 <?php the_field('categorie_evenement_'); ?>
-                            </div>
+                            </p>
                             <p>
                                 <?php the_field('paragraphe_evenement_'); ?>
                             </p>
@@ -137,15 +137,15 @@ $query = new WP_query($args);
                         <div class="date-lieu">
                             <div class="evenement-date">
                                 <p> DATE </p>
-                                <div>
+                                <p>
                                     <?php the_field('date_evenement_'); ?>
-                                </div>
+                                </p>
                             </div>
                             <div class="evenement-lieu">
                                 <p> LIEU </p>
-                                <div>
+                                <p>
                                     <?php the_field('lieu_evenement_'); ?>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>

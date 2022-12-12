@@ -52,6 +52,7 @@ Template Name: Notre école
     <?php
     $args = array(
         'post_type' => 'Enseignant', 
+        'tag' => 'enseignant',
     );
     $query = new WP_query($args);
     ?>
@@ -69,12 +70,86 @@ Template Name: Notre école
                     <?php the_field('prenom_nom_enseignants_'); ?>
                 </h3>
                 <div class="description_prof">
-                    <?php the_field('description_professeur_'); ?>
+                    <?php the_field('description_professeur_');?>
                 </div>
                 <div class="instru_prof">
                     <?php the_field('instrument_professeur'); ?>
                 </div>
                 <button class="btn-bordure prof"><a href="<?php the_permalink('bouton_cours_'); ?>">En savoir plus</a></button>
+            </div>
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+</section>
+
+<section>
+    <h2> L'équipe </h2>
+    <!-- description équipe -->
+    <div class="description equipe">
+        <?php
+            $args = array(
+                'post_type' => 'post',
+                'tag' => 'equipe-description',
+            );
+            $query = new WP_Query($args);
+        ?>
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
+                <div class="equipe-infos">
+                    <div class="equipe-texte"> <?php the_content(); ?> </div>
+                </div>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+    <!-- personnel administratif -->
+    <h3> Personnel administratif </h3> 
+    <?php
+        $args = array(
+            'post_type' => 'Enseignant', 
+            'tag' => 'equipe',
+        );
+        $query = new WP_query($args);
+    ?>
+    <div class="equipe-position">
+        <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()):
+                $query->the_post(); ?>
+        <article class="equipe-membre">
+            <img class="img-equipe" src="<?php the_field('photo_du_professeur_') ?>">
+            <div class="textes_enseignants">
+                <h3 class="titre-enseignant">
+                    <?php the_field('prenom_nom_enseignants_'); ?>
+                </h3>
+                <div class="description_prof">
+                    <?php the_field('description_professeur_');?>
+                </div>
+            </div>
+        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+    <!-- conseil d'administration -->
+    <h3> Conseil d'administration 2022-2023 </h3> 
+    <?php
+        $args = array(
+            'post_type' => 'Enseignant', 
+            'tag' => 'conseil',
+        );
+        $query = new WP_query($args);
+    ?>
+    <div class="conseil">
+        <?php if ($query->have_posts()): ?>
+        <?php while ($query->have_posts()):
+                $query->the_post(); ?>
+        <article class="">
+            <div class="">
+                <h3 class="titre-enseignant">
+                    <?php the_field('prenom_nom_enseignants_'); ?>
+                </h3>
+                <div class="description_prof">
+                    <?php the_field('description_professeur_');?>
+                </div>
             </div>
         </article>
         <?php endwhile; ?>

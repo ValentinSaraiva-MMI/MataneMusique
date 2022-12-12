@@ -108,6 +108,23 @@ h3 {
   background-image: linear-gradient(#4a4a4a, #4a4a4a), linear-gradient(to left, #ff8e01, #dc0019);
 }
 
+.wp-dark-mode-active .widget-img {
+  background: radial-gradient(circle, rgba(255, 143, 0, 0.8) 0%, rgba(255, 143, 0, 0) 76%);
+}
+
+.wp-dark-mode-active .evenement-position {
+  background-color: rgb(131 127 122 / 19%);
+}
+
+.wp-dark-mode-active .evenement-categorie {
+  background-color: #e99222;
+  color: rgb(255 255 255);
+}
+
+.wp-dark-mode-active footer {
+  background-color: rgb(18 16 16 / 69%);
+}
+
 /* scrolbar*/
 
 * {

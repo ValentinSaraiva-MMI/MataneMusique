@@ -1,4 +1,15 @@
 </main>
+<div id="slideshow">
+   <div>
+     <img src="https://assets.codepen.io/9632/dog.jpg">
+   </div>
+   <div>
+     <img src="https://assets.codepen.io/9632/plant.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+</div>
 <footer>
         <div class="content">
             <div class="link-boxes">

@@ -1754,8 +1754,8 @@ table thead {
   }
 
   .titre-cours {
-    top: 223px;
-    left: 27px;
+    left: 25px;
+    font-size: 20px;
   }
 
   .grid-cours {
@@ -2146,18 +2146,17 @@ table thead {
     left: 27px;
   }
 
-  .table-tarif .tableau-cours-ind {
-    width: 69.5vw;
+
+  .table-tarif-groupe h3 {
+    width: 40vw;
   }
 
   .table-tarif-groupe.tableau-cours-ind.text-tarif {
     width: 75vw;
   }
+}
 
-  /*notre ecole*/
-  .nos-services {
-    width: 73vw;
-  }
+/*notre ecole*/
 
   .article-enseignant {
     flex-direction: column;
@@ -2301,13 +2300,13 @@ table thead {
   /* Cours */
 
   .btn-cours {
-    top: 160px;
+    top: 214px;
     left: 16px;
     font-size: 3vw;
   }
 
   .titre-cours {
-    top: 76px;
+    top: 126px;
     left: 20px;
   }
 
@@ -2332,7 +2331,7 @@ table thead {
   }
 
   .frais-accompagnement {
-    width: 82vw;
+    width: 88vw;
     margin-top: 6vh;
   }
 

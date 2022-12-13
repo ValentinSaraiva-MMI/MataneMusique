@@ -85,7 +85,9 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'actualités</a></button>
+        <div class="position-btn">
+            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus dévènements</a></button>
+        </div>
     </section>
 </div>
 <script>

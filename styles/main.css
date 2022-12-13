@@ -348,7 +348,7 @@ textarea {
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 15s linear infinite;
+  animation: primary 30s linear infinite;
 }
 
 .scroll-element img {
@@ -358,11 +358,11 @@ textarea {
 }
 
 .primary {
-  animation: primary 15s linear infinite;
+  animation: primary 30s linear infinite;
 }
 
 .secondary {
-  animation: secondary 15s linear infinite;
+  animation: secondary 30s linear infinite;
 }
 
 @keyframes primary {

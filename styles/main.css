@@ -261,7 +261,7 @@ textarea {
 
 .header_telephone {
   /*dégradé sur texte*/
-  background: linear-gradient(to right, var(--gradient-hover) 50%, #6a6a6a 50%);
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #363636 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /*transition hover*/

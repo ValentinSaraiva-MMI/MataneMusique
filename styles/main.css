@@ -47,6 +47,10 @@ h3 {
   color: #0c2d48;
 }
 
+textarea {
+  resize: none;
+}
+
 /* --------------- */
 /*    dark mode    */
 /* --------------- */
@@ -833,10 +837,6 @@ li.suivez-nous {
   text-align: left;
 }
 
-textarea {
-  resize: none;
-}
-
 /*coordonnées*/
 
 .une-coordonnee {
@@ -1583,6 +1583,11 @@ table thead {
     justify-content: space-between;
     height: 47vh;
     margin-top: 5vh;
+  }
+
+  .coordonnee-texte p {
+    text-align: left;
+    width: 20vw;
   }
 }
 

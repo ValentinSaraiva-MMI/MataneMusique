@@ -61,7 +61,7 @@ Template Name: Accueil
                     <defs>
                         <linearGradient id="grad1">
                             <stop offset="0%" stop-color="#dc0019"/>
-                            <stop offset="100%" stop-color="#ff8e01" />
+                            <stop offset="100%" stop-color="#ff8e00" />
                         </linearGradient>
                     </defs>
                     <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>

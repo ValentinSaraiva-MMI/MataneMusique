@@ -1,4 +1,18 @@
+<div class="slider-area">
+		<h2>Our Clients</h2>
+		<div class="wrapper">
+			<div class="item"><img alt="" src="/images/logo.png"></div>
+			<div class="item"><img alt="" src="/images/logo_cegep.png"></div>
+			<div class="item"><img alt="" src="/images/logo_mccq.png"></div>
+			<div class="item"><img alt="" src="/images/logoEcoleDeMusique.png"></div>
+			<div class="item"><img alt="" src="/images/pascalberube-2022.png"></div>
+		</div>
+	</div>
 </main>
+
+
+
+  
 <footer>
         <div class="content">
             <div class="link-boxes">

@@ -102,7 +102,8 @@ textarea {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {}
+.wp-dark-mode-active .header_telephone:hover {
+}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
@@ -110,13 +111,15 @@ textarea {
 
 .wp-dark-mode-active .btn-bordure {
   background-image: linear-gradient(#4a4a4a, #4a4a4a),
-    linear-gradient(to left, #ff8e01, #dc0019);
+    linear-gradient(to left, #ff8e00, #dc0019);
 }
 
 .wp-dark-mode-active .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 76%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 76%
+  );
 }
 
 .wp-dark-mode-active .evenement-position {
@@ -124,7 +127,7 @@ textarea {
 }
 
 .wp-dark-mode-active .evenement-categorie {
-  background-color: #e99222;
+  background-color: #ff8e00;
   color: rgb(255 255 255);
 }
 
@@ -241,7 +244,7 @@ textarea {
 
 .header_telephone {
   /*dégradé sur texte*/
-  background: linear-gradient(to right, var(--gradient-hover) 50%, #6a6a6a 50%);
+  background: linear-gradient(to right, var(--gradient-hover) 50%, #363636 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /*transition hover*/
@@ -251,7 +254,7 @@ textarea {
 }
 
 :root {
-  --gradient-hover: #dc0019, #ff8e01;
+  --gradient-hover: #dc0019, #ff8e00;
 }
 
 .header_telephone:hover {
@@ -287,20 +290,23 @@ textarea {
 }
 
 .header_hr {
-  background: linear-gradient(90deg, #dc0019, #ff8e01);
+  background: linear-gradient(90deg, #dc0019, #ff8e00);
   height: 3px;
   border: none;
   margin: 0;
 }
 
 .header_hr.anim-header {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01) 0 0 / 400% 100%;
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -318,7 +324,7 @@ textarea {
 }
 
 .banner-link {
-  color: #ff8f00;
+  color: #ff8e00;
   text-decoration: none;
   font-size: 1.75em;
 }
@@ -426,7 +432,7 @@ li.link_name {
   border-style: solid;
   padding: 8px;
   color: #5c5c5c;
-  border-color: #ff8d01;
+  border-color: #ff8e00;
   background-color: #fbfbfb;
 }
 
@@ -540,9 +546,11 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 60%
+  );
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -594,7 +602,7 @@ li.suivez-nous {
   border: solid 3px transparent;
   border-radius: 20px;
   background-image: linear-gradient(white, white),
-    linear-gradient(to left, #ff8e01, #dc0019);
+    linear-gradient(to left, #ff8e00, #dc0019);
   background-origin: border-box;
   background-clip: content-box, border-box;
   padding: 10px;
@@ -700,7 +708,7 @@ li.suivez-nous {
 }
 
 .actu-titre {
-  color: #ff8f00;
+  color: #ff8e00;
 }
 
 .actu-contient {
@@ -720,7 +728,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img~div p {
+.actu-contient img ~ div p {
   text-align: left;
 }
 
@@ -733,6 +741,7 @@ li.suivez-nous {
   background: linear-gradient(to left, #ff8e00, #dc0019);
   border: none;
   border-radius: 10px;
+  cursor: pointer;
   padding: 8px;
 }
 
@@ -764,7 +773,7 @@ li.suivez-nous {
   align-items: center;
   justify-content: space-between;
   height: 20vh;
-  background-color: #ff8f0030;
+  background-color: #ff8e0030;
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -892,14 +901,14 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 div.wpforms-container-full .wpforms-form .wpforms-page-button {
   font-size: 1em !important;
   padding: 10px 15px !important;
-  background: linear-gradient(to left, #ff8e01, #dc0019) !important;
+  background: linear-gradient(to left, #ff8e00, #dc0019) !important;
   border: none !important;
   border-radius: 10px !important;
   color: white !important;
 }
 
 div.wpforms-container-full .wpforms-form button[type="submit"] {
-  background: linear-gradient(to left, #ff8e01, #dc0019) !important;
+  background: linear-gradient(to left, #ff8e00, #dc0019) !important;
   border: none !important;
   color: white !important;
   font-size: 1em !important;
@@ -1148,7 +1157,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .btn-cours {
   margin-top: 1vh;
-  background: linear-gradient(to left, #ff8e01, #dc0019);
+  background: linear-gradient(to left, #ff8e00, #dc0019);
   border: none;
   border-radius: 10px;
   padding: 8px;
@@ -1286,7 +1295,7 @@ table thead {
 }
 
 .orange {
-  color: #ff8f00;
+  color: #ff8e00;
   font-weight: bold;
 }
 
@@ -1394,11 +1403,20 @@ table thead {
 
 .btn-404 {
   margin-top: 1vh;
-  background: linear-gradient(to left, #ff8e01, #dc0019);
+  background: linear-gradient(to left, #ff8e00, #dc0019);
   border: none;
   border-radius: 10px;
   padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
   color: white;
+}
+
+.h1-404 {
+  margin-bottom: 32px;
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 700;
 }
 
 /* ----------------------- */
@@ -1415,7 +1433,7 @@ table thead {
 
 .toggle-button .bar {
   height: 3px;
-  background: linear-gradient(to left, #ff8e01, #dc0019);
+  background: linear-gradient(to left, #ff8e00, #dc0019);
   border-radius: 10px;
 }
 
@@ -1868,7 +1886,7 @@ table thead {
     left: 50px;
     width: 30px;
     height: 2px;
-    background: linear-gradient(to left, #ff8e01, #dc0019);
+    background: linear-gradient(to left, #ff8e00, #dc0019);
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -1885,7 +1903,7 @@ table thead {
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #ff8e01, #dc0019);
+    background: linear-gradient(to left, #ff8e00, #dc0019);
   }
 
   .toggle-button .bar::after {
@@ -1908,12 +1926,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked+.menu-burger {
+  .toggle-button input:checked + .menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked~.nav-container {
+  .toggle-button input:checked ~ .nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1921,30 +1939,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar {
+  .toggle-button input:checked + .menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked+.menu-burger .bar:after {
+  .toggle-button input:checked + .menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar:before {
+  .toggle-button input:checked + .menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input+.menu-burger+ul,
-  .toggle-button input+.menu-burger+div {
+  .toggle-button input + .menu-burger + ul,
+  .toggle-button input + .menu-burger + div {
     display: none;
   }
 
-  .toggle-button input:checked+.menu-burger+ul,
-  .toggle-button input:checked+.menu-burger+div {
+  .toggle-button input:checked + .menu-burger + ul,
+  .toggle-button input:checked + .menu-burger + div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -2357,12 +2375,12 @@ table thead {
     font-size: 0.9em;
   }
 
-  .text-tarif{
+  .text-tarif {
     display: flex;
     justify-content: center;
   }
-  
-  .tableau-cours-ind h3{
+
+  .tableau-cours-ind h3 {
     margin-left: auto;
     margin-right: auto;
   }
@@ -2442,7 +2460,6 @@ table thead {
 }
 
 @media all and (max-width: 360px) {
-
   /*attention a retirer*/
   footer {
     display: none;
@@ -2530,7 +2547,7 @@ table thead {
     padding-bottom: 1vh;
   }
 
-  .evenement-categorie~p {
+  .evenement-categorie ~ p {
     margin: 1vh 0 0 0;
   }
 

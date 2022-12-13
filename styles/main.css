@@ -1486,11 +1486,11 @@ table thead {
   /* Cours */
 
   .titre-cours {
-    left: 50px;
+    left: 2.6vw;
   }
 
   .btn-cours {
-    left: 50px;
+    left: 2.6vw;
   }
 }
 
@@ -1768,12 +1768,12 @@ table thead {
   }
 
   .btn-cours {
-    top: 308px;
-    left: 27px;
+    top: 31vh;
+    left: 1.4vw;
   }
 
   .titre-cours {
-    left: 25px;
+    left: 1.4vw;
     font-size: 20px;
   }
 
@@ -2156,13 +2156,13 @@ table thead {
   }
 
   .btn-cours {
-    top: 308px;
-    left: 27px;
+    top: 31vh;
+    left: 1.4vw;
   }
 
   .titre-cours {
-    top: 223px;
-    left: 27px;
+    top: 23vh;
+    left: 1.4vw;
   }
 
   .table-tarif-groupe h3 {
@@ -2317,14 +2317,14 @@ table thead {
   /* Cours */
 
   .btn-cours {
-    top: 214px;
-    left: 16px;
+    top: 22vh;
+    left: 0.8vw;
     font-size: 3vw;
   }
 
   .titre-cours {
-    top: 126px;
-    left: 20px;
+    top: 13vh;
+    left: 0.8vw;
   }
 
   .img-cours {

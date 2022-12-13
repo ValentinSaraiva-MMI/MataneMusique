@@ -37,21 +37,8 @@
             <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <!-- Test animation btn bordure -->
-        <div class="test-btn">
-            <a class="btn-plus-actu" href="#">
-                <svg>
-                    <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="0%" stop-color="#dc0019"/>
-                            <stop offset="100%" stop-color="#ff8e01" />
-                        </linearGradient>
-                    </defs>
-                    <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
-                </svg>
-                <span> Découvrir plus d'actualités </span>
-            </a>
-        </div>
+        <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'actualités</a></button>
+        
     </section>
 
     <?php
@@ -71,12 +58,12 @@
                             <img src="<?php the_field('image_evenement') ?>" alt="">
                             <div class="evenement">
                                 <div class="evenement-infos">    
-                                    <div class="evenement-categorie">
+                                    <p class="evenement-categorie">
                                         <?php the_field('categorie_evenement_'); ?>
-                                    </div>
-                                    <div>
+                                    </p>
+                                    <p>
                                         <?php the_field('paragraphe_evenement_'); ?>
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="date-lieu">
                                     <div class="evenement-date">
@@ -98,19 +85,8 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <div class="test-btn">
-            <a class="btn-plus-evenement" href="#">
-                <svg>
-                    <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="0%" stop-color="#dc0019"/>
-                            <stop offset="100%" stop-color="#ff8e01" />
-                        </linearGradient>
-                    </defs>
-                    <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
-                </svg>
-                <span> Découvrir plus d'actualités </span>
-            </a>
+        <div class="position-btn">
+            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus dévènements</a></button>
         </div>
     </section>
 </div>

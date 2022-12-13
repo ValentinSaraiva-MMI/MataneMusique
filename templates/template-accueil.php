@@ -53,7 +53,8 @@ Template Name: Accueil
         <?php while ($query->have_posts()): $query->the_post(); ?>
             <h2> <?php the_title(); ?> </h2>
             <div class="ecole-info"> <?php the_content(); ?> </div>
-            <!-- Test animation btn bordure -->
+            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/notre-ecole')); ?>">Découvrir l'école</a></button>
+            <!-- Test animation btn bordure 
             <div class="test-btn">
                 <a href="">
                 <svg>
@@ -65,10 +66,9 @@ Template Name: Accueil
                     </defs>
                     <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
                 </svg>
-                <!--<span>Voir mes réalisations</span>-->
                     <span>Découvrir l'école</span>
                 </a>
-            </div>
+            </div>-->
         <?php endwhile; ?>
         <?php endif; ?>
 </section>
@@ -100,28 +100,11 @@ $query = new WP_query($args);
                         <?php the_field('paragraphe_actualite'); ?>
                     </div>
                 </div>
-                <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
                 <hr class="header_hr">
             </article>
             <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <!-- Test animation btn bordure -->
-        <div class="test-btn">
-                    <a href="http://marcel-pirnay.be/">
-                    <svg>
-                        <defs>
-                            <linearGradient id="grad1">
-                                <stop offset="0%" stop-color="#dc0019"/>
-                                <stop offset="100%" stop-color="#ff8e01" />
-                            </linearGradient>
-                        </defs>
-                        <rect x="5" y="5" rx="20" fill="none" stroke="url(#grad1)"></rect>
-                    </svg>
-                    <!--<span>Voir mes réalisations</span>-->
-                        <span>Découvrir plus de nouvelles</span>
-                    </a>
-                </div>
     </section>
 
     <?php
@@ -144,25 +127,25 @@ $query = new WP_query($args);
                     <img src="<?php the_field('image_evenement') ?>" alt="">
                     <div class="evenement">
                         <div class="evenement-infos">    
-                            <div class="evenement-categorie">
+                            <p class="evenement-categorie">
                                 <?php the_field('categorie_evenement_'); ?>
-                            </div>
-                            <div>
+                            </p>
+                            <p>
                                 <?php the_field('paragraphe_evenement_'); ?>
-                            </div>
+                            </p>
                         </div>
                         <div class="date-lieu">
                             <div class="evenement-date">
                                 <p> DATE </p>
-                                <div>
+                                <p>
                                     <?php the_field('date_evenement_'); ?>
-                                </div>
+                                </p>
                             </div>
                             <div class="evenement-lieu">
                                 <p> LIEU </p>
-                                <div>
+                                <p>
                                     <?php the_field('lieu_evenement_'); ?>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -172,6 +155,10 @@ $query = new WP_query($args);
             <?php endif; ?>
         </div>
     </section>
+    <div class="position-btn">
+        <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus de nouvelles</a></button>
+    </div>
+    
 </div>
 
 

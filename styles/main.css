@@ -53,7 +53,7 @@ h3 {
 
 .wp-dark-mode-switcher.floating,
 .wp-dark-mode-side-toggle-wrap.floating {
-  top: 6.3vh;
+  top: 3vh;
   position: absolute;
 }
 
@@ -98,11 +98,31 @@ h3 {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {
-}
+.wp-dark-mode-active .header_telephone:hover {}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
+}
+
+.wp-dark-mode-active .btn-bordure {
+  background-image: linear-gradient(#4a4a4a, #4a4a4a), linear-gradient(to left, #ff8e01, #dc0019);
+}
+
+.wp-dark-mode-active .widget-img {
+  background: radial-gradient(circle, rgba(255, 143, 0, 0.8) 0%, rgba(255, 143, 0, 0) 76%);
+}
+
+.wp-dark-mode-active .evenement-position {
+  background-color: rgb(131 127 122 / 19%);
+}
+
+.wp-dark-mode-active .evenement-categorie {
+  background-color: #e99222;
+  color: rgb(255 255 255);
+}
+
+.wp-dark-mode-active footer {
+  background-color: rgb(18 16 16 / 69%);
 }
 
 /* scrolbar*/
@@ -172,7 +192,8 @@ h3 {
 /********* Header **********/
 
 .header_logo {
-  width: 4.1vh;
+  width: 7.1vh;
+  margin-right: 1vw;
 }
 
 .header_logo_description {
@@ -180,7 +201,7 @@ h3 {
   color: #585858;
   font-weight: 700;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 .header_button {
@@ -259,19 +280,21 @@ h3 {
 }
 
 .header_hr {
-  background: linear-gradient(
-      90deg,
-      #ff8e01,
-      #ff8e01,
-      #dc0019,
-      #dc0019,
-      #ff8e01,
-      #ff8e01
-    )
-    0 0 / 400% 100%;
+  background: linear-gradient(90deg,
+      #dc0019, #ff8e01);
   height: 3px;
   border: none;
   margin: 0;
+}
+
+.header_hr.anim-header {
+  background: linear-gradient(90deg,
+      #ff8e01,
+      #ff8e01,
+      #dc0019,
+      #dc0019,
+      #ff8e01,
+      #ff8e01) 0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -295,13 +318,12 @@ h3 {
 }
 
 .header_logo_column {
-  flex-direction: column;
+  flex-direction: row;
   flex-basis: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7vw;
-  text-align: center;
+  width: 11vw;
 }
 
 /********* Footer **********/
@@ -309,7 +331,7 @@ h3 {
 footer {
   background: #242424;
   width: 100vw;
-  height: 33vh;
+  height: auto;
   bottom: 0;
   left: 0;
   border-radius: 100px 100px 0px 0px;
@@ -335,6 +357,7 @@ footer ul {
 
 .box-infos li:not(:first-child) {
   margin-bottom: 1vh;
+  color: white;
 }
 
 .link-name {
@@ -386,7 +409,7 @@ li.lien-emploi {
 li.link_name {
   color: white;
   font-weight: bold;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .input-mail {
@@ -403,7 +426,7 @@ li.link_name {
 
 .input-inscrire {
   border-radius: 6px;
-  margin-top: 2vh;
+  margin-top: 1vh;
   padding: 5px;
   background-color: #ddd;
   color: #555;
@@ -511,11 +534,9 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 60%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 60%);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -665,6 +686,7 @@ li.suivez-nous {
   flex-direction: column;
   align-items: center;
   width: 38vw;
+  margin-bottom: 3vh;
 }
 
 .actu {
@@ -692,7 +714,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img ~ div p {
+.actu-contient img~div p {
   text-align: left;
 }
 
@@ -722,6 +744,12 @@ li.suivez-nous {
   margin-top: 3vh;
 }
 
+.position-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /*evenements accueil*/
 
 .evenement-position {
@@ -739,9 +767,17 @@ li.suivez-nous {
 
 .evenement {
   display: flex;
+  width: 26vw;
+  justify-content: space-between;
+  padding: 1vh 1vw;
+  height: inherit;
+}
+
+.evenement .date-lieu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 25vw;
-  align-items: center;
 }
 
 .evenement-position img {
@@ -751,8 +787,8 @@ li.suivez-nous {
   border-radius: 30px;
 }
 
-.evenement-date p,
-.evenement-lieu p {
+.evenement-date p:first-child,
+.evenement-lieu p:first-child {
   margin: 0;
   vertical-align: baseline;
   font-weight: bold;
@@ -764,9 +800,8 @@ li.suivez-nous {
 }
 
 .evenement .evenement-infos {
-  text-align: left;
-  width: 15vw;
-  align-items: flex-start;
+  width: inherit;
+  padding-right: 1vw;
 }
 
 .evenement-categorie {
@@ -774,24 +809,7 @@ li.suivez-nous {
   color: white;
   padding: 12px;
   border-radius: 50px;
-  margin-top: -20px;
-}
-
-.evenement-infos,
-.evenement-date,
-.evenement-lieu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 10vh;
-  align-items: center;
-  text-align: center;
-  width: 8vw;
-}
-
-.evenement-date,
-.evenement-lieu {
-  justify-content: center;
+  width: fit-content;
 }
 
 /* ----------- Nous joindre ------------*/
@@ -896,7 +914,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .mission-historique .services-image img {
   width: 14vw;
-  height: 41vh;
+  height: -webkit-fill-available;
   margin-right: 2vw;
 }
 
@@ -906,6 +924,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .mission-historique .service-img {
   margin-right: 2vw;
+}
+
+.services-image {
+  height: 96.6%;
 }
 
 /*enseignants*/
@@ -940,7 +962,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: flex;
   justify-content: center;
   width: 35vw;
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 
 .article-enseignant h3 {
@@ -960,6 +982,55 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 .btn-bordure.prof {
   float: right;
 }
+
+/*equipe*/
+.equipe-texte p {
+  width: 40vw;
+  text-align: center;
+  margin: 3vh auto 5vh auto;
+}
+
+.img-equipe {
+  width: 8vw;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.equipe-position,
+.equipe-membre,
+.conseil {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3vh;
+}
+
+.equipe-membre .titre-enseignant,
+.conseil .titre-enseignant {
+  color: #ff8e00;
+  text-align: left;
+}
+
+.equipe-membre .textes_enseignants {
+  margin-left: 1vw;
+  width: auto;
+}
+
+.equipe-membre .description_prof p:first-child {
+  font-style: italic;
+}
+
+.equipe-membre .description_prof p:last-child {
+  font-weight: bold;
+}
+
+.conseil .description_prof,
+.conseil .titre-enseignant {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*fondation*/
 
@@ -983,6 +1054,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .infos-fondation {
   width: 22vw;
+  padding-right: 1vw
 }
 
 .infos-fondation:last-child {
@@ -1333,7 +1405,7 @@ table thead {
   }
 
   .div_header_haut {
-    width: 48vw;
+    width: 46.5vw;
   }
 
   .header_search {
@@ -1373,7 +1445,7 @@ table thead {
   }
 
   .actu {
-    width: 38vw;
+    width: inherit;
   }
 
   /*--- Dons ---*/
@@ -1396,8 +1468,13 @@ table thead {
 }
 
 @media all and (max-width: 1280px) {
-  /* header */
+  /* Général */
 
+  .container {
+    width: 90vw;
+  }
+
+  /* header */
   .menu {
     width: 58vw;
   }
@@ -1408,7 +1485,7 @@ table thead {
   }
 
   .div_header_haut {
-    width: 53vw;
+    width: 50.5vw;
   }
 
   .header_search {
@@ -1427,9 +1504,61 @@ table thead {
 
   /* accueil */
 
+  .header_logo_description {
+    font-size: 1em;
+  }
+
+  .banner {
+    margin-left: -3vw;
+  }
+
+  div#n2-ss-3 .n2-font-4d12397fcda4b2f20806e3532e4ead12-hover {
+    font-size: 2em !important;
+  }
+
   .widget-accueil {
     max-width: 19vw;
     padding: 2.5vh 1vw;
+  }
+
+
+  .evenement-position,
+  .actualite {
+    width: 42vw;
+  }
+
+  .evenement {
+    width: 30vw;
+  }
+
+  /* Notre école */
+
+  .mission-historique .services-image img {
+    width: 20vw;
+  }
+
+  .nos-services {
+    width: 50vw;
+  }
+
+  .article-enseignant {
+    width: 43vw;
+  }
+
+  .textes_enseignants {
+    width: 29vw;
+  }
+
+  .infos-dons {
+    width: 62vw;
+  }
+
+  .infos-fondation {
+    width: 32vw;
+  }
+
+  .ecole-info p {
+    width: 68vw;
   }
 
   /* ----------- Nous joindre ------------*/
@@ -1446,6 +1575,9 @@ table thead {
 }
 
 @media all and (max-width: 1024px) {
+
+
+
   .menu {
     width: 66vw;
   }
@@ -1456,7 +1588,11 @@ table thead {
   }
 
   .div_header_haut {
-    width: 64vw;
+    width: 65vw;
+  }
+
+  .header_parent {
+    width: 75vw;
   }
 
   .header_search {
@@ -1473,6 +1609,10 @@ table thead {
     width: 14vw;
   }
 
+  .header_logo_description {
+    font-size: 0.9em;
+  }
+
   /*bannière*/
 
   .banner {
@@ -1483,14 +1623,47 @@ table thead {
     height: 45vh;
   }
 
-  /*actu*/
-
-  .actu {
-    width: 55vw;
+  div#n2-ss-3 .n2-font-4d12397fcda4b2f20806e3532e4ead12-hover {
+    font-size: 1.5em !important;
   }
+
+  /*actu*/
 
   .btn-bordure a {
     font-size: 1.4em;
+  }
+
+  .position-actu-evnmt {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evenement-position,
+  .actualite {
+    width: 70vw;
+  }
+
+  .position-actu-evnmt section {
+    margin-top: 3vh;
+  }
+
+  .evenement {
+    width: 47vw;
+    padding: 1vh 1vw 1vh 2vw;
+  }
+
+  .evenement-position img {
+    width: 23vw;
+  }
+
+  .actu-contient img {
+    width: 23vw;
+    height: 23vw;
+  }
+
+  .actu-contient p {
+    margin-left: 2vw;
   }
 
   /* widget accueil */
@@ -1501,7 +1674,7 @@ table thead {
 
   .widget {
     justify-content: space-between;
-    margin-top: 3vh;
+    margin-top: 6vh;
     width: 93vw;
     margin-left: -1.5vw;
   }
@@ -1542,24 +1715,83 @@ table thead {
 
   /* Cours */
 
+
+  .article-cours {
+    width: 34vw;
+  }
+
+  .grid-cours .ombre-cours {
+    width: fit-content;
+  }
+
+  .table-tarif-individuel {
+    width: 54vw;
+  }
+
+
+  .tarification-familiale {
+    height: 48vh;
+  }
+
+  div.table-tarif.table-tarif-groupe {
+    width: 38vw;
+    ;
+  }
+
+
+  .img-cours {
+    width: 34vw;
+  }
+
   .btn-cours {
-    top: 249px;
-    left: 33px;
+    top: 308px;
+    left: 27px;
   }
 
   .titre-cours {
-    top: 161px;
-    left: 33px;
-    font-size: 2.1vh;
+    top: 223px;
+    left: 27px;
   }
 
-  .img-cours {
-    width: 18vw;
+  .grid-cours {
+    justify-content: space-evenly;
   }
 
-  .ombre-cours {
-    width: 18vw;
+  /*notre ecole*/
+
+  .nos-services {
+    width: 68vw;
   }
+
+  .img-enseignant {
+    height: 22vh;
+  }
+
+  .equipe-texte p {
+    width: 68vw;
+  }
+
+  .img-equipe {
+    width: 13vw;
+  }
+
+  .infos-dons {
+    width: 90vw;
+  }
+
+  .infos-fondation {
+    width: 45vw;
+  }
+
+  .ecole-info p {
+    width: 87vw;
+  }
+
+  /* footer */
+  footer {
+    border-radius: 50px 50px 0px 0px;
+  }
+
 }
 
 @media all and (max-width: 748px) {
@@ -1571,13 +1803,18 @@ table thead {
 
   /*menu*/
 
+  .header_logo_column {
+    width: 25vw;
+  }
+
   .toggle-button {
     display: block;
     position: relative;
   }
 
   .nav-container.desktop,
-  .div_header_haut {
+  .div_header_haut,
+  .header_hr.anim-header {
     display: none;
   }
 
@@ -1591,11 +1828,11 @@ table thead {
 
   .toggle-button .menu-burger {
     position: absolute;
-    right: -100px;
-    top: -100px;
+    right: 1vw;
+    top: -10vh;
     z-index: 10;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 14vh;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -1648,12 +1885,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked + .menu-burger {
+  .toggle-button input:checked+.menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked ~ .nav-container {
+  .toggle-button input:checked~.nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1661,37 +1898,39 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar {
+  .toggle-button input:checked+.menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked + .menu-burger .bar:after {
+  .toggle-button input:checked+.menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar:before {
+  .toggle-button input:checked+.menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input + .menu-burger + ul,
-  .toggle-button input + .menu-burger + div {
+  .toggle-button input+.menu-burger+ul,
+  .toggle-button input+.menu-burger+div {
     display: none;
   }
 
-  .toggle-button input:checked + .menu-burger + ul,
-  .toggle-button input:checked + .menu-burger + div {
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
     opacity: 1;
     margin-right: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    left: -47vw;
+    left: 28vw;
     top: 47vh;
+    height: 100vh;
+    justify-content: flex-start;
   }
 
   .toggle-button a {
@@ -1715,17 +1954,30 @@ table thead {
     display: flex;
     flex-direction: column;
     width: 66vw;
-    height: 30vh;
+    height: 25vh;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6vh;
   }
 
   .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50vh;
-    margin-top: 15vh;
+    height: 45vh;
+    margin-top: 12vh;
+  }
+
+  .wp-dark-mode-switcher.right_bottom,
+  .wp-dark-mode-side-toggle-wrap.right_bottom {
+    right: 10.5vw;
+    height: fit-content;
+  }
+
+  .wp-dark-mode-switcher.floating,
+  .wp-dark-mode-side-toggle-wrap.floating {
+    top: 5.6vh;
+    position: absolute;
   }
 
   /* accueil */
@@ -1754,9 +2006,9 @@ table thead {
   }
 
   .widget {
-    margin-top: 3vh;
-    width: 92.5vw;
-    margin-left: -1vw;
+    margin-top: 6vh;
+    width: 95vw;
+    margin-left: 0;
   }
 
   .widget-img {
@@ -1778,8 +2030,8 @@ table thead {
   /*bannière*/
 
   .banner {
-    width: 94vw;
-    margin-left: -2vw;
+    width: 95vw;
+    margin-left: 0vw;
   }
 
   /*Dons*/
@@ -1850,6 +2102,107 @@ table thead {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  .article-cours {
+    width: 34vw;
+  }
+
+  .grid-cours .ombre-cours {
+    width: fit-content;
+  }
+
+  .table-tarif-individuel {
+    width: 54vw;
+  }
+
+
+  .tarification-familiale {
+    height: 48vh;
+  }
+
+  div.table-tarif.table-tarif-groupe {
+    width: 38vw;
+    ;
+  }
+
+
+  .img-cours {
+    width: 34vw;
+  }
+
+  .btn-cours {
+    top: 308px;
+    left: 27px;
+  }
+
+  .titre-cours {
+    top: 223px;
+    left: 27px;
+  }
+
+  .table-tarif .tableau-cours-ind {
+    width: 69.5vw;
+  }
+
+  .table-tarif-groupe.tableau-cours-ind.text-tarif {
+    width: 75vw;
+  }
+
+  /*notre ecole*/
+  .nos-services {
+    width: 73vw;
+  }
+
+  .article-enseignant {
+    flex-direction: column;
+  }
+
+  .grid-enseignants {
+    justify-content: space-between;
+  }
+
+  .textes_enseignants,
+  .img-enseignant {
+    width: 43vw;
+  }
+
+  .article-enseignant {
+    justify-content: flex-start;
+  }
+
+  .equipe-position {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .equipe-membre {
+    justify-content: flex-start;
+    margin-left: 15vw;
+  }
+
+  .img-equipe {
+    width: 20vw;
+  }
+
+  /*footer*/
+
+  .link-boxes {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box-infos,
+  .box-lien,
+  .box-infolettre {
+    width: 50%;
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .media-icons {
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 640px) {
@@ -1875,6 +2228,46 @@ table thead {
     width: 100%;
   }
 
+  /* Accueil */
+
+  .header_logo_column {
+    width: 37vw;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  .widget-accueil div:last-child {
+    height: auto;
+    margin-top: 1vh;
+  }
+
+  .widget-accueil {
+    padding: 1.5vh 1vw;
+  }
+
+  .widget h3 {
+    margin: 0;
+  }
+
+  .evenement-position,
+  .actualite {
+    width: 80vw;
+  }
+
+  .position-actu-evnmt section {
+    margin-bottom: 3vh;
+  }
+
+  .evenement {
+    width: 57vw;
+  }
+
   /*Dons*/
 
   .image-don img {
@@ -1898,4 +2291,239 @@ table thead {
   }
 
   /* widget accueil */
+
+  /* Cours */
+
+  .btn-cours {
+    top: 160px;
+    left: 16px;
+    font-size: 3vw;
+  }
+
+  .titre-cours {
+    top: 76px;
+    left: 20px;
+  }
+
+  .img-cours {
+    width: 38vw;
+    height: 31vh;
+  }
+
+  .grid-cours .ombre-cours {
+    width: 38vw;
+    height: 31vh;
+  }
+
+  .tarif-ind {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .table-tarif-individuel {
+    width: 95%;
+  }
+
+  .frais-accompagnement {
+    width: 82vw;
+    margin-top: 6vh;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  /* notre ecole */
+  .services-position {
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+
+  .mission-historique .services-image img {
+    height: 12vh;
+    width: 71vw;
+    border-radius: 30px;
+    margin-bottom: 3vh;
+  }
+
+  .services-position {
+    align-items: center;
+  }
+
+  .grid-enseignants {
+    flex-direction: column;
+  }
+
+  .article-enseignant {
+    width: 95vw;
+    flex-direction: row;
+  }
+
+  .textes_enseignants {
+    width: 47vw;
+  }
+
+  .equipe-texte p {
+    width: 80vw;
+  }
+
+  .img-equipe {
+    width: 28vw;
+    height: 15vh;
+  }
+
+  .equipe-membre {
+    margin-left: 12vw;
+  }
+
+  .conseil article {
+    width: 35vw;
+  }
+
+  .conseil {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .infos-dons {
+    flex-direction: column;
+  }
+
+  .infos-fondation {
+    width: 90vw;
+    padding: 0;
+  }
+
+  .infos-fondation:last-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+
+  /*footer*/
+  .box-infos,
+  .box-lien,
+  .box-infolettre {
+    width: 66%;
+  }
+}
+
+@media all and (max-width: 360px) {
+
+  /*attention a retirer*/
+  footer {
+    display: none;
+  }
+
+  /*accueil*/
+  .toggle-button .menu-burger {
+    right: 12vw;
+    top: -15vh;
+  }
+
+  .wp-dark-mode-switcher.right_bottom,
+  .wp-dark-mode-side-toggle-wrap.right_bottom {
+    right: 14.5vw;
+  }
+
+  .wp-dark-mode-switcher.floating,
+  .wp-dark-mode-side-toggle-wrap.floating {
+    top: 5vh;
+  }
+
+  .ecole-info p {
+    width: inherit;
+    padding: 0 3vw;
+  }
+
+  .widget {
+    flex-wrap: wrap;
+  }
+
+  .widget a {
+    font-size: 14px;
+  }
+
+  .widget-accueil {
+    max-width: 45vw;
+    width: 45vw;
+  }
+
+  .actualite {
+    width: inherit;
+    padding: 0 3vw;
+  }
+
+  .evenement-position {
+    width: inherit;
+    padding: 0 3vw 0 0;
+  }
+
+  .position-actu-evnmt section:last-of-type {
+    width: 100%;
+    padding: 0 3vw;
+  }
+
+  .evenement-position img {
+    width: 48%;
+  }
+
+  .evenement {
+    flex-wrap: wrap;
+    width: 52%;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 2vh 1vw 1vh 2vw;
+  }
+
+  .evenement .evenement-infos {
+    padding-right: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -40vw;
+    margin-top: 1.5vh;
+  }
+
+  .evenement-categorie {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .evenement-position {
+    height: auto;
+    align-items: flex-start;
+    padding-bottom: 1vh;
+  }
+
+  .evenement-categorie~p {
+    margin: 1vh 0 0 0;
+  }
+
+  .evenement-date p:last-child,
+  .evenement-lieu p:last-child {
+    margin: 0;
+  }
+
+  .evenement-date {
+    margin-bottom: 2vh;
+  }
+
+  .evenement .evenement-infos p:last-child {
+    width: 100%;
+  }
+
+  .evenement .date-lieu {
+    height: 18vh;
+  }
+
+  /* footer */
+
+  .box-infos,
+  .box-lien,
+  .box-infolettre {
+    width: 84%;
+  }
 }

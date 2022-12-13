@@ -1387,6 +1387,31 @@ table thead {
   text-decoration: none;
 }
 
+/* ----------- Page 404 ------------*/
+.page-404 {
+  text-align: center;
+}
+
+.joindre {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-404 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.btn-404 {
+  margin-top: 1vh;
+  background: linear-gradient(to left, #ff8e01, #dc0019);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+}
+
 /* ----------------------- */
 /*        Responsive       */
 /* ----------------------- */

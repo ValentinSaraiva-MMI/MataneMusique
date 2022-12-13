@@ -540,6 +540,18 @@ li.suivez-nous {
   font-size: 1.5em;
 }
 
+.credits {
+  height: 5vh;
+  background-color: #ffeacf;
+}
+
+.credits p {
+  margin: 0;
+  text-align: center;
+  margin: auto;
+  padding-top: 1.5vh;
+}
+
 /* Outil de recherche */
 
 .search-form {

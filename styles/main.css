@@ -1550,6 +1550,7 @@ table thead {
 
   .titre-cours {
     left: 2.6vw;
+
   }
 
   .btn-cours {
@@ -1831,13 +1832,14 @@ table thead {
   }
 
   .btn-cours {
-    top: 31vh;
+    top: 35vh;
     left: 1.4vw;
   }
 
   .titre-cours {
     left: 1.4vw;
     font-size: 20px;
+    top: 25vh;
   }
 
   .grid-cours {
@@ -2219,12 +2221,12 @@ table thead {
   }
 
   .btn-cours {
-    top: 31vh;
+    top: 35vh;
     left: 1.4vw;
   }
 
   .titre-cours {
-    top: 23vh;
+    top: 25vh;
     left: 1.4vw;
   }
 
@@ -2381,13 +2383,14 @@ table thead {
 
   .btn-cours {
     top: 22vh;
-    left: 0.8vw;
-    font-size: 3vw;
+    left: 2.5vw;
+    font-size: 0.8em;
   }
 
   .titre-cours {
-    top: 13vh;
-    left: 0.8vw;
+    top: 15vh;
+    left: 2.5vw;
+    font-size: 1.3em;
   }
 
   .img-cours {
@@ -2621,4 +2624,11 @@ table thead {
   .box-infolettre {
     width: 84%;
   }
+}
+
+/*cours*/
+
+.titre-cours {
+  left: 1.8vw;
+  font-size: 0.9em;
 }

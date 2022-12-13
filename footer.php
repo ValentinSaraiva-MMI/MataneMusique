@@ -1,13 +1,21 @@
-<div class="slider-area">
-		<h2>Our Clients</h2>
-		<div class="wrapper">
-			<div class="item"><img alt="" src="/images/logo.png"></div>
-			<div class="item"><img alt="" src="/images/logo_cegep.png"></div>
-			<div class="item"><img alt="" src="/images/logo_mccq.png"></div>
-			<div class="item"><img alt="" src="/images/logoEcoleDeMusique.png"></div>
-			<div class="item"><img alt="" src="/images/pascalberube-2022.png"></div>
-		</div>
-	</div>
+<div class="scroll-parent">
+  <div class="scroll-element primary">
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_mccq.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logoEcoleDeMusique.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/pascalberube-2022.png')?>" height="100" width="250" alt="" />
+  </div>
+  <div class="scroll-element secondary">
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_mccq.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logoEcoleDeMusique.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/pascalberube-2022.png')?>" height="100" width="250" alt="" />
+  </div>
+</div>
+
+
 </main>
 
 

@@ -2364,12 +2364,23 @@ table thead {
   }
 
   .frais-accompagnement {
-    width: 88vw;
+    width: 87vw;
     margin-top: 6vh;
+    height: auto;
   }
 
   table {
     font-size: 0.9em;
+  }
+
+  .text-tarif{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tableau-cours-ind h3{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* notre ecole */

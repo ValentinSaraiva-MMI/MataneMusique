@@ -158,8 +158,15 @@ textarea {
 /* ----------------------- */
 /*      Mise en page       */
 /* ----------------------- */
-
-/**/
+/* Slider */
+#slideshow {
+  margin: 80px auto;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
 
 .container {
   width: 80%;
@@ -299,12 +306,12 @@ textarea {
 
 .header_hr.anim-header {
   background: linear-gradient(90deg,
-      #ff8e00,
-      #ff8e00,
+      #ff8e01,
+      #ff8e01,
       #dc0019,
       #dc0019,
-      #ff8e00,
-      #ff8e00) 0 0 / 400% 100%;
+      #ff8e01,
+      #ff8e01) 0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -1402,7 +1409,16 @@ table thead {
   border: none;
   border-radius: 10px;
   padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
   color: white;
+}
+
+.h1-404 {
+  margin-bottom: 32px;
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 700;
 }
 
 /* ----------------------- */

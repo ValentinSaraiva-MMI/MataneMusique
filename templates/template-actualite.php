@@ -58,12 +58,12 @@
                             <img src="<?php the_field('image_evenement') ?>" alt="">
                             <div class="evenement">
                                 <div class="evenement-infos">    
-                                    <div class="evenement-categorie">
+                                    <p class="evenement-categorie">
                                         <?php the_field('categorie_evenement_'); ?>
-                                    </div>
-                                    <div>
+                                    </p>
+                                    <p>
                                         <?php the_field('paragraphe_evenement_'); ?>
-                                    </div>
+                                    </p>
                                 </div>
                                 <div class="date-lieu">
                                     <div class="evenement-date">
@@ -85,7 +85,9 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'actualités</a></button>
+        <div class="position-btn">
+            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus dévènements</a></button>
+        </div>
     </section>
 </div>
 <script>

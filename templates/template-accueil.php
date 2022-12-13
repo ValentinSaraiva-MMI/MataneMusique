@@ -137,15 +137,15 @@ $query = new WP_query($args);
                         <div class="date-lieu">
                             <div class="evenement-date">
                                 <p> DATE </p>
-                                <p>
+                                <div>
                                     <?php the_field('date_evenement_'); ?>
-                                </p>
+                                </div>
                             </div>
                             <div class="evenement-lieu">
                                 <p> LIEU </p>
-                                <p>
+                                <div>
                                     <?php the_field('lieu_evenement_'); ?>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

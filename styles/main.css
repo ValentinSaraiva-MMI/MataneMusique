@@ -51,6 +51,59 @@ textarea {
   resize: none;
 }
 
+/*test partenaire*/
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 8s linear infinite;
+}
+
+.scroll-element img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.primary {
+  animation: primary 8s linear infinite;
+}
+
+.secondary {
+  animation: secondary 8s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+/**/
+
 /* --------------- */
 /*    dark mode    */
 /* --------------- */
@@ -102,7 +155,8 @@ textarea {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {}
+.wp-dark-mode-active .header_telephone:hover {
+}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
@@ -114,9 +168,11 @@ textarea {
 }
 
 .wp-dark-mode-active .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 76%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 76%
+  );
 }
 
 .wp-dark-mode-active .evenement-position {
@@ -294,13 +350,16 @@ textarea {
 }
 
 .header_hr.anim-header {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01) 0 0 / 400% 100%;
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -330,59 +389,6 @@ textarea {
   align-items: center;
   justify-content: center;
   width: 11vw;
-}
-
-/* partenaire*/
-
-.scroll-parent {
-  position: relative;
-  width: 100vw;
-  height: 10vh;
-  overflow: hidden;
-  margin: 10vh auto -8vh -10vw;
-}
-
-.scroll-element {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  animation: primary 30s linear infinite;
-}
-
-.scroll-element img {
-  width: 14vw;
-  height: inherit;
-  object-fit: contain;
-}
-
-.primary {
-  animation: primary 30s linear infinite;
-}
-
-.secondary {
-  animation: secondary 30s linear infinite;
-}
-
-@keyframes primary {
-  from {
-    left: 0%;
-  }
-
-  to {
-    left: -100%;
-  }
-}
-
-@keyframes secondary {
-  from {
-    left: 100%;
-  }
-
-  to {
-    left: 0%;
-  }
 }
 
 /********* Footer **********/
@@ -540,18 +546,6 @@ li.suivez-nous {
   font-size: 1.5em;
 }
 
-.credits {
-  height: 5vh;
-  background-color: #ffeacf;
-}
-
-.credits p {
-  margin: 0;
-  text-align: center;
-  margin: auto;
-  padding-top: 1.5vh;
-}
-
 /* Outil de recherche */
 
 .search-form {
@@ -605,9 +599,11 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 60%
+  );
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -785,7 +781,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img~div p {
+.actu-contient img ~ div p {
   text-align: left;
 }
 
@@ -1290,7 +1286,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .table-tarif .tableau-cours-ind {
-  width: 37vw;
+  width: 47vw;
 }
 
 .table-tarif .tableau-cours-ind {
@@ -1985,12 +1981,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked+.menu-burger {
+  .toggle-button input:checked + .menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked~.nav-container {
+  .toggle-button input:checked ~ .nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1998,30 +1994,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar {
+  .toggle-button input:checked + .menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked+.menu-burger .bar:after {
+  .toggle-button input:checked + .menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar:before {
+  .toggle-button input:checked + .menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input+.menu-burger+ul,
-  .toggle-button input+.menu-burger+div {
+  .toggle-button input + .menu-burger + ul,
+  .toggle-button input + .menu-burger + div {
     display: none;
   }
 
-  .toggle-button input:checked+.menu-burger+ul,
-  .toggle-button input:checked+.menu-burger+div {
+  .toggle-button input:checked + .menu-burger + ul,
+  .toggle-button input:checked + .menu-burger + div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -2394,15 +2390,16 @@ table thead {
   /* Cours */
 
   .btn-cours {
-    top: 22vh;
+    top: 24vh;
     left: 2.5vw;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .titre-cours {
     top: 15vh;
     left: 2.5vw;
     font-size: 1.3em;
+
   }
 
   .img-cours {
@@ -2443,6 +2440,10 @@ table thead {
   .tableau-cours-ind h3 {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  div.table-tarif.table-tarif-groupe{
+    width: 100%;
   }
 
   /* notre ecole */
@@ -2520,7 +2521,6 @@ table thead {
 }
 
 @media all and (max-width: 360px) {
-
   /*attention a retirer*/
   footer {
     display: none;
@@ -2608,7 +2608,7 @@ table thead {
     padding-bottom: 1vh;
   }
 
-  .evenement-categorie~p {
+  .evenement-categorie ~ p {
     margin: 1vh 0 0 0;
   }
 
@@ -2638,9 +2638,9 @@ table thead {
   }
 }
 
-/*cours*/
+  /*cours*/
 
-.titre-cours {
-  left: 1.8vw;
-  font-size: 0.9em;
-}
+  .titre-cours{
+    left: 1.8vw;
+    font-size: 0.9em;
+  }

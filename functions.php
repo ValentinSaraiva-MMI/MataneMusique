@@ -119,6 +119,31 @@ $args = array(
 register_post_type('Service', $args);
 
 
+// Membre
+$labels = array(
+    'name' => 'Membre',
+    'all_items' => 'Ensemble des publication',
+    // affiché dans le sous menu
+    'singular_name' => 'Membre',
+    'add_new_item' => 'Ajouter une publication',
+    'add_new' => 'Ajouter une publication',
+    'edit_item' => 'Modifier une publication',
+    'menu_name' => 'Membres'
+);
+$args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-hammer',
+    'taxonomies' => array('category','post_tag'),
+    'rewrite' => array('slug' => 'Membre')
+);
+register_post_type('Membre', $args);
+
+
 // CPT Actualités
 $labels = array(
     'name' => 'Actualités',

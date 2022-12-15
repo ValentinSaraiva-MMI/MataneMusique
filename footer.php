@@ -1,3 +1,4 @@
+
 <div class="slider-area">
 		<h2>Nos clients</h2>
 		<div class="wrapper">
@@ -9,6 +10,32 @@
             
 		</div>
 	</div>
+
+<div class="scroll-parent">
+  <div class="scroll-element primary">
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_mccq.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/pascalberube-2022.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo-soeurs-st-rosaire-fr.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo-fondation-ja-deseve.jpg')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_CultureBSL.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_conservatoire.jpg')?>" height="100" width="250" alt="" />
+  </div>
+  <div class="scroll-element secondary">
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_mccq.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/pascalberube-2022.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo-soeurs-st-rosaire-fr.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo-fondation-ja-deseve.jpg')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_CultureBSL.png')?>" height="100" width="250" alt="" />
+    <img src="<?php  echo (get_template_directory_uri() . '/images/logo_conservatoire.jpg')?>" height="100" width="250" alt="" />
+
+    
+  </div>
+</div>
+
+
+
 </main>
 
 
@@ -53,6 +80,9 @@
                     <li><input class="input-inscrire" type="button" value="S'inscrire"></li>
                 </ul>
             </div>
+        </div>
+        <div class="credits">
+          <p> © 2022, Nora. Tous droits réservés.</p>
         </div>
 </footer>
 <?php wp_footer(); ?>

@@ -65,12 +65,12 @@
                 </ul>
 
                 <ul class="box-lien">
-                    <li><a href="#">Notre école</a></li>
-                    <li><a href="#">Nos cours</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Nouvelles</a></li>
-                    <li><a href="#">Nous joindre</a></li>
-                    <li class="lien-emploi"><a href="#">Emplois</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/notre-ecole')); ?>">Notre école</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/nos-cours')); ?>">Nos cours</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/services')); ?>">Services</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Nouvelles</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/nous-joindre')); ?>">Nous joindre</a></li>
+                    <li class="lien-emploi"><a href="<?php echo esc_url(home_url('/emplois')); ?>">Emplois</a></li>
                 </ul>
 
                 <ul class="box-infolettre">

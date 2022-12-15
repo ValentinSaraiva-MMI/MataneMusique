@@ -86,7 +86,7 @@
             <?php endif; ?>
         </div>
         <div class="position-btn">
-            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus dévènements</a></button>
+            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'évènements</a></button>
         </div>
     </section>
 </div>

@@ -1286,12 +1286,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .table-tarif .tableau-cours-ind {
-  width: 37vw;
+  width: 47vw;
 }
 
-.table-tarif .tableau-cours-ind {
-  width: 41.5vw;
-}
 
 .grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
@@ -2246,6 +2243,10 @@ table thead {
     width: 75vw;
   }
 
+  .table-tarif .tableau-cours-ind {
+    width: auto;
+  }
+
   /*notre ecole*/
 
   .article-enseignant {
@@ -2390,15 +2391,16 @@ table thead {
   /* Cours */
 
   .btn-cours {
-    top: 22vh;
+    top: 24vh;
     left: 2.5vw;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .titre-cours {
     top: 15vh;
     left: 2.5vw;
     font-size: 1.3em;
+
   }
 
   .img-cours {
@@ -2439,6 +2441,10 @@ table thead {
   .tableau-cours-ind h3 {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  div.table-tarif.table-tarif-groupe{
+    width: 100%;
   }
 
   /* notre ecole */

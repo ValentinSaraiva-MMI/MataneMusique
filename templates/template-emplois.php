@@ -9,7 +9,7 @@
                     <h3>
                         <?php the_field('titre_de_lemploi_'); ?>
                     </h3>
-                    <div class="actu-contient">            
+                    <div>            
                         <div>
                             <?php the_field('presentation_de_lemploi_'); ?>
                         </div>

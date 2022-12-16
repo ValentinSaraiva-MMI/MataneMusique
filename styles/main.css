@@ -500,30 +500,13 @@ li.link_name {
   margin-bottom: 1vh;
 }
 
-.input-mail {
-  font-size: 0.8em;
-  border-width: 2px;
-  border-radius: 14px;
-  text-align: left;
-  border-style: solid;
-  padding: 8px;
-  color: #5c5c5c;
-  border-color: #ff8e00;
-  background-color: #fbfbfb;
+footer .btn-bordure{
+  background-image: linear-gradient(#242424, #242424), linear-gradient(to left, #ff8e00, #dc0019);
+  color: white;
 }
 
-.input-inscrire {
-  border-radius: 6px;
-  margin-top: 1vh;
-  padding: 5px;
-  background-color: #ddd;
-  color: #555;
-}
-
-.input-inscrire:hover {
-  background-color: grey;
-  color: lightgrey;
-  transition: 0.3s;
+footer .btn-bordure:hover {
+  background-image: linear-gradient(#404040, #404040), linear-gradient(to left, #ff8e00, #dc0019);
 }
 
 li.suivez-nous {
@@ -535,7 +518,8 @@ li.suivez-nous {
 /*Crédits*/
 .credits {
   height: 5vh;
-  background-color: #ffeacf;
+  background-color: #161616;
+  color: white;
 }
 
 .credits p {

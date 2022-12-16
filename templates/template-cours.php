@@ -36,7 +36,7 @@ Template Name: Cours
                 </div>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <button class="btn-bordure"><a href="">S'inscrire</a></button>
+            <button class="btn-bordure"><a href="https://tim.cgmatane.qc.ca/projet-4/2022/efc/eq1/formulaire-inscription/">S'inscrire</a></button>
         </div>
 
         <!-- grille de cours individuels -->
@@ -129,7 +129,7 @@ Template Name: Cours
                 </div>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <button class="btn-bordure"><a href="">S'inscrire</a></button>
+            <button class="btn-bordure"><a href="https://tim.cgmatane.qc.ca/projet-4/2022/efc/eq1/formulaire-inscription/">S'inscrire</a></button>
         </div>
 
         <!-- grille de cours de groupe -->
@@ -205,7 +205,3 @@ Template Name: Cours
 
 <?php get_footer(); ?>
 
-<script>
-    var page_active = document.querySelector(".menu-item-35");
-    page_active.style.color = "#dc0019"
-</script>

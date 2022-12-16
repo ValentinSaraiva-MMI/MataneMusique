@@ -220,6 +220,19 @@ textarea {
   border: none;
 }
 
+/* Texte sélectionné */
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #ff8e00;
+}
+
+::selection {
+  color: white;
+  background: #ff8e00
+}
+
 /* ----------------------- */
 /*      Mise en page       */
 /* ----------------------- */

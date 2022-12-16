@@ -137,7 +137,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
-    'menu_icon' => 'dashicons-hammer',
+    'menu_icon' => 'dashicons-smiley',
     'taxonomies' => array('category','post_tag'),
     'rewrite' => array('slug' => 'Membre')
 );
@@ -186,7 +186,6 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
-    'taxonomies' => array('category', 'post_tag'),
     'menu_icon' => 'dashicons-admin-site',
     'rewrite' => array('slug' => 'Partenaires')
 );

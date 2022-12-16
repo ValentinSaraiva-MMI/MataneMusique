@@ -34,11 +34,12 @@ Template Name: Page Membre
                     <br> 
                     <p><?php the_author(); ?></p>
                 </article>
-    </section>
-</main>
-        <?php endwhile; ?>
+      </section>
+    <?php endwhile; ?>
+        </main> 
     <?php endif; ?>
-<?php endif ?>
+<?php endif ?>  
+
 </section>
 <?php 
 wp_reset_postdata(); 

@@ -196,6 +196,10 @@ register_post_type('Evenement', $args);
 
 add_action('init', 'ecole_musique_post_types');
 
+function set_cookie_expiration($time){
+    return time() + 86400;
+}
+add_filter('post_password_expires','set_cookie_expiration');
 
 // Menu
 function demotheme_register_menu()

@@ -55,7 +55,6 @@ textarea {
   resize: none;
 }
 
-
 /*test partenaire*/
 
 .scroll-parent {
@@ -683,6 +682,7 @@ li.suivez-nous {
   padding: 10px;
   background-clip: padding-box, border-box;
   margin-top: 1vh;
+  cursor: pointer;
 }
 
 .btn-bordure a {
@@ -690,6 +690,7 @@ li.suivez-nous {
   color: black;
   font-size: 1.8em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Test anim btn bordure */
@@ -986,8 +987,6 @@ li.suivez-nous {
   width: 46vw;
 }
 
-
-
 .form-contact p:last-child {
   background-color: transparent;
 }
@@ -1017,8 +1016,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   padding: auto !important;
   border-radius: 10px !important;
 }
-
-
 
 /* ----------- école ------------ */
 
@@ -1510,7 +1507,22 @@ table thead {
   margin-left: auto;
 }
 
-.telephone_emplois {}
+.div_numero_emplois {
+  display: inline;
+  margin-left: 10.416vw;
+}
+
+.telephone_emplois {
+  text-decoration: none;
+  color: #6a6a6a;
+  font-weight: 700;
+  font-size: 1em;
+  display: inline;
+}
+
+.h4_numero {
+  display: inline;
+}
 
 .div_paragraphe_emplois {
   text-align: left;
@@ -1642,11 +1654,13 @@ table thead {
   }
 
   /* Inscription*/
-
   .inscription-width {
     width: 50vw;
   }
 
+  .inscription-width {
+    width: 50vw;
+  }
 }
 
 @media all and (max-width: 1280px) {
@@ -1759,12 +1773,29 @@ table thead {
     width: 20vw;
   }
 
+  /* emplois */
+  .div_numero_emplois {
+    display: inline;
+    margin-left: 15.4vw;
+  }
+
+  .telephone_emplois {
+    text-decoration: none;
+    color: #6a6a6a;
+    font-weight: 700;
+    font-size: 1em;
+    display: inline;
+  }
+
+  .h4_numero {
+    display: inline;
+  }
+
   /* Inscription*/
 
   .inscription-width {
     width: 54vw;
   }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -1943,6 +1974,13 @@ table thead {
     justify-content: space-evenly;
   }
 
+  /* Emplois */
+
+  .div_numero_emplois {
+    display: inline;
+    margin-left: 15.9vw;
+  }
+
   /*notre ecole*/
 
   .nos-services {
@@ -1983,7 +2021,6 @@ table thead {
   .inscription-width {
     width: 59vw;
   }
-
 }
 
 @media all and (max-width: 748px) {
@@ -2375,6 +2412,27 @@ table thead {
     width: 20vw;
   }
 
+  /* Emplois */
+
+  .div_numero_emplois {
+    display: inline;
+    margin-left: 14vw;
+    margin-right: 2vw;
+  }
+
+  .telephone_emplois {
+    text-decoration: none;
+    color: #6a6a6a;
+    font-weight: 700;
+    font-size: 0.9em;
+    display: inline;
+  }
+
+  .h4_numero {
+    display: inline;
+    font-size: 0.9em;
+  }
+
   /*footer*/
 
   .link-boxes {
@@ -2401,6 +2459,10 @@ table thead {
     width: 71vw;
   }
 
+
+  .inscription-width {
+    width: 71vw;
+  }
 }
 
 @media all and (max-width: 640px) {
@@ -2614,6 +2676,12 @@ table thead {
     padding-left: 0;
   }
 
+  /* emplois */
+  .div_numero_emplois {
+    display: inline;
+    margin-left: 5vw;
+  }
+
   /*footer*/
   .box-infos,
   .box-lien,
@@ -2626,8 +2694,6 @@ table thead {
   .inscription-width {
     width: 78vw;
   }
-
-
 }
 
 @media all and (max-width: 360px) {
@@ -2761,5 +2827,4 @@ table thead {
     padding: 10vw;
     width: 85vw;
   }
-
 }

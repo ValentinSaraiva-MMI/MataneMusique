@@ -36,6 +36,8 @@
 
        <p class="p_emplois"> <?php the_field('presentation_de_lemploi_'); ?></p>
 
+       <p class="p_emplois"> <?php the_field('numero_de_telepone_'); ?></p>
+
     </article>
 
   <?php endwhile; endif; ?>

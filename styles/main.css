@@ -39,7 +39,18 @@ h3 {
 h1 {
   font-size: 48pt;
   margin-top: 0;
+  /*animation: 0.8s ease-in-out 0s 1 h1arrive;*/
 }
+
+/*@keyframes h1arrive {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}*/
 
 h2 {
   margin-top: 0;
@@ -53,6 +64,24 @@ h3 {
 
 textarea {
   resize: none;
+}
+
+
+@keyframes popsection {
+  0% {
+    opacity: 0;
+    transform: translateY(-1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-0);
+  }
+}
+
+main {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.8s ease-in-out 0s 1 popsection;
 }
 
 /*test partenaire*/
@@ -651,11 +680,23 @@ li.suivez-nous {
   height: auto;
   text-align: center;
   padding: 2.5vh 1vw;
+  animation: 1s ease-out 0s 1 popwidget;
 }
 
 .widget-accueil a {
   color: black;
 }
+
+@keyframes popwidget {
+  0% {
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
 
 .widget {
   display: flex;
@@ -1665,18 +1706,19 @@ table thead {
     top: 36vh;
     font-size: 0.9em;
   }
-    /* Recherches*/
 
-    .search-results section {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      
+  /* Recherches*/
+
+  .search-results section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
   }
 
   .search-results section article {
     width: 85vw;
-}
+  }
 
 }
 
@@ -1811,7 +1853,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 54vw;
   }
 
@@ -2037,7 +2079,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 59vw;
   }
 
@@ -2475,9 +2517,9 @@ table thead {
 
   /* Inscription*/
 
-    .inscription-width{
-      width: 71vw;
-    }
+  .inscription-width {
+    width: 71vw;
+  }
 
 }
 
@@ -2707,7 +2749,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 78vw;
   }
 
@@ -2836,7 +2878,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     padding: 10vw;
     width: 85vw;
   }

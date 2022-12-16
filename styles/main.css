@@ -187,12 +187,12 @@ textarea {
   background-color: rgb(18 16 16 / 69%);
 }
 
-.wp-dark-mode-active .credits{
+.wp-dark-mode-active .credits {
   background-color: rgb(2 2 2)
 }
 
 .wp-dark-mode-active .scroll-parent {
-  background-color: #cfcfcf;
+  background-color: #cfcfcf !important;
 }
 
 /* scrolbar*/

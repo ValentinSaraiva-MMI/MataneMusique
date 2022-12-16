@@ -2669,7 +2669,7 @@ table thead {
   /* emplois */
   .div_numero_emplois {
     display: inline;
-    margin-left: 75px;
+    margin-left: 5vw;
   }
 
   /*footer*/

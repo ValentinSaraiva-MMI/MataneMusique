@@ -11,6 +11,7 @@
 		</div>
 	</div>
 
+
 <div class="scroll-parent">
   <div class="scroll-element primary">
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />

@@ -204,3 +204,4 @@ Template Name: Cours
 </section>
 
 <?php get_footer(); ?>
+

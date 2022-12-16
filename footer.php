@@ -54,11 +54,13 @@
                 </ul>
 
                 <ul class="box-lien">
+                    <li><a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a></li>
                     <li><a href="<?php echo esc_url(home_url('/notre-ecole')); ?>">Notre école</a></li>
                     <li><a href="<?php echo esc_url(home_url('/nos-cours')); ?>">Nos cours</a></li>
                     <li><a href="<?php echo esc_url(home_url('/services')); ?>">Services</a></li>
                     <li><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Nouvelles</a></li>
                     <li><a href="<?php echo esc_url(home_url('/nous-joindre')); ?>">Nous joindre</a></li>
+
                     <li class="lien-emploi"><a href="<?php echo esc_url(home_url('/page-emploi')); ?>">Emplois</a></li>
                 </ul>
 

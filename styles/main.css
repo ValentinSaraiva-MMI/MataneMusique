@@ -957,6 +957,10 @@ li.suivez-nous {
   font-weight: 300;
 }
 
+.form-contact p:last-child {
+  background-color: transparent;
+}
+
 .form-fields {
   border: 1px solid orange;
 }

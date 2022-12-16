@@ -69,7 +69,7 @@
                
                     
                     <a href="http://eepurl.com/icygJH">
-                    <li><input class="input-inscrire" type="button" value="S'inscrire"></li>
+                    <li><input class="btn-bordure" type="button" value="S'inscrire"></li>
                     </a>
                 </ul>
             </div>

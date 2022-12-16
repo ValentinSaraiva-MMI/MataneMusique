@@ -31,14 +31,12 @@
                             <?php the_field('paragraphe_actualite'); ?>
                         </div>
                     </div>
-                    <button class="btn-actu"><a href="<?php the_permalink(); ?>">En savoir plus</a></button>
                     <hr class="header_hr">
                 </article>
             <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'actualités</a></button>
-        
+        <button class="btn-bordure btn-plus-actu">Découvrir plus d'actualités</button>
     </section>
 
     <?php
@@ -86,14 +84,13 @@
             <?php endif; ?>
         </div>
         <div class="position-btn">
-            <button class="btn-bordure"><a href="<?php echo esc_url(home_url('/nouvelles')); ?>">Découvrir plus d'évènements</a></button>
+            <button class="btn-bordure btn-plus-evenement">Découvrir plus d'évènements</button>
         </div>
     </section>
 </div>
-<script>
-    
-    /* Actu */
 
+<script>
+    /* Actu */
     let btn_actu = document.querySelector(".btn-plus-actu");
     console.log(btn_actu)
     btn_actu.addEventListener("click", affiche_plus);
@@ -140,8 +137,6 @@
     function affiche_plus_evenement() {
         evnmt.style.display="block";
     } 
-
 </script>
 
 <?php get_footer(); ?>
-

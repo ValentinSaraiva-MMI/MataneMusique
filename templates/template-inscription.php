@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Formulaire Inscription
+Template Name: Formulaire inscription
 */
 ?>
 
@@ -18,6 +18,8 @@ Template Name: Formulaire Inscription
         <article class="inscription-container">
 
             <div class="inscription-width">
+
+                <h2> Formulaire </h2>
 
                 <p><?php the_content(); ?></p>
 

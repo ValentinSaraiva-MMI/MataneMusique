@@ -598,6 +598,7 @@ li.suivez-nous {
   margin-right: -1.5vw;
   margin-top: 0.5vh;
   z-index: 1;
+  cursor: pointer;
 }
 
 .search-button {
@@ -974,6 +975,14 @@ li.suivez-nous {
 .inscription-container {
   display: flex;
   justify-content: center;
+}
+
+.inscription-width {
+  -webkit-box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 2vw;
+  width: 46vw;
 }
 
 .form-contact p:last-child {
@@ -1641,6 +1650,12 @@ table thead {
     top: 36vh;
     font-size: 0.9em;
   }
+
+  /* Inscription*/
+
+  .inscription-width {
+    width: 50vw;
+  }
 }
 
 @media all and (max-width: 1280px) {
@@ -1769,6 +1784,12 @@ table thead {
 
   .h4_numero {
     display: inline;
+  }
+
+  /* Inscription*/
+
+  .inscription-width {
+    width: 54vw;
   }
 }
 
@@ -1988,6 +2009,12 @@ table thead {
   /* footer */
   footer {
     border-radius: 50px 50px 0px 0px;
+  }
+
+  /* Inscription*/
+
+  .inscription-width {
+    width: 59vw;
   }
 }
 
@@ -2420,6 +2447,12 @@ table thead {
   .media-icons {
     text-align: center;
   }
+
+  /* Inscription*/
+
+  .inscription-width {
+    width: 71vw;
+  }
 }
 
 @media all and (max-width: 640px) {
@@ -2645,6 +2678,12 @@ table thead {
   .box-infolettre {
     width: 66%;
   }
+
+  /* Inscription*/
+
+  .inscription-width {
+    width: 78vw;
+  }
 }
 
 @media all and (max-width: 360px) {
@@ -2769,5 +2808,12 @@ table thead {
   .titre-cours {
     left: 1.8vw;
     font-size: 0.9em;
+  }
+
+  /* Inscription*/
+
+  .inscription-width {
+    padding: 10vw;
+    width: 85vw;
   }
 }

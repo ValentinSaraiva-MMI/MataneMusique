@@ -21,14 +21,14 @@ Template Name: Page Membre
     ?>
     <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()): $query->the_post(); ?>
-            <div>
+            <section class="search-results section article">
                 <h3> 
                     <?php the_title(); ?> 
                 </h3>
                 <div> 
                     <?php the_content(); ?> 
                 </div>
-            </div>
+    </section>
         <?php endwhile; ?>
     <?php endif; ?>
 <?php endif ?>

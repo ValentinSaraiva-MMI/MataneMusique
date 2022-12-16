@@ -73,7 +73,7 @@ Template Name: Notre école
                     <?php the_field('description_professeur_');?>
                 </div>
                 <div class="instru_prof">
-                    <a a href="<?php the_field('bouton_cours_'); ?>">
+                    <a a href="<?php echo get_template_directory_uri() . '/nos-cours' ?>">
                         <?php the_field('instrument_professeur'); ?>
                     </a>
                 </div>

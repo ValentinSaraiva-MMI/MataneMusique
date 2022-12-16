@@ -1416,13 +1416,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   border-radius: 30px;
 }
 
-.table-tarif-individuel,
-.table-tarif-groupe {
-  margin-right: -4vw;
-}
 
 /* TABLEAU */
-¸ table {
+table {
   width: 86%;
   background-color: #f0f0f0;
   border-collapse: collapse;

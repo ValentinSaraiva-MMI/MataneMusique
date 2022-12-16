@@ -1,6 +1,9 @@
 <?php /* Template Name: template Emplois */?>
 <?php get_header(); ?>
+<section>
 <h1>Emplois</h1>
+</section>
+
 
 <div class="emploi-section">
 <?php

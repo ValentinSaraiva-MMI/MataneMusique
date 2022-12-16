@@ -1474,13 +1474,12 @@ table thead {
 .titre_emplois {
   color: #ff8d00;
   font-size: 2.25em;
-  margin-top: 160px;
+  margin-top: 120px;
 }
 
 .p_emplois {
   font-size: 0.875em;
   width: 60vw;
-  text-align: center;
   margin-right: auto;
   margin-left: auto;
 }

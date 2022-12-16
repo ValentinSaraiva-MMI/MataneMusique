@@ -1184,6 +1184,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   font-weight: bold;
 }
 
+
 .conseil .description_prof,
 .conseil .titre-enseignant {
   text-align: center;
@@ -2865,6 +2866,11 @@ table thead {
   .inscription-width {
     padding: 10vw;
     width: 85vw;
+  }
+
+  .equipe-membre .description_prof p {
+    inline-size: 46vw;
+    overflow-wrap: break-word;
   }
 
 }

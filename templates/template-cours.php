@@ -205,7 +205,3 @@ Template Name: Cours
 
 <?php get_footer(); ?>
 
-<script>
-    var page_active = document.querySelector(".menu-item-35");
-    page_active.style.color = "#dc0019"
-</script>

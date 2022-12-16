@@ -92,3 +92,11 @@
     </div>
 
     <main class="container">
+
+
+<script>
+    function page_active() {
+        document.querySelector(".current-menu-item").style.color = "#dc0019"
+    }
+    page_active()
+</script>

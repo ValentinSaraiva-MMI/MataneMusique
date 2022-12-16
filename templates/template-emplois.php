@@ -23,7 +23,6 @@
                     $query->the_post(); ?>
     
     <article class="post">
-      <?php the_post_thumbnail(); ?>
 
       
 
@@ -31,9 +30,9 @@
 
 
 
-      <div class="post__content">
+
         <?php the_field('presentation_de_lemploi_'); ?>
-      </div>
+
     </article>
 
   <?php endwhile; endif; ?>

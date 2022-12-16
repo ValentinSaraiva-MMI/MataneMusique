@@ -9,7 +9,7 @@
 
         'post_type' => 'post',
 
-        'tag' => 'Emploi',
+        'category' => 'Emploi',
 
         );
 

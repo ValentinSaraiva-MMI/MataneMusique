@@ -1341,12 +1341,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .titre-cours {
-  margin-top: 61px;
   font-size: 32pt;
   margin-bottom: 0;
   font-size: 1.5em;
   position: absolute;
-  top: 27vh;
+  top: 32vh;
   left: 2.8vw;
   color: white;
   z-index: 1;
@@ -1697,7 +1696,6 @@ table thead {
 
   .titre-cours {
     left: 2.8vw;
-    top: 26vh;
     font-size: 1.3em;
   }
 
@@ -2028,7 +2026,6 @@ table thead {
 
   .titre-cours {
     left: 1.4vw;
-    top: 25vh;
   }
 
   .grid-cours {
@@ -2429,7 +2426,6 @@ table thead {
   }
 
   .titre-cours {
-    top: 25vh;
     left: 1.4vw;
   }
 
@@ -2619,7 +2615,7 @@ table thead {
   }
 
   .titre-cours {
-    top: 15vh;
+    top: 21vh;
     left: 2.5vw;
     font-size: 1.3em;
   }

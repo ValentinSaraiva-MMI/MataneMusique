@@ -36,7 +36,7 @@
 
        <p class="p_emplois"> <?php the_field('presentation_de_lemploi_'); ?></p>
 
-       <p class="p_emplois"> <?php the_field('numero_de_telepone_'); ?></p>
+       <a class="header_telephone" href="tel:+1-418-562-4212"> 418-562-4212</a>
 
     </article>
 

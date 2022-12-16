@@ -2,7 +2,23 @@
 <?php get_header(); ?>
 <h1>Emplois</h1>
 
-<div class="actu-section">
+<div class="emploi-section">
+<?php
+
+        $args = array(
+
+        'post_type' => 'post',
+
+        'tag' => 'Emploi',
+
+        );
+
+        $query = new WP_Query($args);
+
+    ?>
+
+
+
             <?php if ($query->have_posts()):?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
                 <article>

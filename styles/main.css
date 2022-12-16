@@ -57,29 +57,31 @@ textarea {
   position: relative;
   width: 100vw;
   height: 10vh;
-  overflow-x: hidden;
+  overflow: hidden;
+  margin: 10vh auto -8vh -10vw;
 }
 
 .scroll-element {
   width: inherit;
   height: inherit;
   position: absolute;
-  left: 0%;
-  top: 0%;
-  animation: primary 8s linear infinite;
+  left: 0;
+  top: 0;
+  animation: primary 30s linear infinite;
 }
 
 .scroll-element img {
   height: inherit;
-  object-fit: cover;
+  object-fit: contain;
+  width: 14vw;
 }
 
 .primary {
-  animation: primary 8s linear infinite;
+  animation: primary 30s linear infinite;
 }
 
 .secondary {
-  animation: secondary 8s linear infinite;
+  animation: secondary 30s linear infinite;
 }
 
 @keyframes primary {
@@ -155,8 +157,7 @@ textarea {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {
-}
+.wp-dark-mode-active .header_telephone:hover {}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
@@ -168,11 +169,9 @@ textarea {
 }
 
 .wp-dark-mode-active .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 76%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 76%);
 }
 
 .wp-dark-mode-active .evenement-position {
@@ -186,6 +185,10 @@ textarea {
 
 .wp-dark-mode-active footer {
   background-color: rgb(18 16 16 / 69%);
+}
+
+.wp-dark-mode-active .scroll-parent {
+  background-color: #ffffff;
 }
 
 /* scrolbar*/
@@ -350,16 +353,13 @@ textarea {
 }
 
 .header_hr.anim-header {
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01
-    )
-    0 0 / 400% 100%;
+      #ff8e01) 0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -509,6 +509,18 @@ li.suivez-nous {
   margin-top: 2vh;
 }
 
+/*Crédits*/
+.credits {
+  height: 5vh;
+  background-color: #ffeacf;
+}
+
+.credits p {
+  text-align: center;
+  margin: auto;
+  padding-top: 1.5vh;
+}
+
 /* Menu */
 
 .nav-container {
@@ -599,11 +611,9 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 60%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 60%);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -781,7 +791,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img ~ div p {
+.actu-contient img~div p {
   text-align: left;
 }
 
@@ -1981,12 +1991,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked + .menu-burger {
+  .toggle-button input:checked+.menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked ~ .nav-container {
+  .toggle-button input:checked~.nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -1994,30 +2004,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar {
+  .toggle-button input:checked+.menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked + .menu-burger .bar:after {
+  .toggle-button input:checked+.menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar:before {
+  .toggle-button input:checked+.menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input + .menu-burger + ul,
-  .toggle-button input + .menu-burger + div {
+  .toggle-button input+.menu-burger+ul,
+  .toggle-button input+.menu-burger+div {
     display: none;
   }
 
-  .toggle-button input:checked + .menu-burger + ul,
-  .toggle-button input:checked + .menu-burger + div {
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -2442,7 +2452,7 @@ table thead {
     margin-right: auto;
   }
 
-  div.table-tarif.table-tarif-groupe{
+  div.table-tarif.table-tarif-groupe {
     width: 100%;
   }
 
@@ -2521,6 +2531,7 @@ table thead {
 }
 
 @media all and (max-width: 360px) {
+
   /*attention a retirer*/
   footer {
     display: none;
@@ -2608,7 +2619,7 @@ table thead {
     padding-bottom: 1vh;
   }
 
-  .evenement-categorie ~ p {
+  .evenement-categorie~p {
     margin: 1vh 0 0 0;
   }
 
@@ -2638,9 +2649,9 @@ table thead {
   }
 }
 
-  /*cours*/
+/*cours*/
 
-  .titre-cours{
-    left: 1.8vw;
-    font-size: 0.9em;
-  }
+.titre-cours {
+  left: 1.8vw;
+  font-size: 0.9em;
+}

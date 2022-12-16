@@ -1,5 +1,6 @@
 
 <div class="slider-area">
+		<h2>Nos clients</h2>
 		<div class="wrapper">
 			<div class="item"><img alt="" src="/images/logo.png"></div>
 			<div class="item"><img alt="" src="/images/logo_cegep.png"></div>
@@ -9,6 +10,7 @@
             
 		</div>
 	</div>
+
 
 <div class="scroll-parent">
   <div class="scroll-element primary">
@@ -28,8 +30,6 @@
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo-fondation-ja-deseve.jpg')?>" height="100" width="250" alt="" />
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_CultureBSL.png')?>" height="100" width="250" alt="" />
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_conservatoire.jpg')?>" height="100" width="250" alt="" />
-
-    
   </div>
 </div>
 

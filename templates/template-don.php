@@ -1,9 +1,12 @@
 <?php /* Template Name: Gabarit Don */?>
 
 <?php get_header(); ?>
+<section>
+
+
 
 <h1> Faire un don </h1>
-
+</section>
 
 <div class="faire-don">
     <?php

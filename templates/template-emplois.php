@@ -40,8 +40,11 @@
 
   <?php endwhile; endif; ?>
         </div>
-
+<div class="div_numero_emplois">
+        <h4 class="h4_numero">Pour nous contacter cliquer sur le numéro</h4>
         <a class="telephone_emplois" href="tel:+1-418-562-4212"> 418-562-4212</a>
+
+        </div>
 
 
 <?php get_footer(); ?>

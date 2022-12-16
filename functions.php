@@ -186,6 +186,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
+    'taxonomies' => array('category', 'post_tag'),
     'menu_icon' => 'dashicons-admin-site',
     'rewrite' => array('slug' => 'Partenaires')
 );

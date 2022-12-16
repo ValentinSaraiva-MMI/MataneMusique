@@ -1358,7 +1358,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: flex;
   margin-top: 3vh;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .frais-accompagnement {
@@ -1411,7 +1411,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   box-shadow: inset 0px -155px 80px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
 }
-
 
 
 /* TABLEAU */¸
@@ -2621,6 +2620,7 @@ table thead {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+
   }
 
   .table-tarif-individuel {

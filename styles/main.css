@@ -187,8 +187,8 @@ textarea {
   background-color: rgb(18 16 16 / 69%);
 }
 
-.wp-dark-mode-active .slider-parent {
-  background-color: #cccccc;
+.wp-dark-mode-active .scroll-parent {
+  background-color: #ffffff;
 }
 
 /* scrolbar*/

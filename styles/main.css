@@ -9,7 +9,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+a {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
@@ -1232,11 +1233,12 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   top: 36vh;
   left: 3vw;
   color: white;
-  font-size: 1.3em;
 }
 
-.btn-cours a{
+.btn-cours a {
   text-decoration: none;
+  color: white;
+  font-size: 1.1em;
 }
 
 .description-cours {
@@ -1694,7 +1696,7 @@ table thead {
     width: 20vw;
   }
 
-   
+
 
 }
 

@@ -2651,11 +2651,11 @@ table thead {
   .box-infolettre {
     width: 84%;
   }
-}
 
-/*cours*/
+  /*cours*/
 
-.titre-cours {
-  left: 1.8vw;
-  font-size: 0.9em;
+  .titre-cours {
+    left: 1.8vw;
+    font-size: 0.9em;
+  }
 }

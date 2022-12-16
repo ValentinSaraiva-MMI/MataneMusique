@@ -19,6 +19,8 @@ Template Name: Formulaire inscription
 
             <div class="inscription-width">
 
+                <h2> Formulaire </h2>
+
                 <p><?php the_content(); ?></p>
 
             </div>

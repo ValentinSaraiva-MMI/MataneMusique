@@ -910,14 +910,6 @@ li.suivez-nous {
   text-align: left;
 }
 
-.joindre:first-child {
-  width: 100%;
-}
-
-.joindre:not(:first-child) {
-  flex: 1;
-}
-
 /*coordonnées*/
 
 .une-coordonnee {

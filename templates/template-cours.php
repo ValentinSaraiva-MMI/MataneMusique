@@ -14,7 +14,7 @@ Template Name: Cours
         $query = new WP_query($args);
     ?>
 
-    <h1>Nos cours</h1>
+    <h1 class="target-cours">Nos cours</h1>
     <!-- Cours individuels -->
     <div>
         <!-- description générale des cours individuels -->
@@ -57,7 +57,7 @@ Template Name: Cours
                         <div class="ombre-cours">
                             <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
                         </div>
-                        <button class="btn-cours"><a href="<?php the_field('lien_professeur'); ?>"> <?php the_field('nom_professeur_'); ?> </a></button>
+                        <button class="btn-cours"><a href="<?php echo get_template_directory_uri() . '/notre-ecole#prof' ?>"> <?php the_field('nom_professeur_'); ?> </a></button>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?>
@@ -150,7 +150,7 @@ Template Name: Cours
                         <div class="ombre-cours">
                             <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
                         </div>
-                        <button class="btn-cours"><a href="<?php the_field('lien_professeur'); ?>"> <?php the_field('nom_professeur_'); ?> </a></button>
+                        <button class="btn-cours"><a href="<?php echo get_template_directory_uri() . '/notre-ecole#prof' ?>"> <?php the_field('nom_professeur_'); ?> </a></button>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?>

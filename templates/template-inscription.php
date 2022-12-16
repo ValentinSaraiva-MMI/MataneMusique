@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Formulaire Inscription
+Template Name: Formulaire inscription
 */
 ?>
 

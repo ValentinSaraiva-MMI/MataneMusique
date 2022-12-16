@@ -1694,16 +1694,21 @@ table thead {
     top: 36vh;
     font-size: 0.9em;
   }
+    /* Recherches*/
 
-  /* Inscription*/
-  .inscription-width {
-    width: 50vw;
+    .search-results section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
   }
 
-  .inscription-width {
-    width: 50vw;
-  }
+  .search-results section article {
+    width: 85vw;
 }
+
+}
+
 
 @media all and (max-width: 1280px) {
   /* Général */
@@ -1835,9 +1840,10 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width {
+  .inscription-width{
     width: 54vw;
   }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -2060,9 +2066,10 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width {
+  .inscription-width{
     width: 59vw;
   }
+
 }
 
 @media all and (max-width: 748px) {
@@ -2497,14 +2504,10 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width {
-    width: 71vw;
-  }
+    .inscription-width{
+      width: 71vw;
+    }
 
-
-  .inscription-width {
-    width: 71vw;
-  }
 }
 
 @media all and (max-width: 640px) {
@@ -2733,9 +2736,11 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width {
+  .inscription-width{
     width: 78vw;
   }
+
+
 }
 
 @media all and (max-width: 360px) {
@@ -2860,8 +2865,9 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width {
+  .inscription-width{
     padding: 10vw;
     width: 85vw;
   }
+
 }

@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo('charset') ?> ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="">
+    <meta description="Portée par le désir d’offrir une formation musicale de qualité et d’être une porte ouverte sur la culture, l’École de musique de Matane se veut un lieu vivant, inclusif et chaleureux. En tant qu’acteur clé du paysage culturel de La Matanie, l’École souhaite apporter sa contribution à la vie culturelle et citoyenne de la région en présentant à la population une variété de cours et d’activités musicales pour tous les âges et tous les goûts, qui sont autant de moyens de s’exprimer, de s’épanouir et de socialiser.">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
     
 

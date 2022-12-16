@@ -18,8 +18,9 @@
     ?>
 
 
-
-             <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+<?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()):
+                    $query->the_post(); ?>
     
     <article class="post">
       <?php the_post_thumbnail(); ?>

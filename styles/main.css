@@ -1413,7 +1413,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   border-radius: 30px;
 }
 
-/* TABLEAU */
+/* TABLEAU */¸
+
+.table-tarif{
+  margin-right: -3vw;
+}
 
 table {
   width: 86%;

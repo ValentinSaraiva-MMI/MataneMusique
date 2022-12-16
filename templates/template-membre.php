@@ -14,7 +14,7 @@ Template Name: Page Membre
 <?php else : ?>
     <?php
         $args = array(
-        'post_type' => 'post',
+        'post_type' => 'Membre',
         'tag' => 'membre',
         );
         $query = new WP_Query($args);

@@ -32,11 +32,10 @@
       <h2 class="titre_emplois"><?php the_field('titre_de_lemploi_'); ?></h2>
 
 
-
-
+<div class="div_paragraphe_emplois">
        <p class="p_emplois"> <?php the_field('presentation_de_lemploi_'); ?></p>
-
-       <a class="header_telephone" href="tel:+1-418-562-4212"> 418-562-4212</a>
+       <a class="telephone_emplois" href="tel:+1-418-562-4212"> 418-562-4212</a>
+       </div>
 
     </article>
 

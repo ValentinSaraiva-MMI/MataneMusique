@@ -55,6 +55,7 @@ textarea {
   resize: none;
 }
 
+
 /*test partenaire*/
 
 .scroll-parent {
@@ -592,6 +593,7 @@ li.suivez-nous {
   margin-right: -1.5vw;
   margin-top: 0.5vh;
   z-index: 1;
+  cursor: pointer;
 }
 
 .search-button {
@@ -968,7 +970,7 @@ li.suivez-nous {
   justify-content: center;
 }
 
-.inscription-width{
+.inscription-width {
   -webkit-box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
   border-radius: 25px;

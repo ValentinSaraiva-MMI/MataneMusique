@@ -187,12 +187,12 @@ textarea {
   background-color: rgb(18 16 16 / 69%);
 }
 
-.wp-dark-mode-active .credits{
+.wp-dark-mode-active .credits {
   background-color: rgb(2 2 2)
 }
 
 .wp-dark-mode-active .scroll-parent {
-  background-color: #cfcfcf;
+  background-color: #cfcfcf !important;
 }
 
 /* scrolbar*/
@@ -1233,6 +1233,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   left: 3vw;
   color: white;
   font-size: 1.3em;
+  text-decoration: none;
 }
 
 .description-cours {
@@ -1254,10 +1255,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   z-index: 1;
 }
 
-.btn-cours a {
-  color: white;
-  text-decoration: none;
-}
 
 .grid-cours {
   display: flex;
@@ -1572,12 +1569,15 @@ table thead {
   /* Cours */
 
   .titre-cours {
-    left: 2.6vw;
-
+    left: 2.8vw;
+    top: 26vh;
+    font-size: 1.3em;
   }
 
   .btn-cours {
     left: 2.6vw;
+    top: 36vh;
+    font-size: 0.9em;
   }
 }
 

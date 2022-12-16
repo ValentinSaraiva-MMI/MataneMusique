@@ -1233,6 +1233,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   left: 3vw;
   color: white;
   font-size: 1.3em;
+}
+
+.btn-cours a{
   text-decoration: none;
 }
 
@@ -1690,6 +1693,9 @@ table thead {
     text-align: left;
     width: 20vw;
   }
+
+   
+
 }
 
 @media all and (max-width: 1024px) {
@@ -2651,11 +2657,11 @@ table thead {
   .box-infolettre {
     width: 84%;
   }
-}
 
-/*cours*/
+  /*cours*/
 
-.titre-cours {
-  left: 1.8vw;
-  font-size: 0.9em;
+  .titre-cours {
+    left: 1.8vw;
+    font-size: 0.9em;
+  }
 }

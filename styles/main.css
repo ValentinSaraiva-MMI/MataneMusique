@@ -974,6 +974,15 @@ li.suivez-nous {
   justify-content: center;
 }
 
+.inscription-width{
+  -webkit-box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 2vw;
+}
+
+
+
 .form-contact p:last-child {
   background-color: transparent;
 }

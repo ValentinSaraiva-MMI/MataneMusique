@@ -690,6 +690,7 @@ li.suivez-nous {
   padding: 10px;
   background-clip: padding-box, border-box;
   margin-top: 1vh;
+  cursor: pointer;
 }
 
 .btn-bordure a {
@@ -697,6 +698,7 @@ li.suivez-nous {
   color: black;
   font-size: 1.8em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Test anim btn bordure */

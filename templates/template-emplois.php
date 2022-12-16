@@ -1,6 +1,9 @@
 <?php /* Template Name: template Emplois */?>
 <?php get_header(); ?>
+<section>
 <h1>Emplois</h1>
+</section>
+
 
 <div class="emploi-section">
 <?php
@@ -26,12 +29,12 @@
 
       
 
-      <h2><?php the_field('titre_de_lemploi_'); ?></h2>
+      <h2 class="titre_emplois"><?php the_field('titre_de_lemploi_'); ?></h2>
 
 
 
 
-        <?php the_field('presentation_de_lemploi_'); ?>
+       <p class="p_emplois"> <?php the_field('presentation_de_lemploi_'); ?></p>
 
     </article>
 

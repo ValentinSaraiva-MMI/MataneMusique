@@ -5,7 +5,7 @@ Template Name: Page Membre
 ?>
 
 <?php get_header(); ?>
-<h2>PAGE MEMBRE</h2>
+<h1>Page membre</h1>
 
 <?php if(post_password_required()) : ?>
 

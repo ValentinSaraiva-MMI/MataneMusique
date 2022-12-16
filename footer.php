@@ -17,8 +17,6 @@
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo-fondation-ja-deseve.jpg')?>" height="100" width="250" alt="" />
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_CultureBSL.png')?>" height="100" width="250" alt="" />
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_conservatoire.jpg')?>" height="100" width="250" alt="" />
-
-    
   </div>
 </div>
 

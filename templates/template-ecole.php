@@ -48,7 +48,7 @@ Template Name: Notre école
     </div>
 </section>
 
-<section>
+<section id="prof">
     <?php
     $args = array(
         'post_type' => 'Enseignant', 

@@ -188,6 +188,14 @@ textarea {
   background-color: rgb(18 16 16 / 69%);
 }
 
+.wp-dark-mode-active .credits{
+  background-color: rgb(2 2 2)
+}
+
+.wp-dark-mode-active .scroll-parent {
+  background-color: #cfcfcf;
+}
+
 /* scrolbar*/
 
 * {
@@ -1232,7 +1240,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   margin-top: 61px;
   font-size: 32pt;
   margin-bottom: 0;
-  font-size: 2.5vh;
+  font-size: 1.5em;
   position: absolute;
   top: 27vh;
   left: 2.8vw;

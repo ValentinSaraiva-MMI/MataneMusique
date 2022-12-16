@@ -2,9 +2,11 @@
 
 <?php get_header(); ?>
 
-<h1> Nous joindre </h1>
+
 
 <section class="joindre"> 
+
+    <h1> Nous joindre </h1>
     <div class="coordonnees">
         <h2> Coordonnées </h2>
         <?php

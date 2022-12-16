@@ -7,12 +7,13 @@ Template Name: Formulaire Inscription
 
 <?php get_header(); ?>
 
+<section class="form-inscription">
+
 <?php if (have_posts()) : ?>
 
 
 
 <?php while (have_posts()) : the_post(); ?>
-
 
 
     <article class="inscription-container">
@@ -31,12 +32,11 @@ Template Name: Formulaire Inscription
 
 <?php endwhile; ?>
 
-
-
 <?php else : ?>
 
-
-
 <?php endif; ?>
+
+
+</section>
 
 <?php get_footer(); ?>

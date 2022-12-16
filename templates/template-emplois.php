@@ -34,13 +34,14 @@
 
 <div class="div_paragraphe_emplois">
        <p class="p_emplois"> <?php the_field('presentation_de_lemploi_'); ?></p>
-       <a class="telephone_emplois" href="tel:+1-418-562-4212"> 418-562-4212</a>
        </div>
 
     </article>
 
   <?php endwhile; endif; ?>
         </div>
+
+        <a class="telephone_emplois" href="tel:+1-418-562-4212"> 418-562-4212</a>
 
 
 <?php get_footer(); ?>

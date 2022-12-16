@@ -161,8 +161,7 @@ textarea {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {
-}
+.wp-dark-mode-active .header_telephone:hover {}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
@@ -174,11 +173,9 @@ textarea {
 }
 
 .wp-dark-mode-active .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 76%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 76%);
 }
 
 .wp-dark-mode-active .evenement-position {
@@ -309,7 +306,8 @@ textarea {
   color: white;
 }
 
-.header_telephone {
+.header_telephone,
+.instru_prof a {
   /*dégradé sur texte*/
   background: linear-gradient(to right, var(--gradient-hover) 50%, #363636 50%);
   -webkit-background-clip: text;
@@ -324,7 +322,8 @@ textarea {
   --gradient-hover: #dc0019, #ff8e00;
 }
 
-.header_telephone:hover {
+.header_telephone:hover,
+.instru_prof a:hover {
   background-position: left bottom;
 }
 
@@ -364,16 +363,13 @@ textarea {
 }
 
 .header_hr.anim-header {
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01
-    )
-    0 0 / 400% 100%;
+      #ff8e01) 0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -625,11 +621,9 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(
-    circle,
-    rgba(255, 143, 0, 0.8) 0%,
-    rgba(255, 143, 0, 0) 60%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 143, 0, 0.8) 0%,
+      rgba(255, 143, 0, 0) 60%);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -807,7 +801,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img ~ div p {
+.actu-contient img~div p {
   text-align: left;
 }
 
@@ -969,7 +963,7 @@ li.suivez-nous {
   font-weight: 300;
 }
 
-.inscription-container{
+.inscription-container {
   display: flex;
   justify-content: center;
 }
@@ -1071,6 +1065,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 .textes_enseignants .instru_prof {
   font-style: italic;
   font-weight: 300;
+}
+
+.instru_prof a {
+  text-decoration: none;
+  color: black;
 }
 
 .article-enseignant {
@@ -1500,8 +1499,7 @@ table thead {
   margin-left: auto;
 }
 
-.telephone_emplois {
-}
+.telephone_emplois {}
 
 .div_paragraphe_emplois {
   text-align: left;
@@ -2047,12 +2045,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked + .menu-burger {
+  .toggle-button input:checked+.menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked ~ .nav-container {
+  .toggle-button input:checked~.nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -2060,30 +2058,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar {
+  .toggle-button input:checked+.menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked + .menu-burger .bar:after {
+  .toggle-button input:checked+.menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked + .menu-burger .bar:before {
+  .toggle-button input:checked+.menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input + .menu-burger + ul,
-  .toggle-button input + .menu-burger + div {
+  .toggle-button input+.menu-burger+ul,
+  .toggle-button input+.menu-burger+div {
     display: none;
   }
 
-  .toggle-button input:checked + .menu-burger + ul,
-  .toggle-button input:checked + .menu-burger + div {
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -2586,6 +2584,7 @@ table thead {
 }
 
 @media all and (max-width: 360px) {
+
   /*attention a retirer*/
   footer {
     display: none;
@@ -2673,7 +2672,7 @@ table thead {
     padding-bottom: 1vh;
   }
 
-  .evenement-categorie ~ p {
+  .evenement-categorie~p {
     margin: 1vh 0 0 0;
   }
 

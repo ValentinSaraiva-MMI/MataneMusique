@@ -150,7 +150,7 @@ Template Name: Cours
                         <div class="ombre-cours">
                             <img class="img-cours" src="<?php the_field('image_du_cours_') ?>" alt="">
                         </div>
-                        <button class="btn-cours"><a href="<?php the_permalink(); ?>">  En savoir plus </a></button>
+                        <button class="btn-cours"><a href="<?php the_field('lien_professeur'); ?>"> <?php the_field('nom_professeur_'); ?> </a></button>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?>

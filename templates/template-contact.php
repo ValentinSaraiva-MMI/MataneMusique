@@ -7,6 +7,8 @@
 <section class="joindre"> 
 
     <h1> Nous joindre </h1>
+
+    <div class="coordonnes-form">
     <div class="coordonnees">
         <h2> Coordonnées </h2>
         <?php
@@ -43,6 +45,7 @@
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
+    </div>
     </div>
 </section>
 

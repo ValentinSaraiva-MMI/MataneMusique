@@ -1633,11 +1633,19 @@ table thead {
     font-size: 0.9em;
   }
 
-    /* Inscription*/
+    /* Recherches*/
 
-    .inscription-width{
-      width: 50vw;
-    }
+    .search-results section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+  }
+
+  .search-results section article {
+    width: 85vw;
+}
+
 
 }
 
@@ -1753,9 +1761,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
-    width: 54vw;
-  }
+
 
 }
 
@@ -1972,9 +1978,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
-    width: 59vw;
-  }
+
 
 }
 
@@ -2389,9 +2393,7 @@ table thead {
 
     /* Inscription*/
 
-    .inscription-width{
-      width: 71vw;
-    }
+
 
 }
 
@@ -2615,9 +2617,6 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
-    width: 78vw;
-  }
 
 
 }
@@ -2749,9 +2748,6 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
-    padding: 10vw;
-    width: 85vw;
-  }
+
 
 }

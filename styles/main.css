@@ -529,7 +529,7 @@ li.link_name {
   margin-bottom: 1vh;
 }
 
-footer .btn-bordure {
+footer .btn-bordure{
   background-image: linear-gradient(#242424, #242424), linear-gradient(to left, #ff8e00, #dc0019);
   color: white;
 }
@@ -593,7 +593,6 @@ li.suivez-nous {
 .menu .footer-text {
   font-size: 1.5em;
 }
-
 li.current_page_item a {
   color: #dc0019;
 }
@@ -1381,11 +1380,15 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .table-tarif .tableau-cours-ind {
-  width: 47vw;
+  width: 41.5vw;
 }
 
-.table-tarif .tableau-cours-ind {
-  width: 41.5vw;
+.table-tarif .table-tarif-individuel{
+  margin-right: -7vw;
+}
+
+.table-tarif .table-tarif-groupe{
+  margin-right: -7vw;
 }
 
 .grid-cours
@@ -1417,7 +1420,10 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 
-/* TABLEAU */
+
+/* TABLEAU */¸
+
+
 table {
   width: 86%;
   background-color: #f0f0f0;

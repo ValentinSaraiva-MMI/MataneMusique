@@ -768,6 +768,14 @@ li.suivez-nous {
   margin-top: 0;
 }
 
+.btn-plus-actu,
+.btn-plus-evenement {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 /* Actu Accueil */
 
 .actualite {
@@ -1633,11 +1641,11 @@ table thead {
     font-size: 0.9em;
   }
 
-    /* Inscription*/
+  /* Inscription*/
 
-    .inscription-width{
-      width: 50vw;
-    }
+  .inscription-width {
+    width: 50vw;
+  }
 
 }
 
@@ -1753,7 +1761,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 54vw;
   }
 
@@ -1972,7 +1980,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 59vw;
   }
 
@@ -2387,11 +2395,11 @@ table thead {
     text-align: center;
   }
 
-    /* Inscription*/
+  /* Inscription*/
 
-    .inscription-width{
-      width: 71vw;
-    }
+  .inscription-width {
+    width: 71vw;
+  }
 
 }
 
@@ -2615,7 +2623,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     width: 78vw;
   }
 
@@ -2749,7 +2757,7 @@ table thead {
 
   /* Inscription*/
 
-  .inscription-width{
+  .inscription-width {
     padding: 10vw;
     width: 85vw;
   }

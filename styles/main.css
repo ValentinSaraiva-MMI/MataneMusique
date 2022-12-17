@@ -3174,5 +3174,14 @@ table thead {
 
   .des-coordonnees {
     height: auto;
+    margin-top: 0;
+  }
+
+  .coordonnee-texte p {
+    width: 66vw;
+  }
+
+  .joindre {
+    margin-bottom: 0;
   }
 }

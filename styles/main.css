@@ -2487,9 +2487,9 @@ table thead {
     justify-content: space-between;
   }
 
-  .textes_enseignants,
   .img-enseignant {
-    width: 40vw;
+    height: 32vh;
+    width: 21vh;
   }
 
   .textes_enseignants {

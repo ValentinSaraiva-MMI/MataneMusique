@@ -186,7 +186,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
-    'menu_icon' => 'dashicons-groups',
+    'menu_icon' => 'dashicons-admin-site',
     'rewrite' => array('slug' => 'Partenaires')
 );
 register_post_type('Partenaires', $args);

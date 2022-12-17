@@ -529,7 +529,7 @@ li.link_name {
   margin-bottom: 1vh;
 }
 
-footer .btn-bordure{
+footer .btn-bordure {
   background-image: linear-gradient(#242424, #242424), linear-gradient(to left, #ff8e00, #dc0019);
   color: white;
 }
@@ -593,6 +593,7 @@ li.suivez-nous {
 .menu .footer-text {
   font-size: 1.5em;
 }
+
 li.current_page_item a {
   color: #dc0019;
 }
@@ -1183,6 +1184,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   font-weight: bold;
 }
 
+
 .conseil .description_prof,
 .conseil .titre-enseignant {
   text-align: center;
@@ -1413,7 +1415,8 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 
-/* TABLEAU */¸
+
+/* TABLEAU */
 
 
 table {
@@ -2201,7 +2204,7 @@ table thead {
     display: flex;
     flex-direction: column;
     text-align: center;
-    left: 28vw;
+    left: 22vw;
     top: 47vh;
     height: 100vh;
     justify-content: flex-start;
@@ -2435,7 +2438,7 @@ table thead {
 
   .textes_enseignants,
   .img-enseignant {
-    width: 43vw;
+    width: 40vw;
   }
 
   .article-enseignant {
@@ -2652,6 +2655,12 @@ table thead {
   }
 
   /* notre ecole */
+
+  .equipe-membre .description_prof p {
+    inline-size: 50vw;
+    overflow-wrap: break-word;
+  }
+
   .services-position {
     flex-direction: column;
     margin-top: 3vh;
@@ -2865,5 +2874,7 @@ table thead {
     padding: 10vw;
     width: 85vw;
   }
+
+
 
 }

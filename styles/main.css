@@ -1376,6 +1376,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 .text-cours-ind ul {
   text-align: center;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .tarif-ind {
@@ -1810,7 +1811,7 @@ table thead {
     width: 50vw;
   }
 
-  .img-enseignant{
+  .img-enseignant {
     width: 12vw;
   }
 
@@ -2073,7 +2074,7 @@ table thead {
   .img-enseignant {
     height: auto;
     width: 21vh;
-}
+  }
 
   .equipe-texte p {
     width: 68vw;
@@ -2664,12 +2665,17 @@ table thead {
     width: 39vw;
   }
 
-  p {
+  p,
+  li {
     font-size: 14px;
   }
 
   h2 {
     font-size: 24pt;
+  }
+
+  .btn-bordure a {
+    font-size: 1.2em;
   }
 
   .widget-accueil div:last-child {
@@ -2835,21 +2841,29 @@ table thead {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
   }
 
   .table-tarif-individuel {
-    width: 95%;
+    width: 100%;
   }
 
   .frais-accompagnement {
-    width: 87vw;
+    width: 95vw;
     margin-top: 6vh;
     height: auto;
   }
 
+  .table-tarif .tableau-cours-ind {
+    width: 95vw;
+  }
+
+  .text-tarif ul {
+    padding-left: 0;
+  }
+
   table {
     font-size: 0.9em;
+    width: 100%;
   }
 
   .text-tarif {
@@ -2864,6 +2878,23 @@ table thead {
 
   div.table-tarif.table-tarif-groupe {
     width: 100%;
+  }
+
+  .btn-cours a {
+    font-size: 0.8em;
+  }
+
+  .titre-cours {
+    top: 22vh;
+    left: 2.5vw;
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .text-tarif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   /* notre ecole */
@@ -3056,7 +3087,7 @@ table thead {
   /*cours*/
 
   .titre-cours {
-    left: 1.8vw;
+    left: 2.5vw;
     font-size: 0.9em;
   }
 

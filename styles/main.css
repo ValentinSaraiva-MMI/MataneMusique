@@ -2750,6 +2750,11 @@ table thead {
     width: 78vw;
   }
 
+  /*menu*/
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
+    left: 10vw;
+  }
 
 }
 
@@ -2880,7 +2885,7 @@ table thead {
   }
 
   .equipe-membre .description_prof p {
-    inline-size: 50vw;
+    inline-size: 46vw;
     overflow-wrap: break-word;
   }
 

@@ -49,8 +49,8 @@
                         wp_nav_menu($args);
                     ?>
                     <div class="mobile-nav">
-                    <a href="<?php echo esc_url(home_url('/don')) ?>"> <button class="header_button_mobile">Faire un don</button> </a>
-                    <a href="<?php echo esc_url(home_url('/formulaire-inscription')); ?>"> <button class="header_button_mobile">S’inscrire</button></a>
+                        <a href="<?php echo esc_url(home_url('/don')) ?>"> <button class="header_button_mobile">Faire un don</button> </a>
+                        <a href="<?php echo esc_url(home_url('/formulaire-inscription')); ?>"> <button class="header_button_mobile">S’inscrire</button></a>
                         <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/membre')); ?>"> 
                             <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> " class="header_icons2" alt="icons profile"> 
                         </button>

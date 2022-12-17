@@ -982,6 +982,10 @@ li.current_page_item a {
   justify-content: flex-start;
 }
 
+.une-coordonnee:first-child img {
+  margin-right: 0.6vw;
+}
+
 .coordonnee-texte p {
   text-align: left;
 }
@@ -992,7 +996,7 @@ li.current_page_item a {
 }
 
 .coordonnees {
-  width: 20vw;
+  width: 95vw;
   padding-top: 2vw;
 }
 
@@ -2168,6 +2172,10 @@ table thead {
   .formulaire-contact {
     width: 50vw;
   }
+
+  .une-coordonnee:first-child img {
+    margin-right: 1vw;
+  }
 }
 
 @media all and (max-width: 748px) {
@@ -2451,13 +2459,14 @@ table thead {
 
   .des-coordonnees {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 47vh;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30vh;
     margin-top: 5vh;
     align-items: center;
     margin-left: 0;
-    width: 80vw;
+    flex-wrap: wrap;
+    width: 95vw;
   }
 
   .coordonnes-form {
@@ -2465,17 +2474,18 @@ table thead {
   }
 
   .formulaire-contact {
-    width: 95vw;
-    -webkit-box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.25);
+    width: 85vw;
+    -webkit-box-shadow: 0px 4px 8px 5px rgb(0 0 0 / 25%);
+    box-shadow: 0px 4px 8px 5px rgb(0 0 0 / 25%);
     border-radius: 25px;
     padding: 2vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .coordonnee-texte p {
     text-align: left;
-    width: 35vw;
-    margin: 0px 30px;
+    width: 34vw;
   }
 
   .coordonnees h2 {
@@ -2702,6 +2712,12 @@ table thead {
   .header_icons,
   .header_icons2 {
     height: 4.5vh;
+  }
+
+  /*Contact */
+
+  .une-coordonnee:first-child img {
+    margin-right: 2vw;
   }
 }
 
@@ -3048,6 +3064,25 @@ table thead {
   /*footer*/
   .scroll-parent {
     margin: 0 auto -8vh -2vw;
+  }
+
+  /* Contact */
+
+  .des-coordonnees {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .coordonnee-texte p {
+    width: 50vw;
+  }
+
+  .coordonnee-texte {
+    margin-left: 5vw;
+  }
+
+  .une-coordonnee {
+    margin-bottom: 1vh;
   }
 }
 

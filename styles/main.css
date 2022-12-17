@@ -1253,7 +1253,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: block;
   position: relative;
   max-height: 0;
-  left: -4.5vw;
+  left: -1.5vw;
   color: #ff8e00;
   font-size: 20px;
 }
@@ -1734,6 +1734,7 @@ table thead {
     width: 85vw;
   }
 
+
 }
 
 @media all and (max-width: 1280px) {
@@ -1803,6 +1804,7 @@ table thead {
 
   .mission-historique .services-image img {
     width: 20vw;
+    height: 54vw;
   }
 
   .nos-services {
@@ -2094,6 +2096,10 @@ table thead {
     width: 87vw;
   }
 
+  .mission-historique .services-image img {
+    width: 83vw;
+}
+
   .services-position {
     align-items: center;
   }
@@ -2109,6 +2115,10 @@ table thead {
 
   .textes_enseignants {
     width: 47vw;
+  }
+
+  .infos-fondation li:before {
+    left: -2.5vw;
   }
 
 
@@ -2511,9 +2521,9 @@ table thead {
     justify-content: space-between;
   }
 
-  .textes_enseignants,
   .img-enseignant {
-    width: 40vw;
+    height: 32vh;
+    width: 21vh;
   }
 
   .textes_enseignants {
@@ -2533,6 +2543,11 @@ table thead {
     justify-content: flex-start;
     margin-left: 15vw;
   }
+
+  .mission-historique .services-image img {
+    width: 84vw;
+    height: 14vh;
+}
 
   .img-equipe {
     width: 20vw;

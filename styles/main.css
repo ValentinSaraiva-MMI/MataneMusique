@@ -66,7 +66,6 @@ textarea {
   resize: none;
 }
 
-
 @keyframes popsection {
   0% {
     opacity: 0;
@@ -190,7 +189,8 @@ main {
   background-position: left bottom;
 }
 
-.wp-dark-mode-active .header_telephone:hover {}
+.wp-dark-mode-active .header_telephone:hover {
+}
 
 .wp-dark-mode-active .search-input {
   color: #7c7872;
@@ -202,9 +202,11 @@ main {
 }
 
 .wp-dark-mode-active .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 76%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 76%
+  );
 }
 
 .wp-dark-mode-active .evenement-position {
@@ -259,7 +261,7 @@ main {
 
 ::selection {
   color: white;
-  background: #ff8e00
+  background: #ff8e00;
 }
 
 /* ----------------------- */
@@ -405,13 +407,16 @@ main {
 }
 
 .header_hr.anim-header {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       #ff8e01,
       #ff8e01,
       #dc0019,
       #dc0019,
       #ff8e01,
-      #ff8e01) 0 0 / 400% 100%;
+      #ff8e01
+    )
+    0 0 / 400% 100%;
   animation: anim-barre 18s linear infinite;
 }
 
@@ -664,9 +669,11 @@ li.suivez-nous {
 /* Widget accueil */
 
 .widget-img {
-  background: radial-gradient(circle,
-      rgba(255, 143, 0, 0.8) 0%,
-      rgba(255, 143, 0, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 143, 0, 0.8) 0%,
+    rgba(255, 143, 0, 0) 60%
+  );
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -696,7 +703,6 @@ li.suivez-nous {
     transform: scale(100%);
   }
 }
-
 
 .widget {
   display: flex;
@@ -866,7 +872,7 @@ li.suivez-nous {
   text-align: center;
 }
 
-.actu-contient img~div p {
+.actu-contient img ~ div p {
   text-align: left;
 }
 
@@ -1713,15 +1719,12 @@ table thead {
     display: flex;
     align-items: center;
     flex-direction: column;
-
   }
 
   .search-results section article {
     width: 85vw;
   }
-
 }
-
 
 @media all and (max-width: 1280px) {
   /* Général */
@@ -1856,7 +1859,6 @@ table thead {
   .inscription-width {
     width: 54vw;
   }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -2082,7 +2084,6 @@ table thead {
   .inscription-width {
     width: 59vw;
   }
-
 }
 
 @media all and (max-width: 748px) {
@@ -2133,7 +2134,7 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
-    left: 50px;
+    left: 20px;
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2176,12 +2177,12 @@ table thead {
     transition: 0.4s 0s ease-in-out;
   }
 
-  .toggle-button input:checked+.menu-burger {
+  .toggle-button input:checked + .menu-burger {
     /*box-shadow: 0 0 0 100vw #FFFFFF60, 0 0 0 100vh #FFFFFF60;*/
     border-radius: 0;
   }
 
-  .toggle-button input:checked~.nav-container {
+  .toggle-button input:checked ~ .nav-container {
     background-color: #dedede60;
     backdrop-filter: blur(3px);
     width: 100vw;
@@ -2189,30 +2190,30 @@ table thead {
     margin: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar {
+  .toggle-button input:checked + .menu-burger .bar {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-  .toggle-button input:checked+.menu-burger .bar:after {
+  .toggle-button input:checked + .menu-burger .bar:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
   }
 
-  .toggle-button input:checked+.menu-burger .bar:before {
+  .toggle-button input:checked + .menu-burger .bar:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
   }
 
-  .toggle-button input+.menu-burger+ul,
-  .toggle-button input+.menu-burger+div {
+  .toggle-button input + .menu-burger + ul,
+  .toggle-button input + .menu-burger + div {
     display: none;
   }
 
-  .toggle-button input:checked+.menu-burger+ul,
-  .toggle-button input:checked+.menu-burger+div {
+  .toggle-button input:checked + .menu-burger + ul,
+  .toggle-button input:checked + .menu-burger + div {
     opacity: 1;
     margin-right: 0;
     display: flex;
@@ -2520,7 +2521,6 @@ table thead {
   .inscription-width {
     width: 71vw;
   }
-
 }
 
 @media all and (max-width: 640px) {
@@ -2752,12 +2752,9 @@ table thead {
   .inscription-width {
     width: 78vw;
   }
-
-
 }
 
 @media all and (max-width: 360px) {
-
   /*accueil*/
   .toggle-button .menu-burger {
     right: 12vw;
@@ -2840,7 +2837,7 @@ table thead {
     padding-bottom: 1vh;
   }
 
-  .evenement-categorie~p {
+  .evenement-categorie ~ p {
     margin: 1vh 0 0 0;
   }
 
@@ -2882,5 +2879,4 @@ table thead {
     padding: 10vw;
     width: 85vw;
   }
-
 }

@@ -66,7 +66,6 @@ textarea {
   resize: none;
 }
 
-
 @keyframes popsection {
   0% {
     opacity: 0;
@@ -259,7 +258,7 @@ main {
 
 ::selection {
   color: white;
-  background: #ff8e00
+  background: #ff8e00;
 }
 
 /* ----------------------- */
@@ -530,12 +529,14 @@ li.link_name {
 }
 
 footer .btn-bordure {
-  background-image: linear-gradient(#242424, #242424), linear-gradient(to left, #ff8e00, #dc0019);
+  background-image: linear-gradient(#242424, #242424),
+    linear-gradient(to left, #ff8e00, #dc0019);
   color: white;
 }
 
 footer .btn-bordure:hover {
-  background-image: linear-gradient(#404040, #404040), linear-gradient(to left, #ff8e00, #dc0019);
+  background-image: linear-gradient(#404040, #404040),
+    linear-gradient(to left, #ff8e00, #dc0019);
 }
 
 li.suivez-nous {
@@ -684,7 +685,6 @@ li.current_page_item a {
     transform: scale(100%);
   }
 }
-
 
 .widget {
   display: flex;
@@ -1184,7 +1184,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   font-weight: bold;
 }
 
-
 .conseil .description_prof,
 .conseil .titre-enseignant {
   text-align: center;
@@ -1385,7 +1384,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   width: 41.5vw;
 }
 
-
 .grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
 -webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
@@ -1413,8 +1411,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   box-shadow: inset 0px -155px 80px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
 }
-
-
 
 /* TABLEAU */
 
@@ -1695,9 +1691,17 @@ table thead {
   }
 
 
+  .search-results section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .search-results section article {
+    width: 85vw;
+  }
 
 }
-
 
 @media all and (max-width: 1280px) {
   /* Général */
@@ -1832,7 +1836,6 @@ table thead {
   .inscription-width {
     width: 54vw;
   }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -2052,12 +2055,19 @@ table thead {
     border-radius: 50px 50px 0px 0px;
   }
 
+  .scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    margin: 10vh auto -8vh -5vw;
+  }
+
   /* Inscription*/
 
   .inscription-width {
     width: 59vw;
   }
-
 }
 
 @media all and (max-width: 748px) {
@@ -2065,6 +2075,14 @@ table thead {
 
   h3 {
     font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+
+  h1 {
+    font-size: 30pt;
   }
 
   /*menu*/
@@ -2108,7 +2126,11 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
-    left: 50px;
+
+    left: 20px;
+
+    left: 0;
+
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2236,7 +2258,7 @@ table thead {
 
   .wp-dark-mode-switcher.right_bottom,
   .wp-dark-mode-side-toggle-wrap.right_bottom {
-    right: 10.5vw;
+    right: 15.5vw;
     height: fit-content;
   }
 
@@ -2476,6 +2498,14 @@ table thead {
     flex-direction: column;
   }
 
+  .scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    margin: 10vh auto -8vh -2vw;
+  }
+
   .box-infos,
   .box-lien,
   .box-infolettre {
@@ -2494,20 +2524,6 @@ table thead {
   .inscription-width {
     width: 71vw;
   }
-
-
-    /* Recherches*/
-
-    .search-results section {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-  
-    }
-  
-    .search-results section article {
-      width: 85vw;
-    }
 
 }
 
@@ -2742,12 +2758,23 @@ table thead {
     width: 66%;
   }
 
+  .scroll-element img {
+    height: inherit;
+    object-fit: contain;
+    width: 18vw;
+  }
+
   /* Inscription*/
 
   .inscription-width {
     width: 78vw;
   }
 
+  /*menu*/
+  .toggle-button input:checked+.menu-burger+ul,
+  .toggle-button input:checked+.menu-burger+div {
+    left: 10vw;
+  }
 
 }
 
@@ -2755,7 +2782,6 @@ table thead {
 
   /*accueil*/
   .toggle-button .menu-burger {
-    right: 12vw;
     top: -15vh;
   }
 
@@ -2878,6 +2904,8 @@ table thead {
     width: 85vw;
   }
 
-
-
+  .equipe-membre .description_prof p {
+    inline-size: 46vw;
+    overflow-wrap: break-word;
+  }
 }

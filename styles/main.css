@@ -1694,18 +1694,7 @@ table thead {
     font-size: 0.9em;
   }
 
-  /* Recherches*/
 
-  .search-results section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-  }
-
-  .search-results section article {
-    width: 85vw;
-  }
 
 }
 
@@ -2505,6 +2494,20 @@ table thead {
   .inscription-width {
     width: 71vw;
   }
+
+
+    /* Recherches*/
+
+    .search-results section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+    }
+  
+    .search-results section article {
+      width: 85vw;
+    }
 
 }
 

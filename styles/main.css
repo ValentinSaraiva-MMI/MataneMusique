@@ -1808,6 +1808,10 @@ table thead {
     width: 50vw;
   }
 
+  .img-enseignant{
+    width: 12vw;
+  }
+
   .article-enseignant {
     width: 43vw;
   }
@@ -2065,8 +2069,9 @@ table thead {
   }
 
   .img-enseignant {
-    height: 22vh;
-  }
+    height: auto;
+    width: 21vh;
+}
 
   .equipe-texte p {
     width: 68vw;
@@ -2500,9 +2505,6 @@ table thead {
 
   /*notre ecole*/
 
-  .article-enseignant {
-    flex-direction: column;
-  }
 
   .grid-enseignants {
     justify-content: space-between;

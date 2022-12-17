@@ -2265,8 +2265,6 @@ table thead {
     color: black;
     text-decoration: none;
     font-size: 18pt;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     width: 80%;
   }
 
@@ -2492,7 +2490,7 @@ table thead {
     width: 40vw;
   }
 
-  .textes_enseignants{
+  .textes_enseignants {
     width: 75vw;
   }
 
@@ -2618,7 +2616,7 @@ table thead {
   /* Accueil */
 
   .header_logo_column {
-    width: 37vw;
+    width: 39vw;
   }
 
   p {

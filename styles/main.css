@@ -1148,6 +1148,24 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   float: right;
 }
 
+/* espace membre */
+
+.post-password-form input {
+  background: linear-gradient(to left, #ff8e00, #dc0019);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+}
+
+.post-password-form label input {
+  background: transparent;
+  border: solid 1px #ff8d00;
+  border-radius: 10px;
+  padding: 7px;
+  color: black;
+}
+
 /*equipe*/
 .equipe-texte p {
   width: 40vw;
@@ -1528,6 +1546,15 @@ table thead {
   bottom: 1vh;
   left: 50%;
   transform: translate(-50%);
+}
+
+.membre.search-results section article p:last-child {
+  color: white;
+}
+
+.membre.search-results section {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .search-results section article p:last-child a {
@@ -2171,11 +2198,7 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
-
-    left: 20px;
-
     left: 0;
-
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2590,6 +2613,11 @@ table thead {
     width: 95vw;
     margin-top: 5vh;
   }
+
+  .header_icons,
+  .header_icons2 {
+    height: 4.5vh;
+  }
 }
 
 @media all and (max-width: 640px) {
@@ -2651,8 +2679,93 @@ table thead {
     margin-bottom: 3vh;
   }
 
+  .actu-contient div {
+    text-align: center;
+  }
+
   .evenement {
     width: 57vw;
+  }
+
+  .actu-contient img {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 2vh;
+  }
+
+  .actu-contient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actu-contient img~div p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .evenement-position {
+    width: inherit;
+    padding: 0 3vw 0 0;
+  }
+
+  .position-actu-evnmt section:last-of-type {
+    width: 100%;
+    padding: 0 3vw;
+  }
+
+  .evenement-position img {
+    width: 48%;
+  }
+
+  .evenement {
+    flex-wrap: wrap;
+    width: 52%;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 2vh 1vw 1vh 2vw;
+  }
+
+  .evenement .evenement-infos {
+    padding-right: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -40vw;
+    margin-top: 1.5vh;
+  }
+
+  .evenement-categorie {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .evenement-position {
+    height: auto;
+    align-items: flex-start;
+    padding-bottom: 1vh;
+  }
+
+  .evenement-categorie~p {
+    margin: 1vh 0 0 0;
+  }
+
+  .evenement-date p:last-child,
+  .evenement-lieu p:last-child {
+    margin: 0;
+  }
+
+  .evenement-date {
+    margin-bottom: 2vh;
+  }
+
+  .evenement .evenement-infos p:last-child {
+    width: 100%;
+  }
+
+  .evenement .date-lieu {
+    height: 18vh;
   }
 
   /*Dons*/
@@ -2765,6 +2878,8 @@ table thead {
   .img-equipe {
     width: 28vw;
     height: 15vh;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .equipe-membre {
@@ -2910,68 +3025,9 @@ table thead {
     padding: 0 3vw;
   }
 
-  .evenement-position {
-    width: inherit;
-    padding: 0 3vw 0 0;
-  }
-
-  .position-actu-evnmt section:last-of-type {
-    width: 100%;
-    padding: 0 3vw;
-  }
-
-  .evenement-position img {
-    width: 48%;
-  }
-
-  .evenement {
-    flex-wrap: wrap;
-    width: 52%;
-    flex-direction: column-reverse;
-    height: auto;
-    padding: 2vh 1vw 1vh 2vw;
-  }
-
-  .evenement .evenement-infos {
-    padding-right: 0;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: -40vw;
-    margin-top: 1.5vh;
-  }
-
-  .evenement-categorie {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .evenement-position {
-    height: auto;
-    align-items: flex-start;
-    padding-bottom: 1vh;
-  }
-
-  .evenement-categorie~p {
-    margin: 1vh 0 0 0;
-  }
-
-  .evenement-date p:last-child,
-  .evenement-lieu p:last-child {
-    margin: 0;
-  }
-
-  .evenement-date {
-    margin-bottom: 2vh;
-  }
-
-  .evenement .evenement-infos p:last-child {
-    width: 100%;
-  }
-
-  .evenement .date-lieu {
-    height: 18vh;
+  .actu-contient img {
+    width: 40vw;
+    height: 40vw;
   }
 
   /* footer */

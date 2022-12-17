@@ -37,7 +37,7 @@
 
         <div class="header_parent">
             <label class="toggle-button">
-                <input type="checkbox">
+                <input id="checkbox" type="checkbox">
                 <span class="menu-burger">
                     <span class="bar"></span>
                 </span>
@@ -51,9 +51,11 @@
                     <div class="mobile-nav">
                         <a href="<?php echo esc_url(home_url('/don')) ?>"> <button class="header_button_mobile">Faire un don</button> </a>
                         <a href="<?php echo esc_url(home_url('/formulaire-inscription')); ?>"> <button class="header_button_mobile">S’inscrire</button></a>
-                        <button class="header_button_mobile" onclick="<?php echo esc_url(home_url('/membre')); ?>"> 
-                            <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> " class="header_icons2" alt="icons profile"> 
-                        </button>
+                        <a href="<?php echo esc_url(home_url('/membre')); ?>">
+                            <button class="header_button_mobile"> 
+                                <img src="<?php echo get_template_directory_uri() . '/images/icons/profileicon.png' ?> " class="header_icons2" alt="icons profile"> 
+                            </button>
+                        </a>
                     </div>
                 </div>
             </label>
@@ -93,3 +95,18 @@
 
     <main class="container">
 
+<!--
+<script>
+    function scroll_menuburger_ouvert() {
+    // Get the checkbox
+        let checkbox = document.querySelector("#checkbox");
+        // If the checkbox is checked, display the output text
+        if (checkbox.checked == true){
+            document.body.style.overflowY = 'hidden';
+        } else {
+            document.body.style.overflowY = 'scroll';
+        }
+    }
+    scroll_menuburger_ouvert()
+</script>
+-->

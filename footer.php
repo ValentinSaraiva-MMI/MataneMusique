@@ -2,33 +2,6 @@
 
 
 <div class="scroll-parent">
-
-<?php
-
-        $args = array(
-
-        'post_type' => 'Partenaires',
-
-        'category' => 'Partenaire',
-
-        );
-
-        $query = new WP_Query($args);
-
-    ?>
-
-
-<?php if ($query->have_posts()): ?>
-            <?php while ($query->have_posts()):
-                    $query->the_post(); ?>
-    
-
-
-
-
-
-
-
   <div class="scroll-element primary">
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_cegep.png')?>" height="100" width="250" alt="" />
     <img src="<?php  echo (get_template_directory_uri() . '/images/logo_mccq.png')?>" height="100" width="250" alt="" />
@@ -49,7 +22,6 @@
   </div>
 </div>
 
-<?php endwhile; endif; ?>
 
 
 </main>

@@ -534,30 +534,15 @@ li.link_name {
   margin-bottom: 1vh;
 }
 
-.input-mail {
-  font-size: 0.8em;
-  border-width: 2px;
-  border-radius: 14px;
-  text-align: left;
-  border-style: solid;
-  padding: 8px;
-  color: #5c5c5c;
-  border-color: #ff8e00;
-  background-color: #fbfbfb;
+footer .btn-bordure {
+  background-image: linear-gradient(#242424, #242424),
+    linear-gradient(to left, #ff8e00, #dc0019);
+  color: white;
 }
 
-.input-inscrire {
-  border-radius: 6px;
-  margin-top: 1vh;
-  padding: 5px;
-  background-color: #ddd;
-  color: #555;
-}
-
-.input-inscrire:hover {
-  background-color: grey;
-  color: lightgrey;
-  transition: 0.3s;
+footer .btn-bordure:hover {
+  background-image: linear-gradient(#404040, #404040),
+    linear-gradient(to left, #ff8e00, #dc0019);
 }
 
 li.suivez-nous {
@@ -569,7 +554,8 @@ li.suivez-nous {
 /*Crédits*/
 .credits {
   height: 5vh;
-  background-color: #ffeacf;
+  background-color: #161616;
+  color: white;
 }
 
 .credits p {
@@ -613,6 +599,10 @@ li.suivez-nous {
 
 .menu .footer-text {
   font-size: 1.5em;
+}
+
+li.current_page_item a {
+  color: #dc0019;
 }
 
 /* Outil de recherche */
@@ -1347,12 +1337,11 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .titre-cours {
-  margin-top: 61px;
   font-size: 32pt;
   margin-bottom: 0;
   font-size: 1.5em;
   position: absolute;
-  top: 27vh;
+  top: 32vh;
   left: 2.8vw;
   color: white;
   z-index: 1;
@@ -1400,10 +1389,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 .table-tarif .tableau-cours-ind {
-  width: 47vw;
-}
-
-.table-tarif .tableau-cours-ind {
   width: 41.5vw;
 }
 
@@ -1436,7 +1421,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 }
 
 /* TABLEAU */
-
 table {
   width: 86%;
   background-color: #f0f0f0;
@@ -1703,7 +1687,6 @@ table thead {
 
   .titre-cours {
     left: 2.8vw;
-    top: 26vh;
     font-size: 1.3em;
   }
 
@@ -2030,7 +2013,6 @@ table thead {
 
   .titre-cours {
     left: 1.4vw;
-    top: 25vh;
   }
 
   .grid-cours {
@@ -2093,6 +2075,14 @@ table thead {
     font-size: 1.1em;
   }
 
+  h2 {
+    font-size: 20pt;
+  }
+
+  h1 {
+    font-size: 30pt;
+  }
+
   /*menu*/
 
   .header_logo_column {
@@ -2134,7 +2124,11 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
+
     left: 20px;
+
+    left: 0;
+
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2219,7 +2213,7 @@ table thead {
     display: flex;
     flex-direction: column;
     text-align: center;
-    left: 28vw;
+    left: 22vw;
     top: 47vh;
     height: 100vh;
     justify-content: flex-start;
@@ -2262,7 +2256,7 @@ table thead {
 
   .wp-dark-mode-switcher.right_bottom,
   .wp-dark-mode-side-toggle-wrap.right_bottom {
-    right: 10.5vw;
+    right: 15.5vw;
     height: fit-content;
   }
 
@@ -2430,7 +2424,6 @@ table thead {
   }
 
   .titre-cours {
-    top: 25vh;
     left: 1.4vw;
   }
 
@@ -2454,7 +2447,7 @@ table thead {
 
   .textes_enseignants,
   .img-enseignant {
-    width: 43vw;
+    width: 40vw;
   }
 
   .article-enseignant {
@@ -2619,7 +2612,7 @@ table thead {
   }
 
   .titre-cours {
-    top: 15vh;
+    top: 21vh;
     left: 2.5vw;
     font-size: 1.3em;
   }
@@ -2669,6 +2662,12 @@ table thead {
   }
 
   /* notre ecole */
+
+  .equipe-membre .description_prof p {
+    inline-size: 50vw;
+    overflow-wrap: break-word;
+  }
+
   .services-position {
     flex-direction: column;
     margin-top: 3vh;
@@ -2757,7 +2756,6 @@ table thead {
 @media all and (max-width: 360px) {
   /*accueil*/
   .toggle-button .menu-burger {
-    right: 12vw;
     top: -15vh;
   }
 
@@ -2878,5 +2876,10 @@ table thead {
   .inscription-width {
     padding: 10vw;
     width: 85vw;
+  }
+
+  .equipe-membre .description_prof p {
+    inline-size: 50vw;
+    overflow-wrap: break-word;
   }
 }

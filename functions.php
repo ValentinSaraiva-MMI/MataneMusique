@@ -137,7 +137,7 @@ $args = array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
     'menu_position' => 5,
-    'menu_icon' => 'dashicons-hammer',
+    'menu_icon' => 'dashicons-smiley',
     'taxonomies' => array('category','post_tag'),
     'rewrite' => array('slug' => 'Membre')
 );
@@ -167,6 +167,29 @@ $args = array(
 );
 register_post_type('Actualités', $args);
 
+
+// CPT Partenaires
+$labels = array(
+    'name' => 'Partenaires',
+    'all_items' => 'Toutes les Partenaires',
+    // affiché dans le sous menu
+    'singular_name' => 'Partenaire',
+    'add_new_item' => 'Ajouter un Partenaire',
+    'add_new' => 'Ajouter un Partenaire',
+    'edit_item' => 'Modifier les Partenaires',
+    'menu_name' => 'Partenaires'
+);
+$args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-admin-site',
+    'rewrite' => array('slug' => 'Partenaires')
+);
+register_post_type('Partenaires', $args);
 
 // CPT Évenement
 $labels = array(

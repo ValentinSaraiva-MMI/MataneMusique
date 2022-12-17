@@ -975,7 +975,7 @@ li.current_page_item a {
 .une-coordonnee {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .coordonnee-texte p {
@@ -983,7 +983,8 @@ li.current_page_item a {
 }
 
 .coordonnee-texte {
-  width: 15vw;
+  width: auto;
+  margin-left: 2vw;
 }
 
 .coordonnees {
@@ -2101,7 +2102,7 @@ table thead {
 
   .mission-historique .services-image img {
     width: 23vw;
-}
+  }
 
   .services-position {
     align-items: center;
@@ -2153,6 +2154,15 @@ table thead {
   .services-image img {
     width: 30vw;
     margin-left: 3vw;
+  }
+
+  /*Contact*/
+  .coordonnee-texte p {
+    width: 35vw;
+  }
+
+  .formulaire-contact {
+    width: 50vw;
   }
 }
 
@@ -2432,7 +2442,7 @@ table thead {
   .joindre {
     display: flex;
     justify-content: space-between;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .des-coordonnees {
@@ -2444,6 +2454,10 @@ table thead {
     align-items: center;
     margin-left: 0;
     width: 80vw;
+  }
+
+  .coordonnes-form {
+    flex-direction: column-reverse;
   }
 
   .formulaire-contact {
@@ -2477,15 +2491,11 @@ table thead {
   }
 
   .article-cours {
-    width: 34vw;
+    width: 38vw;
   }
 
   .grid-cours .ombre-cours {
     width: fit-content;
-  }
-
-  .table-tarif-individuel {
-    width: 54vw;
   }
 
   .tarification-familiale {
@@ -2502,11 +2512,14 @@ table thead {
 
   .btn-cours {
     top: 35vh;
-    left: 1.4vw;
+    left: 4.5vw;
   }
 
   .titre-cours {
-    left: 1.4vw;
+    top: 32vh;
+    left: 4.5vw;
+    font-size: 1.3em;
+    text-align: left;
   }
 
   .table-tarif-groupe h3 {
@@ -2516,6 +2529,55 @@ table thead {
   .table-tarif-groupe.tableau-cours-ind.text-tarif {
     width: 75vw;
   }
+
+  .tarif-ind {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .table-tarif-individuel {
+    width: 100%;
+  }
+
+  .frais-accompagnement {
+    width: 95vw;
+    margin-top: 6vh;
+    height: auto;
+  }
+
+  .table-tarif .tableau-cours-ind {
+    width: 95vw;
+  }
+
+  .text-tarif ul {
+    padding-left: 0;
+  }
+
+  table {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .text-tarif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tableau-cours-ind h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.table-tarif.table-tarif-groupe {
+    width: 100%;
+  }
+
+  .btn-cours a {
+    font-size: 1.2em;
+  }
+
 
   /*notre ecole*/
 
@@ -2550,7 +2612,7 @@ table thead {
   .mission-historique .services-image img {
     width: 84vw;
     height: 14vh;
-}
+  }
 
   .img-equipe {
     width: 20vw;
@@ -2819,7 +2881,7 @@ table thead {
   /* Cours */
 
   .btn-cours {
-    top: 24vh;
+    top: 18vh;
     left: 2.5vw;
     font-size: 1em;
   }
@@ -2832,55 +2894,12 @@ table thead {
 
   .img-cours {
     width: 38vw;
-    height: 31vh;
+    height: 25vh;
   }
 
   .grid-cours .ombre-cours {
     width: 38vw;
-    height: 31vh;
-  }
-
-  .tarif-ind {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .table-tarif-individuel {
-    width: 100%;
-  }
-
-  .frais-accompagnement {
-    width: 95vw;
-    margin-top: 6vh;
-    height: auto;
-  }
-
-  .table-tarif .tableau-cours-ind {
-    width: 95vw;
-  }
-
-  .text-tarif ul {
-    padding-left: 0;
-  }
-
-  table {
-    font-size: 0.9em;
-    width: 100%;
-  }
-
-  .text-tarif {
-    display: flex;
-    justify-content: center;
-  }
-
-  .tableau-cours-ind h3 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  div.table-tarif.table-tarif-groupe {
-    width: 100%;
+    height: 25vh;
   }
 
   .btn-cours a {
@@ -2888,16 +2907,10 @@ table thead {
   }
 
   .titre-cours {
-    top: 22vh;
+    top: 15vh;
     left: 2.5vw;
     font-size: 1.3em;
     text-align: left;
-  }
-
-  .text-tarif {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
 
   /* notre ecole */
@@ -3090,8 +3103,14 @@ table thead {
   /*cours*/
 
   .titre-cours {
+    top: 16vh;
     left: 2.5vw;
     font-size: 0.9em;
+  }
+
+  table td,
+  table th {
+    padding: 10px;
   }
 
   /* Inscription*/

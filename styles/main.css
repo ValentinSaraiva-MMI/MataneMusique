@@ -223,7 +223,11 @@ main {
   background-color: rgb(2 2 2);
 }
 
-.wp-dark-mode-active .scroll-element {
+.wp-dark-mode-active .scroll-element.primary {
+  background-color: #cccccc !important;
+}
+
+.wp-dark-mode-active .scroll-element.secondary {
   background-color: #cccccc !important;
 }
 

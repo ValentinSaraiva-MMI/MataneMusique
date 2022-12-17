@@ -1230,7 +1230,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: block;
   position: relative;
   max-height: 0;
-  left: -1.5vw;
+  left: -4.5vw;
   color: #ff8e00;
   font-size: 20px;
 }
@@ -2049,6 +2049,24 @@ table thead {
   .ecole-info p {
     width: 87vw;
   }
+
+  .services-position {
+    align-items: center;
+  }
+
+  .grid-enseignants {
+    flex-direction: column;
+  }
+
+  .article-enseignant {
+    width: 95vw;
+    flex-direction: row;
+  }
+
+  .textes_enseignants {
+    width: 47vw;
+  }
+
 
   /* footer */
   footer {

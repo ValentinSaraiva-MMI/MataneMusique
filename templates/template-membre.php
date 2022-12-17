@@ -22,7 +22,7 @@ Template Name: Page Membre
         );
         $query = new WP_Query($args);
     ?>
-<main class="search-results">
+<main class="search-results membre">
     <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()): $query->the_post(); ?>
             <section>

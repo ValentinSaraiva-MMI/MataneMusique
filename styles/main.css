@@ -1847,8 +1847,8 @@ table thead {
 
   /*coordonnées*/
 
-  .coordonnees{
-    width: 21vw;
+  .coordonnees {
+    width: auto;
   }
 
   .des-coordonnees {
@@ -3163,5 +3163,26 @@ table thead {
   .equipe-membre .description_prof p {
     inline-size: 46vw;
     overflow-wrap: break-word;
+  }
+
+  /* Contact */
+
+  .formulaire-contact {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90vw;
+  }
+
+  .des-coordonnees {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .coordonnee-texte p {
+    width: 66vw;
+  }
+
+  .joindre {
+    margin-bottom: 0;
   }
 }

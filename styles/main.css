@@ -66,7 +66,6 @@ textarea {
   resize: none;
 }
 
-
 @keyframes popsection {
   0% {
     opacity: 0;
@@ -259,7 +258,7 @@ main {
 
 ::selection {
   color: white;
-  background: #ff8e00
+  background: #ff8e00;
 }
 
 /* ----------------------- */
@@ -530,12 +529,14 @@ li.link_name {
 }
 
 footer .btn-bordure {
-  background-image: linear-gradient(#242424, #242424), linear-gradient(to left, #ff8e00, #dc0019);
+  background-image: linear-gradient(#242424, #242424),
+    linear-gradient(to left, #ff8e00, #dc0019);
   color: white;
 }
 
 footer .btn-bordure:hover {
-  background-image: linear-gradient(#404040, #404040), linear-gradient(to left, #ff8e00, #dc0019);
+  background-image: linear-gradient(#404040, #404040),
+    linear-gradient(to left, #ff8e00, #dc0019);
 }
 
 li.suivez-nous {
@@ -684,7 +685,6 @@ li.current_page_item a {
     transform: scale(100%);
   }
 }
-
 
 .widget {
   display: flex;
@@ -1184,7 +1184,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   font-weight: bold;
 }
 
-
 .conseil .description_prof,
 .conseil .titre-enseignant {
   text-align: center;
@@ -1385,7 +1384,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   width: 41.5vw;
 }
 
-
 .grid-cours
 /*-moz-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);
 -webkit-box-shadow: inset 0px -155px 60px rgba(0, 0, 0, 0.25);*/
@@ -1413,8 +1411,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   box-shadow: inset 0px -155px 80px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
 }
-
-
 
 /* TABLEAU */
 table {
@@ -1698,15 +1694,12 @@ table thead {
     display: flex;
     align-items: center;
     flex-direction: column;
-
   }
 
   .search-results section article {
     width: 85vw;
   }
-
 }
-
 
 @media all and (max-width: 1280px) {
   /* Général */
@@ -1841,7 +1834,6 @@ table thead {
   .inscription-width {
     width: 54vw;
   }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -2066,7 +2058,6 @@ table thead {
   .inscription-width {
     width: 59vw;
   }
-
 }
 
 @media all and (max-width: 748px) {
@@ -2125,7 +2116,11 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
+
+    left: 20px;
+
     left: 0;
+
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2511,7 +2506,6 @@ table thead {
   .inscription-width {
     width: 71vw;
   }
-
 }
 
 @media all and (max-width: 640px) {
@@ -2888,5 +2882,4 @@ table thead {
     inline-size: 46vw;
     overflow-wrap: break-word;
   }
-
 }

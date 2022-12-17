@@ -2061,6 +2061,14 @@ table thead {
     border-radius: 50px 50px 0px 0px;
   }
 
+  .scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    margin: 10vh auto -8vh -5vw;
+  }
+
   /* Inscription*/
 
   .inscription-width {
@@ -2496,6 +2504,14 @@ table thead {
     flex-direction: column;
   }
 
+  .scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    margin: 10vh auto -8vh -2vw;
+  }
+
   .box-infos,
   .box-lien,
   .box-infolettre {
@@ -2744,6 +2760,12 @@ table thead {
   .box-lien,
   .box-infolettre {
     width: 66%;
+  }
+
+  .scroll-element img {
+    height: inherit;
+    object-fit: contain;
+    width: 18vw;
   }
 
   /* Inscription*/

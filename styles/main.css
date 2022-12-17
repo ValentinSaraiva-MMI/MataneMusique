@@ -2076,6 +2076,14 @@ table thead {
     font-size: 1.1em;
   }
 
+  h2 {
+    font-size: 20pt;
+  }
+
+  h1 {
+    font-size: 30pt;
+  }
+
   /*menu*/
 
   .header_logo_column {
@@ -2117,7 +2125,7 @@ table thead {
   .toggle-button .bar {
     position: absolute;
     top: 135px;
-    left: 50px;
+    left: 0;
     width: 30px;
     height: 2px;
     background: linear-gradient(to left, #ff8e00, #dc0019);
@@ -2245,7 +2253,7 @@ table thead {
 
   .wp-dark-mode-switcher.right_bottom,
   .wp-dark-mode-side-toggle-wrap.right_bottom {
-    right: 10.5vw;
+    right: 15.5vw;
     height: fit-content;
   }
 
@@ -2749,7 +2757,6 @@ table thead {
 
   /*accueil*/
   .toggle-button .menu-burger {
-    right: 12vw;
     top: -15vh;
   }
 
@@ -2872,6 +2879,9 @@ table thead {
     width: 85vw;
   }
 
-
+  .equipe-membre .description_prof p {
+    inline-size: 50vw;
+    overflow-wrap: break-word;
+  }
 
 }

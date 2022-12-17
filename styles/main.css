@@ -1802,6 +1802,7 @@ table thead {
 
   .mission-historique .services-image img {
     width: 20vw;
+    height: 54vw;
   }
 
   .nos-services {
@@ -2092,6 +2093,10 @@ table thead {
   .ecole-info p {
     width: 87vw;
   }
+
+  .mission-historique .services-image img {
+    width: 83vw;
+}
 
   .services-position {
     align-items: center;
@@ -2532,6 +2537,11 @@ table thead {
     justify-content: flex-start;
     margin-left: 15vw;
   }
+
+  .mission-historique .services-image img {
+    width: 84vw;
+    height: 14vh;
+}
 
   .img-equipe {
     width: 20vw;

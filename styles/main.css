@@ -2179,7 +2179,7 @@ table thead {
   }
 
   .toggle-button input:checked~.nav-container {
-    background-color: #dedede60;
+    background-color: #dededead;
     backdrop-filter: blur(3px);
     width: 100vw;
     height: 100vh;

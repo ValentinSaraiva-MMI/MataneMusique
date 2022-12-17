@@ -841,6 +841,10 @@ li.current_page_item a {
   display: flex;
 }
 
+.actu-contient div {
+  width: -webkit-fill-available;
+}
+
 .actu-contient img {
   width: 15vw;
   height: 15vw;
@@ -849,13 +853,14 @@ li.current_page_item a {
 }
 
 .actu-contient p {
-  margin-left: 1vw;
+  margin-left: 0;
   margin-top: 0;
   text-align: center;
 }
 
 .actu-contient img~div p {
   text-align: left;
+  margin-left: 1vw;
 }
 
 .actu-section hr {
@@ -1262,7 +1267,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 
 .services-image img {
   width: 25vw;
-  height: 80vh;
+  height: -webkit-fill-available;
   object-fit: cover;
   border-radius: 45px;
 }
@@ -1836,6 +1841,12 @@ table thead {
   .inscription-width {
     width: 54vw;
   }
+
+  /* Services */
+  .services .widget-accueil {
+    max-width: 24vw;
+    padding: 1.5vh;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -1923,7 +1934,7 @@ table thead {
     height: 23vw;
   }
 
-  .actu-contient p {
+  .actu-contient img~div p {
     margin-left: 2vw;
   }
 
@@ -2085,6 +2096,17 @@ table thead {
 
   .inscription-width {
     width: 59vw;
+  }
+
+  /* Services */
+
+  .services .widget-accueil {
+    max-width: 28vw;
+  }
+
+  .services-image img {
+    width: 30vw;
+    margin-left: 3vw;
   }
 }
 
@@ -2522,7 +2544,7 @@ table thead {
 
   .scroll-parent {
     position: relative;
-    width: 100vw;
+    width: 99vw;
     height: 10vh;
     overflow: hidden;
     margin: 10vh auto -8vh -2vw;
@@ -2547,6 +2569,27 @@ table thead {
     width: 71vw;
   }
 
+  .services .widget-accueil {
+    max-width: 30vw;
+  }
+
+  .services-position {
+    display: flex;
+    margin-top: 7vh;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .services-image img {
+    width: 54vw;
+    height: 20vh;
+    margin-left: 0;
+  }
+
+  .nos-services {
+    width: 95vw;
+    margin-top: 5vh;
+  }
 }
 
 @media all and (max-width: 640px) {

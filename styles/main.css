@@ -2739,22 +2739,6 @@ table thead {
     overflow-wrap: break-word;
   }
 
-  .services-position {
-    flex-direction: column;
-    margin-top: 3vh;
-  }
-
-  .mission-historique .services-image img {
-    height: 12vh;
-    width: 71vw;
-    border-radius: 30px;
-    margin-bottom: 3vh;
-  }
-
-  .services-position {
-    align-items: center;
-  }
-
   .grid-enseignants {
     flex-direction: column;
   }
@@ -2835,6 +2819,49 @@ table thead {
     left: 10vw;
   }
 
+  /* Services */
+  .widget.services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services .widget-accueil p {
+    margin: 1vh;
+  }
+
+  .services .widget-accueil {
+    max-width: 66vw;
+    margin-bottom: 3vh;
+  }
+
+  .services-position {
+    margin-top: 0;
+  }
+
+  .services-image img {
+    width: 66vw;
+    height: 25vh;
+  }
+
+  .services .widget-accueil {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  .services-image img {
+    width: 90vw;
+    height: 22vh;
+    margin-left: 0;
+  }
+
+  .nos-services {
+    width: 90vw;
+  }
+
+  /*footer*/
+  .scroll-parent {
+    margin: 0 auto -8vh -2vw;
+  }
 }
 
 @media all and (max-width: 360px) {

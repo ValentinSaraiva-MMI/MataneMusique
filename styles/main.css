@@ -2098,7 +2098,7 @@ table thead {
 
   .mission-historique .services-image img {
     width: 83vw;
-}
+  }
 
   .services-position {
     align-items: center;
@@ -2474,7 +2474,7 @@ table thead {
   }
 
   .article-cours {
-    width: 34vw;
+    width: 38vw;
   }
 
   .grid-cours .ombre-cours {
@@ -2547,7 +2547,7 @@ table thead {
   .mission-historique .services-image img {
     width: 84vw;
     height: 14vh;
-}
+  }
 
   .img-equipe {
     width: 20vw;
@@ -2885,7 +2885,7 @@ table thead {
   }
 
   .titre-cours {
-    top: 22vh;
+    top: 21vh;
     left: 2.5vw;
     font-size: 1.3em;
     text-align: left;

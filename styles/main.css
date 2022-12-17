@@ -223,8 +223,8 @@ main {
   background-color: rgb(2 2 2);
 }
 
-.wp-dark-mode-active .scroll-parent {
-  background-color: #cfcfcf !important;
+.wp-dark-mode-active .scroll-element {
+  background-color: #cccccc !important;
 }
 
 /* scrolbar*/
@@ -1809,7 +1809,6 @@ table thead {
 
   .mission-historique .services-image img {
     width: 20vw;
-    height: 54vw;
   }
 
   .nos-services {
@@ -1844,6 +1843,10 @@ table thead {
 
   /*coordonnées*/
 
+  .coordonnees{
+    width: 21vw;
+  }
+
   .des-coordonnees {
     display: flex;
     flex-direction: column;
@@ -1854,7 +1857,7 @@ table thead {
 
   .coordonnee-texte p {
     text-align: left;
-    width: 20vw;
+    width: 29vw;
   }
 
   /* emplois */
@@ -2077,7 +2080,7 @@ table thead {
   }
 
   .img-enseignant {
-    height: auto;
+    height: 55vh;
     width: 21vh;
   }
 

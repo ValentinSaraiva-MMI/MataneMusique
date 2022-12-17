@@ -1253,7 +1253,7 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
   display: block;
   position: relative;
   max-height: 0;
-  left: -4.5vw;
+  left: -1.5vw;
   color: #ff8e00;
   font-size: 20px;
 }
@@ -1733,6 +1733,7 @@ table thead {
     width: 85vw;
   }
 
+
 }
 
 @media all and (max-width: 1280px) {
@@ -2113,6 +2114,10 @@ table thead {
 
   .textes_enseignants {
     width: 47vw;
+  }
+
+  .infos-fondation li:before {
+    left: -2.5vw;
   }
 
 

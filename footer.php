@@ -65,7 +65,7 @@
                 </ul>
 
                 <ul class="box-infolettre">
-                    <li class="link_name">Abonnez-vous a notre infolettre 😊</li>
+                    <li class="link_name">Abonnez-vous à notre infolettre 😊</li>
                
                     
                     <a href="http://eepurl.com/icygJH">

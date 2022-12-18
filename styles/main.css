@@ -850,8 +850,8 @@ li.current_page_item a {
 }
 
 .actu-contient img {
-  width: 15vw;
-  height: 15vw;
+  width: 10vw;
+  height: 10vw;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -865,6 +865,11 @@ li.current_page_item a {
 .actu-contient img~div p {
   text-align: left;
   margin-left: 1vw;
+}
+
+.actu-contient img~div {
+  display: flex;
+  align-items: center;
 }
 
 .actu-section hr {

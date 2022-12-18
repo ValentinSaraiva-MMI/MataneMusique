@@ -117,7 +117,7 @@ $query = new WP_query($args);
 
 
     <section>
-        <h2>Évenements à venir</h2>
+        <h2>Évenements</h2>
         <div class="position-evenement">
             <?php if ($query->have_posts()): ?>
             <?php while ($query->have_posts()):

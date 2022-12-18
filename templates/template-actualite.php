@@ -36,7 +36,7 @@
             <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <button class="btn-bordure btn-plus-actu">Découvrir plus d'actualités</button>
+        <button id="btn-plus-actu" class="btn-bordure btn-plus-actu">Découvrir plus d'actualités</button>
     </section>
 
     <?php
@@ -47,7 +47,7 @@
     ?>
 
     <section>
-        <h2>Évenements à venir</h2>
+        <h2>Évènements</h2>
         <div class="position-evenement">
             <?php if ($query->have_posts()): ?>
                 <?php while ($query->have_posts()): $query->the_post(); ?>
@@ -84,14 +84,16 @@
             <?php endif; ?>
         </div>
         <div class="position-btn">
-            <button class="btn-bordure btn-plus-evenement">Découvrir plus d'évènements</button>
+            <button id="btn-plus-evenement" class="btn-bordure btn-plus-evenement">Découvrir plus d'évènements</button>
         </div>
     </section>
 </div>
 
 <script>
+    /* Afficher plus d'actu et d'évènements aaffiche les 3 premiers qui ont été écrits et non les 3 derniers, je n'ai pas réussi à le faire correctement */
+
     /* Actu */
-    let btn_actu = document.querySelector(".btn-plus-actu");
+    let btn_actu = document.querySelector("#btn-plus-actu");
     console.log(btn_actu)
     btn_actu.addEventListener("click", affiche_plus);
 
@@ -99,26 +101,26 @@
     let actu = document.querySelector(".actu");
     
     function compte() {
-        console.log("compte")
         for (let i = 0; i < nb_actualite; i++) {
-            console.log("ca marche");
             if (i >= 3) {
                 console.log("encore mieux")
                 actu.style.display="none";
+                btn_actu.style.display = "block"
+            } else {
+                btn_actu.style.display = "none"
             }
         }
     }
-
     compte()
 
     function affiche_plus() {
-        actu.style.display="block";
+        actu.style.display = "block";
     }  
 
 
     /* Evenement */
 
-    let btn_evenement = document.querySelector(".btn-plus-evenement");
+    let btn_evenement = document.querySelector("#btn-plus-evenement");
     btn_evenement.addEventListener("click", affiche_plus_evenement);
 
     let nb_evenement = document.querySelectorAll(".plus-evenmt").length;
@@ -128,6 +130,9 @@
         for (let i = 0; i < nb_evenement; i++) {
             if (i >= 3) {
                 evnmt.style.display="none";
+                btn_evenement.style.display = "block"
+            } else {
+                btn_evenement.style.display = "none"
             }
         }
     }

@@ -5,7 +5,7 @@ Template Name: Page Membre
 ?>
 
 <?php get_header(); ?>
-
+<div class="search-results membre">
     <section>
         <h1>Page membre</h1>
     </section>
@@ -22,25 +22,21 @@ Template Name: Page Membre
         );
         $query = new WP_Query($args);
     ?>
-<main class="search-results membre">
+
     <?php if ($query->have_posts()): ?>
         <?php while ($query->have_posts()): $query->the_post(); ?>
-            <section>
                 <article>
-                <h3> 
-                    <?php the_title(); ?> 
-                </h3>
+                    <h3> 
+                        <?php the_title(); ?> 
+                    </h3>
                     <?php the_content(); ?>
-                    <br> 
-                    <p><?php the_author(); ?></p>
                 </article>
-      </section>
-    <?php endwhile; ?>
-        </main> 
+        <?php endwhile; ?>
     <?php endif; ?>
 <?php endif ?>  
 
 </section>
+</div>
 <?php 
 wp_reset_postdata(); 
 get_footer(); ?>
